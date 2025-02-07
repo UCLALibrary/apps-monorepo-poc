@@ -1,8 +1,8 @@
 {
-  "name": "my-module",
+  "name": "@stellar/nuxt",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "description": "My new Stellar Nuxt module",
+  "repository": "pghorpade/stellar",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -41,8 +41,15 @@
     "changelogen": "^0.5.7",
     "eslint": "^9.19.0",
     "nuxt": "^3.15.2",
-    "typescript": "~5.7.3",
+    "typescript": "catalog:",
     "vitest": "^3.0.4",
-    "vue-tsc": "^2.2.0"
+    "vue-tsc": "catalog:",
+    "vue-component-library": "workspace:^"
+  },
+  "peerDependencies": {
+    "vue-component-library": "workspace:^"
+  },
+  "engines": {
+    "pnpm": "^9.12.1"
   }
 }

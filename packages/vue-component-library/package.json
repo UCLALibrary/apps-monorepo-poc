@@ -1,5 +1,5 @@
 {
-  "name": "@stellar/vue-component-library",
+  "name": "vue-component-library",
   "version": "0.0.0",
   "type": "module",
   "files": [

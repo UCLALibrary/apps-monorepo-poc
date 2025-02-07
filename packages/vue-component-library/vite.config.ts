@@ -12,7 +12,7 @@ export default defineConfig({
     lib: {
       entry: getFilePath("./src/index.ts"),
       formats: ["es", "cjs"],
-      fileName: "stellar-vue",
+      fileName: "index",
       cssFileName: "style",
       
     },
@@ -63,6 +63,6 @@ export default defineConfig({
 
 /** Gets the given path while ensuring cross-platform and correct decoding */
 function getFilePath(path: string) {
-  console.log("vite config parinita",resolve(__dirname, path))
+  console.log("getFilePath",resolve(__dirname, path))
   return resolve(__dirname, path)
 }
