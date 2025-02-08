@@ -4,10 +4,20 @@ import packageJson from "./package.json"
 import vue from '@vitejs/plugin-vue'
 import svgLoader from 'vite-svg-loader'
 import postcssBase64 from 'postcss-base64'
+import dts from 'vite-plugin-dts'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue(), svgLoader({ svgo: false })],
+  plugins: [
+    vue(), 
+    svgLoader({ svgo: false }),
+    dts({
+      tsconfigPath: './tsconfig.node.json',
+      outDir: 'dist',
+      insertTypesEntry: true,
+      rollupTypes: true
+    }),
+  ],
   build: {
     lib: {
       entry: getFilePath("./src/index.ts"),
