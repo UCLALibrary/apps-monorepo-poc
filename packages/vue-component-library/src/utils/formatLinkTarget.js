@@ -9,10 +9,12 @@ export default function formatLinkTarget(string = '', url = '') {
   if (
     NEW_TAB.includes(string)
     || (UNSPECIFIED.includes(string) && !isInternalLink(url))
-  )
+  ) {
     output = '_blank'
-  else
+  }
+  else {
     output = ''
+  }
 
   return output
 }

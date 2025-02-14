@@ -1,7 +1,9 @@
-import { addComponent, defineNuxtModule, createResolver, useLogger } from '@nuxt/kit'
-import * as VueComponentLibrary from "vue-component-library"
+import { addComponent, defineNuxtModule, useLogger } from '@nuxt/kit'
+import * as VueComponentLibrary from 'vue-component-library'
 // Module options TypeScript interface definition
-export interface ModuleOptions {}
+export interface ModuleOptions {
+  [key: string]: unknown
+}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
@@ -11,14 +13,14 @@ export default defineNuxtModule<ModuleOptions>({
   // Default configuration options of the Nuxt module
   defaults: {},
   setup(_options, _nuxt) {
-    const logger = useLogger("@apps-monorepo-poc/nuxt-module")
-    // const resolver = createResolver(import.meta.url)
-    _nuxt.options.css.push("vue-component-library/style.css")
+    const logger = useLogger('@apps-monorepo-poc/nuxt-module')
+
+    _nuxt.options.css.push('vue-component-library/style.css')
     Object.keys(VueComponentLibrary)
       .forEach((component) => {
-        console.log(component)
+        logger.info(`Adding component: ${component}`)
         addComponent({
-          filePath: "vue-component-library",
+          filePath: 'vue-component-library',
           name: component,
           export: component,
         })

@@ -1,4 +1,3 @@
-
 import { inject } from 'vue'
 
 // Inject the theme

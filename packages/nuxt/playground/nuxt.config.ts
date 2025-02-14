@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
-  vueComponentLibrary: {},
   devtools: { enabled: true },
   compatibilityDate: '2025-02-07',
+  vueComponentLibrary: {},
 })

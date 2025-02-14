@@ -10,6 +10,8 @@
     "build:packages": "pnpm run build:lib && pnpm run build:module",
     "build:lib":"pnpm -r --filter vue-component-library run build",
     "build:module":"pnpm -r --filter @apps-monorepo-poc/nuxt-module run dev:prepare",
+    "build": "pnpm run build:packages",
+    "release": "pnpm -r --filter vue-component-library run release && pnpm -r --filter @apps-monorepo-poc/nuxt-module run release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

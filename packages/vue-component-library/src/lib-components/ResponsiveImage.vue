@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import type { MediaItemType } from '@/types/types'
 
 import type { PropType } from 'vue'
-import type { MediaItemType } from '@/types/types'
+import { computed, ref } from 'vue'
 
 const props = defineProps({
   media: {
@@ -44,7 +44,7 @@ const props = defineProps({
   objectFit: {
     type: String,
     default: '',
-  }
+  },
 })
 
 const hasLoaded = ref(false)

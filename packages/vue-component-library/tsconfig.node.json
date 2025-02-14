@@ -3,32 +3,31 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
     "target": "ES2022",
     "lib": ["ES2023", "DOM"],
+    "moduleDetection": "force",
+
+    "baseUrl": ".",
+    "rootDir": ".",
     "module": "ESNext",
-    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "allowImportingTsExtensions": true,
+    /* Linting */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     /* generate type declarations for your library */
     "declaration": true,
     "declarationDir": "dist",
     "emitDeclarationOnly": true,
-    "outDir": "dist",
-    "rootDir": ".",
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
     "noEmit": true,
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
-
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"],
-    }
+    "outDir": "dist",
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "noUncheckedSideEffectImports": true
   },
-  "include": ["vite.config.ts","src/**/*","src/types/*"]
+  "include": ["vite.config.ts", "src/**/*", "src/types/*"]
 }
