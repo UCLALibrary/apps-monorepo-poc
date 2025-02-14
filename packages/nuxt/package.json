@@ -1,5 +1,5 @@
 {
-  "name": "@stellar/nuxt",
+  "name": "@apps-monorepo-poc/nuxt-module",
   "version": "1.0.0",
   "description": "My new Stellar Nuxt module",
   "repository": "pghorpade/stellar",

@@ -5,13 +5,13 @@ export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: '@stellar/nuxt',
-    configKey: 'stellar',
+    name: '@apps-monorepo-poc/nuxt-module',
+    configKey: 'vueComponentLibrary',
   },
   // Default configuration options of the Nuxt module
   defaults: {},
   setup(_options, _nuxt) {
-    const logger = useLogger("@stellar/nuxt")
+    const logger = useLogger("@apps-monorepo-poc/nuxt-module")
     // const resolver = createResolver(import.meta.url)
     _nuxt.options.css.push("vue-component-library/style.css")
     Object.keys(VueComponentLibrary)
