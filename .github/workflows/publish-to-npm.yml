@@ -29,6 +29,10 @@ jobs:
         run: pnpm install --save-dev @semantic-release/changelog @semantic-release/git -w
       - name: Build All Packages
         run: pnpm run build
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
       - name: Create Initial Tag if None Exist
         run: |
           if [ -z "$(git tag)" ]; then
