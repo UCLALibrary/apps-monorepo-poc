@@ -29,12 +29,6 @@ jobs:
         run: pnpm install --save-dev @semantic-release/changelog @semantic-release/git -w
       - name: Build All Packages
         run: pnpm run build
-      - name: Create Initial Tag if None Exist
-        run: |
-          if [ -z "$(git tag)" ]; then
-            git tag v0.1.0
-            git push origin v0.1.0
-          fi
       - name: Release All Packages
         env:
           GH_TOKEN: ${{ secrets.PAT_POC }}
