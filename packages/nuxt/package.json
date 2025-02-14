@@ -25,7 +25,6 @@
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "build": "pnpm run dev:prepare",
     "release": "semantic-release",
-    "prebuild": "rimraf ./dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest run",
