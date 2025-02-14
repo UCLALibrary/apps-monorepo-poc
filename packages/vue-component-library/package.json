@@ -29,14 +29,19 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && VITE_CJS_TRACE=true vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "release": "semantic-release"
   },
   "dependencies": {
     "date-fns": "^4.1.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^4.2.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
+    "eslint": "^9.19.0",
     "postcss-base64": "^0.7.1",
     "sass": "^1.79.5",
     "ucla-library-design-tokens": "^5.28.0",
