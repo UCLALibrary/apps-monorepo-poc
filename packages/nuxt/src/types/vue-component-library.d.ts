@@ -1,3 +1,3 @@
-declare module 'vue-component-library' {
-export * from 'vue-component-library/types'
-}
+/*declare module 'vue-component-library' {
+export * from 'vue-component-library'
+}*/

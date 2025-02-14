@@ -1,12 +1,15 @@
 {
-  "name": "stellar",
+  "name": "apps-monorepo-poc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "vue-component-library": "pnpm -r --filter vue-component-library run build",
-    "nuxt:prepare": "pnpm -r --filter @stellar/nuxt run dev:prepare",
-    "nuxt:dev": "pnpm -r --filter @stellar/nuxt run dev",
+    "nuxt:prepare": "pnpm -r --filter @apps-monorepo-poc/nuxt-module run dev:prepare",
+    "nuxt:dev": "pnpm -r --filter @apps-monorepo-poc/nuxt-module run dev",
+    "build:packages": "pnpm run build:lib && pnpm run build:module",
+    "build:lib":"pnpm -r --filter vue-component-library run build",
+    "build:module":"pnpm -r --filter @apps-monorepo-poc/nuxt-module run dev:prepare",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
