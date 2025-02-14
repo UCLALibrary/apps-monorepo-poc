@@ -36,7 +36,7 @@ export default {
         return this.to
       }
       return this.to
-    }
+    },
   },
 }
 </script>

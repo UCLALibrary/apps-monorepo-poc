@@ -1,10 +1,10 @@
 <script setup>
-import { computed, defineAsyncComponent } from 'vue'
 import { useTheme } from '@/composables/useTheme'
+import SmartLink from '@/lib-components/SmartLink.vue'
 
 // Helper functions
 import isInternalLink from '@/utils/isInternalLink'
-import SmartLink from '@/lib-components/SmartLink.vue'
+import { computed, defineAsyncComponent } from 'vue'
 
 const props = defineProps({
   to: {
@@ -49,19 +49,19 @@ const props = defineProps({
 })
 
 const SvgExternalLink = defineAsyncComponent(() =>
-  import('ucla-library-design-tokens/assets/svgs/icon-external-link.svg')
+  import('ucla-library-design-tokens/assets/svgs/icon-external-link.svg'),
 )
 
 const SvgArrowRight = defineAsyncComponent(() =>
-  import('ucla-library-design-tokens/assets/svgs/icon-arrow-right.svg')
+  import('ucla-library-design-tokens/assets/svgs/icon-arrow-right.svg'),
 )
 
 const SvgArrowDownload = defineAsyncComponent(() =>
-  import('ucla-library-design-tokens/assets/svgs/icon-download.svg')
+  import('ucla-library-design-tokens/assets/svgs/icon-download.svg'),
 )
 
 const IconClose = defineAsyncComponent(() =>
-  import('ucla-library-design-tokens/assets/svgs/icon-close.svg')
+  import('ucla-library-design-tokens/assets/svgs/icon-close.svg'),
 )
 
 const theme = useTheme()

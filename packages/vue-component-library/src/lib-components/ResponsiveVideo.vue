@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { computed, onMounted, reactive, ref, watch } from 'vue'
-import type { PropType } from 'vue'
 import type { MediaItemType } from '@/types/types'
+import type { PropType } from 'vue'
+import { computed, onMounted, reactive, ref, watch } from 'vue'
 
 const props = defineProps({
   media: {
     type: Object as PropType<MediaItemType>,
-    default: () => ({})
+    default: () => ({}),
   },
   mode: {
     type: String,
@@ -39,7 +39,7 @@ const props = defineProps({
   controls: {
     type: Boolean,
     default: false,
-  }
+  },
 })
 
 const emit = defineEmits(['ended', 'error', 'error-image', 'error-video', 'loaded', 'loaded-image', 'loaded-video', 'playing'])
@@ -130,7 +130,7 @@ const parsedFocalPoint = computed(() => {
   else {
     return {
       x: '0.5',
-      y: '0.5'
+      y: '0.5',
     }
   }
 })
@@ -153,8 +153,9 @@ const mediaStyles = computed(() => {
   if (
     parsedFocalPoint.value.x !== ''
     && parsedFocalPoint.value.y !== ''
-  )
+  ) {
     styles.objectPosition = `${parsedFocalPoint.value.x}% ${parsedFocalPoint.value.y}%`
+  }
 
   return styles
 })

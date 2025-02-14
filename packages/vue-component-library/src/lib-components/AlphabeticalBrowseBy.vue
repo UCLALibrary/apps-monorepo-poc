@@ -105,8 +105,9 @@ export default {
           if (
             item.letter === this.selectedLetterProp
             && this.selectedLetter === ''
-          )
+          ) {
             letterClass = `${letterClass} is-selected`
+          }
 
           // Set the class for the letter when clicked
           if (item.letter === this.selectedLetter)

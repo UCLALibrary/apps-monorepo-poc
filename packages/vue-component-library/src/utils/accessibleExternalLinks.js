@@ -1,9 +1,8 @@
-
 export default function accessibleExternalLinks(text = '') {
   if (text == null)
     return text // don't try string method .replace
 
-  const regex = /<a\s+(?:[^>]*?\s+)?target=(["_blank'])(.*?)\1*>(.*?)<\/a>/g
+  const regex = /<a\s[^>]*?target=["'_blank][^>]*>.*?<\/a>/g
 
   return text.replace(regex, (match) => {
     const xmatch = match.replace('</a>', '')

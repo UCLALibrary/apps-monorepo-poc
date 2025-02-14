@@ -1,4 +1,3 @@
-
 /**
  * Take a URI and determine if it is an internal link
  * @param {string} uri
@@ -10,10 +9,11 @@ function isInternalLink(uri = '') {
 
   if (
     uri == null
-              || String(uri).indexOf('/') === 0
-              || (!uri.includes('.') && uri.length !== 0)
-  )
+    || String(uri).indexOf('/') === 0
+    || (!uri.includes('.') && uri.length !== 0)
+  ) {
     output = true
+  }
 
   return output
 }

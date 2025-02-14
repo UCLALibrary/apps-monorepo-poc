@@ -1,192 +1,192 @@
 <script>
-import { defineAsyncComponent } from 'vue'
 import SmartLink from '@/lib-components/SmartLink.vue'
+import { defineAsyncComponent } from 'vue'
 
 export default {
   name: 'IconWithLink',
   components: {
     SmartLink,
     SvgIconConsultation: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-chat.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-chat.svg'),
     ),
     SvgIconList: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-list.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-list.svg'),
     ),
     SvgIconLocation: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-location.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-location.svg'),
     ),
     SvgIconPhone: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-phone.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-phone.svg'),
     ),
     SvgIconSearch: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-search.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-search.svg'),
     ),
     SvgIconVirtual: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-virtual.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-virtual.svg'),
     ),
     SvgIconHeadphones: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-headphones.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-headphones.svg'),
     ),
     SvgIconVideo: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-video.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-video.svg'),
     ),
     SvgIconImageStack: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-image-stack.svg'
-      )
+      ),
     ),
     SvgIconMoney: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-money.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-money.svg'),
     ),
     SvgIconMessage: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-message.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-message.svg'),
     ),
     SvgIconPlay: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-play.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-play.svg'),
     ),
     SvgIconPlayFilled: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-play-filled.svg'
-      )
+      ),
     ),
     SvgIconEye: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-eye.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-eye.svg'),
     ),
     SvgIconCheck: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-check.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-check.svg'),
     ),
     SvgIconEmail: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-email.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-email.svg'),
     ),
     SvgIconCard: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-card.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-card.svg'),
     ),
     SvgIconCalendar: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-calendar.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-calendar.svg'),
     ),
     SvgIconLaptop: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-laptop.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-laptop.svg'),
     ),
     SvgIconBook: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-book.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-book.svg'),
     ),
     SvgIconLocker: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-locker.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-locker.svg'),
     ),
     SvgIconPerson: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-person.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-person.svg'),
     ),
     SvgIconAccessible: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-accessible.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-accessible.svg'),
     ),
     SvgIconClock: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-clock.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-clock.svg'),
     ),
     SvgIconChair: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-chair.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-chair.svg'),
     ),
     SvgIconLight: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-light.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-light.svg'),
     ),
     SvgIconLocationFilled: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-location-filled.svg'
-      )
+      ),
     ),
     SvgIconAlert: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-alert.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-alert.svg'),
     ),
     SvgIconShareEmail: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-share-email.svg'
-      )
+      ),
     ),
     SvgIconSharePrinter: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-share-printer.svg'
-      )
+      ),
     ),
     SvgIconShareFacebook: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-share-facebook.svg'
-      )
+      ),
     ),
     SvgIconShareInstagram: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-share-instagram.svg'
-      )
+      ),
     ),
     SvgIconShareLinkedin: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-share-linkedin.svg'
-      )
+      ),
     ),
     SvgIconShareTwitter: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-share-twitter.svg'
-      )
+      ),
     ),
     SvgIconShareWhatsapp: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-share-whatsapp.svg'
-      )
+      ),
     ),
 
     // FTVA Icons
     SvgIconFtvaAppleinc: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-ftva-appleinc.svg'
-      )
+      ),
     ),
 
     SvgIconFtvaGcal: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-ftva-gcal.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-ftva-gcal.svg'),
     ),
 
     SvgIconFtvaOutlook: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-ftva-outlook.svg'
-      )
+      ),
     ),
 
     SvgIconFtvaDownload: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-ftva-download.svg'
-      )
+      ),
     ),
 
     SvgIconFtvaShare: defineAsyncComponent(() =>
-      import('ucla-library-design-tokens/assets/svgs/icon-ftva-share.svg')
+      import('ucla-library-design-tokens/assets/svgs/icon-ftva-share.svg'),
     ),
 
     SvgIconFtvaSocialConfirm: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-ftva-social_confirm.svg'
-      )
+      ),
     ),
 
     SvgIconFtvaSocialEmail: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-ftva-social_email.svg'
-      )
+      ),
     ),
 
     SvgIconFtvaSocialFacebook: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-ftva-social_facebook.svg'
-      )
+      ),
     ),
 
     SvgIconFtvaSocialLink: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-ftva-social_link.svg'
-      )
+      ),
     ),
 
     SvgIconFtvaSocialX: defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/icon-ftva-social_x.svg'
-      )
+      ),
     ),
   },
   props: {

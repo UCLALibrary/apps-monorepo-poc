@@ -1,29 +1,29 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import type { LocationItemType, MediaItemType } from '@/types/types'
 import type { PropType } from 'vue'
-import { format } from 'date-fns/format'
-
-// SVGs
-import SvgMoleculeHalfFaceted from 'ucla-library-design-tokens/assets/svgs/molecule-half-overlay.svg'
-import SvgHatchRight from 'ucla-library-design-tokens/assets/svgs/graphic-hatch-lines.svg'
-import SvgHeadingVector from 'ucla-library-design-tokens/assets/svgs/graphic-category-slash.svg'
+import BlockForm from '@/lib-components/BlockForm.vue'
 
 // Components
 import ButtonLink from '@/lib-components/ButtonLink.vue'
 import IconWithLink from '@/lib-components/IconWithLink.vue'
+import ResponsiveImage from '@/lib-components/ResponsiveImage.vue'
+
+import ResponsiveVideo from '@/lib-components/ResponsiveVideo.vue'
 import RichText from '@/lib-components/RichText.vue'
 import SmartLink from '@/lib-components/SmartLink.vue'
-import ResponsiveImage from '@/lib-components/ResponsiveImage.vue'
-import ResponsiveVideo from '@/lib-components/ResponsiveVideo.vue'
-import BlockForm from '@/lib-components/BlockForm.vue'
-
-import type { LocationItemType, MediaItemType } from '@/types/types'
-
+import fixURI from '@/utils/fixURI'
+import formatEventDates from '@/utils/formatEventDates'
 // Utility functions
 import formatEventTimes from '@/utils/formatEventTimes'
-import formatEventDates from '@/utils/formatEventDates'
 import getSectionName from '@/utils/getSectionName'
-import fixURI from '@/utils/fixURI'
+
+import { format } from 'date-fns/format'
+
+import SvgHeadingVector from 'ucla-library-design-tokens/assets/svgs/graphic-category-slash.svg'
+import SvgHatchRight from 'ucla-library-design-tokens/assets/svgs/graphic-hatch-lines.svg'
+// SVGs
+import SvgMoleculeHalfFaceted from 'ucla-library-design-tokens/assets/svgs/molecule-half-overlay.svg'
+import { computed } from 'vue'
 
 const props = defineProps({
   media: {
@@ -109,11 +109,13 @@ const isVideo = computed(() => {
       || extension === 'f4v'
       || extension === 'm4b'
       || extension === 'mov'
-    )
+    ) {
       return true
+    }
 
-    else
+    else {
       return false
+    }
   }
   else {
     return false

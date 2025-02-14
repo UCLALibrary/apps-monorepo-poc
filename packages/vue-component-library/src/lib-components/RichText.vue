@@ -1,10 +1,10 @@
 <script setup lang="ts">
+import { useTheme } from '@/composables/useTheme'
+import accessibleExternalLinks from '@/utils/accessibleExternalLinks'
+import stripCraftURLFromText from '@/utils/stripCraftURLFromText'
+
 // UTILITY FUNCTIONS
 import { computed } from 'vue'
-import stripCraftURLFromText from '@/utils/stripCraftURLFromText'
-import accessibleExternalLinks from '@/utils/accessibleExternalLinks'
-
-import { useTheme } from '@/composables/useTheme'
 
 const props = defineProps({
   richTextContent: {

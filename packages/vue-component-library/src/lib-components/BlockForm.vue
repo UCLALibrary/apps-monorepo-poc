@@ -1,7 +1,7 @@
 <script setup>
-import { computed, defineAsyncComponent, inject, ref, watch } from 'vue'
-
 import SvgGlyphClose from 'ucla-library-design-tokens/assets/svgs/icon-close.svg'
+
+import { computed, defineAsyncComponent, inject, ref, watch } from 'vue'
 
 const ButtonLink = defineAsyncComponent(() => import('@/lib-components/ButtonLink.vue'))
 
@@ -37,10 +37,12 @@ const parseQuestions = computed(() => {
       obj.type === 'string'
       || obj.type === 'radio'
       || obj.type === 'dropdown'
-    )
+    ) {
       formQuestions.value[obj.id] = ''
-    else
+    }
+    else {
       formQuestions.value[obj.id] = []
+    }
 
     questionsRequired.value[obj.id] = obj.required
     return {
@@ -61,8 +63,8 @@ function handleSubmit() {
     },
     registration_type:
       registrationType
-        && registrationType.value !== 'both'
-        && registrationType.value !== ''
+      && registrationType.value !== 'both'
+      && registrationType.value !== ''
         ? registrationType.value
         : registrationType.value
           && registrationType.value === 'both'
@@ -126,22 +128,26 @@ function checkForm() {
   if (
     blockFormData.value.emailMethod.status === 'required'
     && email.value
-  )
+  ) {
     emailValid = true
+  }
 
   if (
     registrationType
     && registrationType.value === 'both'
     && registrationTypeInput.value === ''
-  )
+  ) {
     registrationTypeValid = false
+  }
   else if (
     registrationType
     && registrationType.value !== 'both'
-  )
+  ) {
     registrationTypeValid = true
-  else
+  }
+  else {
     registrationTypeValid = true
+  }
 
   errors.value = []
   if (!fullNameValid)
@@ -160,8 +166,8 @@ function checkForm() {
     ) {
       question.type === 'string'
         ? errors.value.push(
-          `${blockFormData.value.questions.label} 4a required.`
-        )
+            `${blockFormData.value.questions.label} 4a required.`,
+          )
         : errors.value.push(`${question.label} 4b required.`)
     }
     else if (
