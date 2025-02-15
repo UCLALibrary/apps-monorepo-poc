@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
           token: ${{ secrets.PAT_POC }}
-       - name: Detect Changed Packages
+      - name: Detect Changed Packages
         id: filter
         uses: dorny/paths-filter@v3
         with:
