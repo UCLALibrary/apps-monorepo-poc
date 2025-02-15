@@ -15,6 +15,15 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
           token: ${{ secrets.PAT_POC }}
+       - name: Detect Changed Packages
+        id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            component-library:
+              - 'packages/vue-component-library/**'
+            nuxt-module:
+              - 'packages/nuxt-module/**'
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
@@ -29,8 +38,15 @@ jobs:
         run: pnpm install --save-dev @semantic-release/changelog @semantic-release/git -w
       - name: Build All Packages
         run: pnpm run build
-      - name: Release All Packages
+      - name: Release Component Library
+        if: steps.filter.outputs.component-library == 'true'
         env:
           GH_TOKEN: ${{ secrets.PAT_POC }}
-          NPM_TOKEN: ${{ secrets.NPM_POC_TOKEN }}
-        run: pnpm dlx semantic-release
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm --filter @apps-monorepo-poc/vue-component-library run release
+      - name: Release Nuxt Module
+        if: steps.filter.outputs.component-library == 'true' && steps.filter.outputs.nuxt-module == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PAT_POC }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm --filter @apps-monorepo-poc/nuxt-module run release
