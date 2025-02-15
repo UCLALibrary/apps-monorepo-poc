@@ -1,5 +1,5 @@
 import { addComponent, defineNuxtModule, useLogger } from '@nuxt/kit'
-import * as VueComponentLibrary from 'vue-component-library'
+import * as VueComponentLibrary from '@apps-monorepo-poc/vue-component-library'
 // Module options TypeScript interface definition
 export interface ModuleOptions {
   [key: string]: unknown

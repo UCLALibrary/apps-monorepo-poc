@@ -52,10 +52,10 @@
     "typescript": "catalog:",
     "vitest": "^3.0.4",
     "vue-tsc": "catalog:",
-    "vue-component-library": "workspace:^"
+    "@apps-monorepo-poc/vue-component-library": "workspace:^"
   },
   "peerDependencies": {
-    "vue-component-library": "workspace:^"
+    "@apps-monorepo-poc/vue-component-library": "workspace:^"
   },
   "engines": {
     "pnpm": "^9.12.1"
