@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/v1.3.0...v1.4.0) (2025-02-15)
+
+
+### Features
+
+* add new component ([#23](https://github.com/UCLALibrary/apps-monorepo-poc/issues/23)) ([2667473](https://github.com/UCLALibrary/apps-monorepo-poc/commit/26674734b2a2010023c10b12f5816af7a73969f6))
+
 # [1.3.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/v1.2.0...v1.3.0) (2025-02-15)
 
 
