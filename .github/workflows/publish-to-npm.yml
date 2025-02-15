@@ -23,7 +23,7 @@ jobs:
             component-library:
               - 'packages/vue-component-library/**'
             nuxt-module:
-              - 'packages/nuxt-module/**'
+              - 'packages/nuxt/**'
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
