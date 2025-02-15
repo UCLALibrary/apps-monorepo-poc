@@ -1,15 +1,16 @@
 {
   "name": "vue-component-library",
   "type": "module",
+  "private": false,
   "version": "0.0.0",
-  "homepage": "https://stellar.netlify.app",
+  "homepage": "https://ucla-library-storybook.netlify.app/?path=/docs/configure-your-project--docs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pghorpade/stellar",
+    "url": "https://github.com/UCLALibrary/apps-monorepo-poc",
     "directory": "packages/vue-component-library"
   },
   "bugs": {
-    "url": "https://github.com/pghorpade/stellar/issues"
+    "url": "https://github.com/UCLALibrary/apps-monorepo-poc/issues"
   },
   "exports": {
     ".": {
@@ -29,6 +30,8 @@
   "engines": {
     "pnpm": "^9.12.1"
   },
+  "author": "UCLA Library Application Team",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && VITE_CJS_TRACE=true vite build",

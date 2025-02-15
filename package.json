@@ -8,22 +8,21 @@
     "nuxt:prepare": "pnpm -r --filter @apps-monorepo-poc/nuxt-module run dev:prepare",
     "nuxt:dev": "pnpm -r --filter @apps-monorepo-poc/nuxt-module run dev",
     "build:packages": "pnpm run build:lib && pnpm run build:module",
-    "build:lib":"pnpm -r --filter vue-component-library run build",
-    "build:module":"pnpm -r --filter @apps-monorepo-poc/nuxt-module run dev:prepare",
+    "build:lib": "pnpm -r --filter vue-component-library run build",
+    "build:module": "pnpm -r --filter @apps-monorepo-poc/nuxt-module run dev:prepare",
     "build": "pnpm run build:packages",
-    "release": "pnpm -r --filter vue-component-library run release && pnpm -r --filter @apps-monorepo-poc/nuxt-module run release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "UCLA Library Application Team",
   "license": "ISC",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^24.2.2",
     "typescript": "catalog:",
     "vite": "catalog:",
-    "vue-tsc": "catalog:",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1"
-    
+    "vue-tsc": "catalog:"
   },
   "engines": {
     "pnpm": "^9.12.1"
