@@ -1,8 +1,10 @@
 {
   "name": "vue-component-library",
   "type": "module",
-  "private": false,
   "version": "0.0.0",
+  "private": false,
+  "author": "UCLA Library Application Team",
+  "license": "MIT",
   "homepage": "https://ucla-library-storybook.netlify.app/?path=/docs/configure-your-project--docs",
   "repository": {
     "type": "git",
@@ -30,8 +32,6 @@
   "engines": {
     "pnpm": "^9.12.1"
   },
-  "author": "UCLA Library Application Team",
-  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && VITE_CJS_TRACE=true vite build",
