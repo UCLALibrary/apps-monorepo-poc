@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/v1.1.0...v1.2.0) (2025-02-15)
+
+
+### Features
+
+* rename component library package ([#21](https://github.com/UCLALibrary/apps-monorepo-poc/issues/21)) ([89ccd42](https://github.com/UCLALibrary/apps-monorepo-poc/commit/89ccd425889743eab9c2573d645d0e44e376b338))
+
 # [1.1.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/v1.0.0...v1.1.0) (2025-02-15)
 
 
