@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/v1.2.0...v1.3.0) (2025-02-15)
+
+
+### Features
+
+* add publish config to make the package public ([#22](https://github.com/UCLALibrary/apps-monorepo-poc/issues/22)) ([fdd20e7](https://github.com/UCLALibrary/apps-monorepo-poc/commit/fdd20e78f07034c9856d2f7ea090a9dbad08f19d))
+
 # [1.2.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/v1.1.0...v1.2.0) (2025-02-15)
 
 
