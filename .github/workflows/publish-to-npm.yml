@@ -24,7 +24,7 @@ jobs:
         with:
           version: 9
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm ci
       - name: Install semantic-release extra plugins
         run: pnpm install --save-dev @semantic-release/changelog @semantic-release/git -w
       - name: Build All Packages
