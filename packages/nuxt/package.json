@@ -29,6 +29,7 @@
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "build": "pnpm run dev:prepare",
+    "release":"semantic-release",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest run",
@@ -50,7 +51,6 @@
     "nuxt": "^3.15.2",
     "typescript": "catalog:",
     "vitest": "^3.0.4",
-    "release":"semantic-release",
     "vue-tsc": "catalog:",
     "vue-component-library": "workspace:^"
   },
