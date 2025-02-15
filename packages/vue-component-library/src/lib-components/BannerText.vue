@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { computed, defineAsyncComponent } from 'vue'
-import type { PropType } from 'vue'
-import { format } from 'date-fns/format'
-
 import type { LocationItemType, SubjectAreaItemType } from '@/types/types'
-
+import type { PropType } from 'vue'
 import BlockForm from '@/lib-components/BlockForm.vue'
+
+import fixURI from '@/utils/fixURI'
+
+import formatEventDates from '@/utils/formatEventDates'
 
 // Utility functions
 import formatEventTimes from '@/utils/formatEventTimes'
-import formatEventDates from '@/utils/formatEventDates'
 import getSectionName from '@/utils/getSectionName'
-import fixURI from '@/utils/fixURI'
+import { format } from 'date-fns/format'
+import { computed, defineAsyncComponent } from 'vue'
 
 const props = defineProps({
   category: {
@@ -365,7 +365,7 @@ const parsedLocations = computed(() => {
   --location-icon-color: var(--color-primary-blue-03);
   --hover-border-color: var(--color-primary-blue-02);
   --hover-background-color: var(--color-white);
-  background-image: url("ucla-library-design-tokens/assets/svgs/molecule-half-faceted-light.svg");
+  background-image: url("/node_modules/ucla-library-design-tokens/assets/svgs/molecule-half-faceted-light.svg");
 }
 
 .theme-dark {
@@ -385,7 +385,7 @@ const parsedLocations = computed(() => {
   --location-icon-color: var(--color-white);
   --hover-border-color: var(--color-white);
   --hover-background-color: var(--color-primary-blue-03);
-  background-image: url("ucla-library-design-tokens/assets/svgs/molecule-half-faceted-dark.svg");
+  background-image: url("/node_modules/ucla-library-design-tokens/assets/svgs/molecule-half-faceted-dark.svg");
 
   :deep(.icon-with-link) {
     .link {

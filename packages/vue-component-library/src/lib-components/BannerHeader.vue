@@ -1,22 +1,22 @@
 <script setup lang="ts">
-import { computed, defineAsyncComponent } from 'vue'
+import type { LocationItemType, MediaItemType, SubjectAreaItemType } from '@/types/types'
 import type { PropType } from 'vue'
-import { format } from 'date-fns/format'
-
-// Components
-import SvgMoleculeHalfFaceted from 'ucla-library-design-tokens/assets/svgs/molecule-half-overlay.svg'
-import SvgHatchRight from 'ucla-library-design-tokens/assets/svgs/graphic-hatch-lines.svg'
-import ResponsiveImage from '@/lib-components/ResponsiveImage.vue'
-import ResponsiveVideo from '@/lib-components/ResponsiveVideo.vue'
 import BlockForm from '@/lib-components/BlockForm.vue'
 
-import type { LocationItemType, MediaItemType, SubjectAreaItemType } from '@/types/types'
-
+import ResponsiveImage from '@/lib-components/ResponsiveImage.vue'
+import ResponsiveVideo from '@/lib-components/ResponsiveVideo.vue'
+import fixURI from '@/utils/fixURI'
+import formatEventDates from '@/utils/formatEventDates'
 // Utility functions
 import formatEventTimes from '@/utils/formatEventTimes'
-import formatEventDates from '@/utils/formatEventDates'
+
 import getSectionName from '@/utils/getSectionName'
-import fixURI from '@/utils/fixURI'
+
+import { format } from 'date-fns/format'
+import SvgHatchRight from 'ucla-library-design-tokens/assets/svgs/graphic-hatch-lines.svg'
+// Components
+import SvgMoleculeHalfFaceted from 'ucla-library-design-tokens/assets/svgs/molecule-half-overlay.svg'
+import { computed, defineAsyncComponent } from 'vue'
 
 const props = defineProps({
   media: {
@@ -113,7 +113,7 @@ const props = defineProps({
   sectionHandle: {
     type: String,
     default: '',
-  }
+  },
 })
 // Async Components
 const ButtonLink = defineAsyncComponent(() => import('@/lib-components/ButtonLink.vue'))
@@ -147,10 +147,12 @@ const isVideo = computed(() => {
       || extension === 'f4v'
       || extension === 'm4b'
       || extension === 'mov'
-    )
+    ) {
       return true
-    else
+    }
+    else {
       return false
+    }
   }
   else { return false }
 })
@@ -295,7 +297,7 @@ const parsedLocations = computed(() => {
           || phone
           || staffDirectoryLink
           || addressLink
-          "
+        "
         class="meta-text"
       >
         <div
@@ -303,7 +305,7 @@ const parsedLocations = computed(() => {
             || subjectAreas.length
             || dateCreated
             || startDate
-            "
+          "
           class="meta-block"
         >
           <div
