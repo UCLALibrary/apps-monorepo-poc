@@ -2,7 +2,10 @@
   "name": "@apps-monorepo-poc/nuxt-module",
   "version": "1.0.0",
   "private":"false",
-  "description": "My new Stellar Nuxt module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Nuxt module to enable autoimports",
   "repository": {
     "type": "git",
     "url": "https://github.com/UCLALibrary/apps-monorepo-poc",
