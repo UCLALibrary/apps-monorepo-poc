@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "private":"false",
   "description": "My new Stellar Nuxt module",
-  "repository": "pghorpade/stellar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UCLALibrary/apps-monorepo-poc",
+    "directory": "packages/nuxt"
+  },
+  "author": "UCLA Library Application Team",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -24,7 +29,6 @@
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "build": "pnpm run dev:prepare",
-    "release": "semantic-release",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest run",
