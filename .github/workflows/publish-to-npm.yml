@@ -33,4 +33,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT_POC }}
           NPM_TOKEN: ${{ secrets.NPM_POC_TOKEN }}
-        run: pnpm dlx release --debug
+        run: pnpm dlx release
