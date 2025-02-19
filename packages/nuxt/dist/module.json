@@ -1,0 +1,9 @@
+{
+  "name": "@apps-monorepo-poc/nuxt-module",
+  "configKey": "vueComponentLibrary",
+  "version": "1.0.0",
+  "builder": {
+    "@nuxt/module-builder": "0.8.4",
+    "unbuild": "unknown"
+  }
+}
