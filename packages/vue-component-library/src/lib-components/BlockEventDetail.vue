@@ -2,17 +2,17 @@
   setup
   lang="ts"
 >
-// Utility functions
-import { computed } from 'vue'
-import SvgIconCalendar from 'ucla-library-design-tokens/assets/svgs/icon-ftva-calendar.svg'
-import SvgIconLocation from 'ucla-library-design-tokens/assets/svgs/icon-ftva-location.svg'
-import SvgIconClock from 'ucla-library-design-tokens/assets/svgs/icon-ftva-clock.svg'
-import formatTimes from '@/utils/formatEventTimes'
-import formatDates from '@/utils/formatEventDates'
 import { useTheme } from '@/composables/useTheme'
-
 // Child components
 import SmartLink from '@/lib-components/SmartLink.vue'
+import formatDates from '@/utils/formatEventDates'
+import formatTimes from '@/utils/formatEventTimes'
+import SvgIconCalendar from 'ucla-library-design-tokens/assets/svgs/icon-ftva-calendar.svg'
+import SvgIconClock from 'ucla-library-design-tokens/assets/svgs/icon-ftva-clock.svg'
+import SvgIconLocation from 'ucla-library-design-tokens/assets/svgs/icon-ftva-location.svg'
+
+// Utility functions
+import { computed } from 'vue'
 
 interface BlockEventDetailLocation {
   id?: string
@@ -43,7 +43,7 @@ const { startDate, endDate, time, ongoing, locations } = defineProps({
   locations: {
     type: Array<BlockEventDetailLocation>,
     default: () => [],
-  }
+  },
 })
 
 const theme = useTheme()
