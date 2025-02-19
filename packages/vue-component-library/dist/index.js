@@ -1,5 +1,5 @@
-import { createElementBlock as o, openBlock as i, createElementVNode as u, defineAsyncComponent as d, inject as ne, ref as H, computed as p, watch as rr, createBlock as I, unref as T, withModifiers as ut, normalizeClass as A, createVNode as q, createCommentVNode as m, createTextVNode as G, withDirectives as U, vModelRadio as pe, vModelText as ce, mergeProps as Ir, Fragment as B, renderList as N, toDisplayString as D, vModelCheckbox as Pr, vModelSelect as Er, resolveComponent as rt, withCtx as ee, renderSlot as Z, resolveDynamicComponent as X, defineComponent as te, normalizeStyle as de, reactive as Dr, onMounted as Rr, createStaticVNode as fe, vShow as dt } from "vue";
-const qr = {
+import { createElementBlock as o, openBlock as s, createElementVNode as u, defineAsyncComponent as f, inject as ne, ref as A, computed as y, watch as nr, createBlock as I, unref as x, withModifiers as dt, normalizeClass as q, createVNode as H, createCommentVNode as m, createTextVNode as B, withDirectives as z, vModelRadio as be, vModelText as de, mergeProps as Or, Fragment as N, renderList as j, toDisplayString as P, vModelCheckbox as Dr, vModelSelect as Pr, resolveComponent as at, withCtx as Q, renderSlot as Z, resolveDynamicComponent as J, defineComponent as ee, normalizeStyle as fe, reactive as Er, onMounted as Hr, createStaticVNode as ge, vShow as ht } from "vue";
+const Rr = {
   width: "32",
   height: "32",
   viewBox: "0 0 32 32",
@@ -7,8 +7,8 @@ const qr = {
   xmlns: "http://www.w3.org/2000/svg",
   class: "svg__icon-close"
 };
-function nr(e, t) {
-  return i(), o("svg", qr, t[0] || (t[0] = [
+function ar(e, t) {
+  return s(), o("svg", Rr, t[0] || (t[0] = [
     u("circle", {
       cx: "16",
       cy: "15.8645",
@@ -32,10 +32,10 @@ function nr(e, t) {
     }, null, -1)
   ]));
 }
-const tt = { render: nr }, Hr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const nt = { render: ar }, qr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: tt,
-  render: nr
+  default: nt,
+  render: ar
 }, Symbol.toStringTag, { value: "Module" })), W = (e, t) => {
   const r = e.__vccOpts || e;
   for (const [n, a] of t)
@@ -55,7 +55,7 @@ const tt = { render: nr }, Hr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Ob
 }, Wr = { key: 1 }, Vr = {
   key: 2,
   class: "input-wrapper input-radio"
-}, Yr = { for: "in-person" }, Ur = { for: "online" }, zr = { class: "input-wrapper" }, Gr = { class: "input-container" }, Zr = {
+}, Yr = { for: "in-person" }, Ur = { for: "online" }, zr = { class: "input-wrapper" }, Zr = { class: "input-container" }, Gr = {
   key: 3,
   class: "input-wrapper"
 }, Qr = { for: "email" }, Xr = { key: 0 }, Jr = { key: 1 }, Kr = ["required"], en = ["for"], tn = {
@@ -76,276 +76,276 @@ const tt = { render: nr }, Hr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Ob
 }, dn = ["id", "onUpdate:modelValue", "true-value", "value"], hn = ["for"], fn = ["id", "onUpdate:modelValue", "name"], mn = ["value"], gn = {
   __name: "BlockForm",
   setup(e) {
-    const t = d(() => Promise.resolve().then(() => at)), r = ne("eventId"), n = ne("blockFormData"), a = ne("registrationType"), s = ne("libcalWaitlist"), l = ne("libcalEndpoint");
-    console.log("BlockForm eventId", r.value), console.log("BlockForm blockFormData", n.value), console.log("BlockForm registrationType", a.value), console.log("BlockForm libcalWaitlist", s.value), console.log("BlockForm libcalEndpoint", l);
-    const c = H([]), h = H(""), f = H(""), y = H(""), w = H({}), M = H({}), _ = H(null), g = H(!1), v = H(!1), L = H({}), O = H(!1), R = H(""), x = p(() => n.value.questions ? n.value.questions.map((E) => (E.type === "string" || E.type === "radio" || E.type === "dropdown" ? M.value[E.id] = "" : M.value[E.id] = [], w.value[E.id] = E.required, {
+    const t = f(() => Promise.resolve().then(() => ot)), r = ne("eventId"), n = ne("blockFormData"), a = ne("registrationType"), i = ne("libcalWaitlist"), l = ne("libcalEndpoint");
+    console.log("BlockForm eventId", r.value), console.log("BlockForm blockFormData", n.value), console.log("BlockForm registrationType", a.value), console.log("BlockForm libcalWaitlist", i.value), console.log("BlockForm libcalEndpoint", l);
+    const c = A([]), d = A(""), h = A(""), v = A(""), b = A({}), M = A({}), _ = A(null), g = A(!1), p = A(!1), L = A({}), O = A(!1), R = A(""), F = y(() => n.value.questions ? n.value.questions.map((E) => (E.type === "string" || E.type === "radio" || E.type === "dropdown" ? M.value[E.id] = "" : M.value[E.id] = [], b.value[E.id] = E.required, {
       ...E,
       classes: `input-${E.type}`
     })) : []);
-    function F() {
+    function T() {
       console.log("registrationTypeInput", R.value, a.value && a === "both");
       const E = {
         form: {
-          first_name: h.value,
-          last_name: f.value,
-          email: y.value,
+          first_name: d.value,
+          last_name: h.value,
+          email: v.value,
           questions: []
         },
         registration_type: a && a.value !== "both" && a.value !== "" ? a.value : a.value && a.value === "both" ? R.value : "",
-        is_waitlist: s.value && s.value !== "" ? s.value : "0"
+        is_waitlist: i.value && i.value !== "" ? i.value : "0"
       };
       E.form.questions = n.value.questions.map((k) => ({
         id: k.id,
         answer: M.value[k.id]
       })), console.log("data submitting", JSON.stringify(E));
-      let b = "";
-      console.log("eventId", r), l ? b = `${l}api/1.1/events/${r.value}/register` : b = `${process.env.VUE_APP_CALENDAR_LIBRARY_URL}${r}/register`, fetch(b, {
+      let w = "";
+      console.log("eventId", r), l ? w = `${l}api/1.1/events/${r.value}/register` : w = `${process.env.VUE_APP_CALENDAR_LIBRARY_URL}${r}/register`, fetch(w, {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded"
         },
         body: JSON.stringify(E)
       }).then(() => {
-        v.value = !0, L.value = {
+        p.value = !0, L.value = {
           code: "success",
           text: "One seat is sent to LibCal to be registered or will be on wait list"
         };
       }).catch((k) => {
-        console.error(k), v.value = !0, L.value = {
+        console.error(k), p.value = !0, L.value = {
           code: "error",
           text: k
         };
       });
     }
-    function C() {
-      let E = !1, b = !1, k = !1;
-      h.value && f.value && (E = !0), n.value.emailMethod.status === "required" && y.value && (b = !0), a && a.value === "both" && R.value === "" ? k = !1 : (a && a.value, k = !0), c.value = [], E || c.value.push("Full Name 1 required."), b || c.value.push("Email 2 required."), k || c.value.push("Registration Type 3 required.");
-      for (const P of n.value.questions)
-        w.value[P.id] && !M.value[P.id] ? P.type === "string" ? c.value.push(
+    function $() {
+      let E = !1, w = !1, k = !1;
+      d.value && h.value && (E = !0), n.value.emailMethod.status === "required" && v.value && (w = !0), a && a.value === "both" && R.value === "" ? k = !1 : (a && a.value, k = !0), c.value = [], E || c.value.push("Full Name 1 required."), w || c.value.push("Email 2 required."), k || c.value.push("Registration Type 3 required.");
+      for (const D of n.value.questions)
+        b.value[D.id] && !M.value[D.id] ? D.type === "string" ? c.value.push(
           `${n.value.questions.label} 4a required.`
-        ) : c.value.push(`${P.label} 4b required.`) : w.value[P.id] && P.type === "checkbox" && M.value[P.id].length === 0 && c.value.push(`${P.label} 4c required.`);
-      c.value.length === 0 ? F() : window.scrollTo(0, 0);
+        ) : c.value.push(`${D.label} 4b required.`) : b.value[D.id] && D.type === "checkbox" && M.value[D.id].length === 0 && c.value.push(`${D.label} 4c required.`);
+      c.value.length === 0 ? T() : window.scrollTo(0, 0);
     }
-    function j() {
+    function V() {
       O.value = !0;
     }
     function S() {
       O.value = !1;
     }
-    function V() {
+    function Y() {
       clearTimeout(_.value), g.value = !1, O.value = !1;
     }
-    return rr(L, () => {
-      g.value = !0, _.value = setTimeout(V, 113e3);
-    }), (E, b) => O.value ? (i(), o("div", {
+    return nr(L, () => {
+      g.value = !0, _.value = setTimeout(Y, 113e3);
+    }), (E, w) => O.value ? (s(), o("div", {
       key: 1,
-      class: A(["block-form", {
+      class: q(["block-form", {
         "form-error": c.value.length,
         "form-success": g.value
       }])
     }, [
-      g.value ? (i(), o("div", Ar, [
-        b[8] || (b[8] = u("h3", null, "Registration complete", -1)),
-        b[9] || (b[9] = u("p", null, "Please check your email to view your booking.", -1)),
+      g.value ? (s(), o("div", Ar, [
+        w[8] || (w[8] = u("h3", null, "Registration complete", -1)),
+        w[9] || (w[9] = u("p", null, "Please check your email to view your booking.", -1)),
         u("button", {
           type: "button",
           class: "notification--remove",
-          onClick: b[1] || (b[1] = (k) => V())
+          onClick: w[1] || (w[1] = (k) => Y())
         }, [
-          q(T(tt), { class: "svg-glyph-close" })
+          H(x(nt), { class: "svg-glyph-close" })
         ])
-      ])) : (i(), o("form", Br, [
+      ])) : (s(), o("form", Br, [
         u("div", Nr, [
-          b[10] || (b[10] = u("h3", { class: "formTitle" }, " Registration ", -1)),
+          w[10] || (w[10] = u("h3", { class: "formTitle" }, " Registration ", -1)),
           u("button", {
             type: "button",
-            onClick: b[2] || (b[2] = (k) => S())
+            onClick: w[2] || (w[2] = (k) => S())
           }, [
-            q(T(tt), { class: "svg-glyph-close" })
+            H(x(nt), { class: "svg-glyph-close" })
           ])
         ]),
-        c.value.length ? (i(), o("div", jr, b[11] || (b[11] = [
+        c.value.length ? (s(), o("div", jr, w[11] || (w[11] = [
           u("p", null, " Please complete the required fields to complete registration ", -1)
         ]))) : m("", !0),
-        c.value.length ? (i(), o("br", Wr)) : m("", !0),
-        b[18] || (b[18] = u("div", { class: "registrationInfo" }, [
+        c.value.length ? (s(), o("br", Wr)) : m("", !0),
+        w[18] || (w[18] = u("div", { class: "registrationInfo" }, [
           u("p", null, "Registration is required for this event.")
         ], -1)),
-        T(a) === "both" ? (i(), o("div", Vr, [
-          b[14] || (b[14] = u("legend", null, [
-            G(" Registration Type "),
+        x(a) === "both" ? (s(), o("div", Vr, [
+          w[14] || (w[14] = u("legend", null, [
+            B(" Registration Type "),
             u("span", { class: "required" }, "(required)")
           ], -1)),
           u("label", Yr, [
-            U(u("input", {
+            z(u("input", {
               id: "in-person",
-              "onUpdate:modelValue": b[3] || (b[3] = (k) => R.value = k),
+              "onUpdate:modelValue": w[3] || (w[3] = (k) => R.value = k),
               type: "radio",
               value: "in-person",
               required: ""
             }, null, 512), [
-              [pe, R.value]
+              [be, R.value]
             ]),
-            b[12] || (b[12] = G("in-person"))
+            w[12] || (w[12] = B("in-person"))
           ]),
           u("label", Ur, [
-            U(u("input", {
+            z(u("input", {
               id: "online",
-              "onUpdate:modelValue": b[4] || (b[4] = (k) => R.value = k),
+              "onUpdate:modelValue": w[4] || (w[4] = (k) => R.value = k),
               type: "radio",
               value: "online"
             }, null, 512), [
-              [pe, R.value]
+              [be, R.value]
             ]),
-            b[13] || (b[13] = G(" online"))
+            w[13] || (w[13] = B(" online"))
           ])
         ])) : m("", !0),
         u("div", zr, [
-          b[15] || (b[15] = u("label", null, [
-            G("Full Name "),
+          w[15] || (w[15] = u("label", null, [
+            B("Full Name "),
             u("span", { class: "required" }, "(required)")
           ], -1)),
-          u("div", Gr, [
-            U(u("input", {
+          u("div", Zr, [
+            z(u("input", {
               id: "firstName",
-              "onUpdate:modelValue": b[5] || (b[5] = (k) => h.value = k),
+              "onUpdate:modelValue": w[5] || (w[5] = (k) => d.value = k),
               type: "text",
               name: "firstName",
               required: "",
               placeholder: "First Name"
             }, null, 512), [
-              [ce, h.value]
+              [de, d.value]
             ]),
-            U(u("input", {
+            z(u("input", {
               id: "lastName",
-              "onUpdate:modelValue": b[6] || (b[6] = (k) => f.value = k),
+              "onUpdate:modelValue": w[6] || (w[6] = (k) => h.value = k),
               type: "text",
               name: "lastName",
               required: "",
               placeholder: "Last Name"
             }, null, 512), [
-              [ce, f.value]
+              [de, h.value]
             ])
           ])
         ]),
-        T(n).emailMethod ? (i(), o("div", Zr, [
+        x(n).emailMethod ? (s(), o("div", Gr, [
           u("label", Qr, [
-            T(n).emailMethod.status === "required" ? (i(), o("span", Xr, b[16] || (b[16] = [
-              G(" Email "),
+            x(n).emailMethod.status === "required" ? (s(), o("span", Xr, w[16] || (w[16] = [
+              B(" Email "),
               u("span", { class: "required" }, "(required)", -1)
-            ]))) : (i(), o("span", Jr, "Email"))
+            ]))) : (s(), o("span", Jr, "Email"))
           ]),
-          U(u("input", Ir({
+          z(u("input", Or({
             id: "email",
-            "onUpdate:modelValue": b[7] || (b[7] = (k) => y.value = k),
+            "onUpdate:modelValue": w[7] || (w[7] = (k) => v.value = k),
             type: "email",
             name: "email",
-            required: T(n).emailMethod.status
+            required: x(n).emailMethod.status
           }, {}), null, 16, Kr), [
-            [ce, y.value]
+            [de, v.value]
           ])
         ])) : m("", !0),
-        (i(!0), o(B, null, N(x.value, (k) => (i(), o("div", {
+        (s(!0), o(N, null, j(F.value, (k) => (s(), o("div", {
           key: k.id,
           class: "input-wrapper parsedQuestionsLabelWrapper"
         }, [
-          k.type !== "string" ? (i(), o("label", {
+          k.type !== "string" ? (s(), o("label", {
             key: 0,
             for: k.id,
-            class: A(k.required ? "questionRequired" : "")
+            class: q(k.required ? "questionRequired" : "")
           }, [
-            G(D(k.label) + " ", 1),
-            k.required ? (i(), o("span", tn, " (required) ")) : m("", !0)
+            B(P(k.label) + " ", 1),
+            k.required ? (s(), o("span", tn, " (required) ")) : m("", !0)
           ], 10, en)) : m("", !0),
-          k.type === "string" ? (i(), o("div", rn, [
+          k.type === "string" ? (s(), o("div", rn, [
             u("label", {
               for: k.id,
-              class: A(k.required ? "questionRequired" : "")
+              class: q(k.required ? "questionRequired" : "")
             }, [
-              G(D(k.label) + " ", 1),
-              k.required ? (i(), o("span", an, "(required)")) : m("", !0)
+              B(P(k.label) + " ", 1),
+              k.required ? (s(), o("span", an, "(required)")) : m("", !0)
             ], 10, nn),
-            U(u("textarea", {
-              "onUpdate:modelValue": (P) => M.value[k.id] = P,
+            z(u("textarea", {
+              "onUpdate:modelValue": (D) => M.value[k.id] = D,
               placeholder: "Add multiple lines"
             }, null, 8, sn), [
-              [ce, M.value[k.id]]
+              [de, M.value[k.id]]
             ])
           ])) : m("", !0),
-          k.type === "radio" ? (i(), o("div", on, [
-            (i(!0), o(B, null, N(k.options, (P, ae) => (i(), o("div", {
-              key: ae,
+          k.type === "radio" ? (s(), o("div", on, [
+            (s(!0), o(N, null, j(k.options, (D, se) => (s(), o("div", {
+              key: se,
               class: "radioWrapper"
             }, [
-              u("label", { for: P }, [
-                U(u("input", {
-                  id: P,
-                  "onUpdate:modelValue": (ye) => M.value[k.id] = ye,
+              u("label", { for: D }, [
+                z(u("input", {
+                  id: D,
+                  "onUpdate:modelValue": (ke) => M.value[k.id] = ke,
                   type: "radio",
-                  value: P,
+                  value: D,
                   name: k.id
                 }, null, 8, cn), [
-                  [pe, M.value[k.id]]
+                  [be, M.value[k.id]]
                 ]),
-                G(" " + D(P), 1)
+                B(" " + P(D), 1)
               ], 8, ln)
             ]))), 128))
           ])) : m("", !0),
-          k.type === "checkbox" ? (i(), o("div", un, [
-            (i(!0), o(B, null, N(k.options, (P, ae) => (i(), o("div", {
-              key: ae,
+          k.type === "checkbox" ? (s(), o("div", un, [
+            (s(!0), o(N, null, j(k.options, (D, se) => (s(), o("div", {
+              key: se,
               class: "checkboxWrapper"
             }, [
-              U(u("input", {
-                id: P,
-                "onUpdate:modelValue": (ye) => M.value[k.id] = ye,
+              z(u("input", {
+                id: D,
+                "onUpdate:modelValue": (ke) => M.value[k.id] = ke,
                 type: "checkbox",
-                "true-value": P,
-                value: P
+                "true-value": D,
+                value: D
               }, null, 8, dn), [
-                [Pr, M.value[k.id]]
+                [Dr, M.value[k.id]]
               ]),
-              u("label", { for: P }, D(P), 9, hn)
+              u("label", { for: D }, P(D), 9, hn)
             ]))), 128))
           ])) : m("", !0),
-          k.type === "dropdown" ? U((i(), o("select", {
+          k.type === "dropdown" ? z((s(), o("select", {
             key: 4,
             id: k.id,
-            "onUpdate:modelValue": (P) => M.value[k.id] = P,
+            "onUpdate:modelValue": (D) => M.value[k.id] = D,
             name: k.id,
-            class: A(["input-dropdown", k.classes])
+            class: q(["input-dropdown", k.classes])
           }, [
-            b[17] || (b[17] = u("option", {
+            w[17] || (w[17] = u("option", {
               disabled: "",
               value: ""
             }, " Please select one ", -1)),
-            (i(!0), o(B, null, N(k.options, (P, ae) => (i(), o("option", {
-              key: ae,
-              value: P
-            }, D(P), 9, mn))), 128))
+            (s(!0), o(N, null, j(k.options, (D, se) => (s(), o("option", {
+              key: se,
+              value: D
+            }, P(D), 9, mn))), 128))
           ], 10, fn)), [
-            [Er, M.value[k.id]]
+            [Pr, M.value[k.id]]
           ]) : m("", !0)
         ]))), 128)),
-        q(T(t), {
+        H(x(t), {
           type: "submit",
           label: "Register",
           "icon-name": "none",
           "is-secondary": !0,
-          onClick: ut(C, ["prevent"])
+          onClick: dt($, ["prevent"])
         })
       ]))
-    ], 2)) : (i(), I(T(t), {
+    ], 2)) : (s(), I(x(t), {
       key: 0,
       label: "Register",
       "icon-name": "none",
       "is-secondary": !0,
       class: "register-button",
-      onClick: b[0] || (b[0] = ut((k) => j(), ["prevent"]))
+      onClick: w[0] || (w[0] = dt((k) => V(), ["prevent"]))
     }));
   }
-}, nt = /* @__PURE__ */ W(gn, [["__scopeId", "data-v-201d7bab"]]);
-function ar() {
+}, st = /* @__PURE__ */ W(gn, [["__scopeId", "data-v-201d7bab"]]);
+function it() {
   return ne("theme");
 }
 function sr(e = "") {
@@ -397,36 +397,36 @@ const bn = {
   key: 3,
   class: "smart-link is-link"
 };
-function Mn(e, t, r, n, a, s) {
-  const l = rt("router-link");
-  return s.isRelative && !r.isDownload && !s.parsedTarget ? (i(), I(l, {
+function Mn(e, t, r, n, a, i) {
+  const l = at("router-link");
+  return i.isRelative && !r.isDownload && !i.parsedTarget ? (s(), I(l, {
     key: 0,
     class: "smart-link is-router-link",
-    to: s.parsedTo
+    to: i.parsedTo
   }, {
-    default: ee(() => [
+    default: Q(() => [
       Z(e.$slots, "default", {}, void 0, !0)
     ]),
     _: 3
-  }, 8, ["to"])) : r.isDownload ? (i(), o("a", {
+  }, 8, ["to"])) : r.isDownload ? (s(), o("a", {
     key: 1,
     href: r.to,
     class: "smart-link is-link",
     download: ""
   }, [
     Z(e.$slots, "default", {}, void 0, !0)
-  ], 8, wn)) : r.to ? (i(), o("a", {
+  ], 8, wn)) : r.to ? (s(), o("a", {
     key: 2,
     href: r.to,
-    target: s.parsedTarget,
+    target: i.parsedTarget,
     class: "smart-link is-link"
   }, [
     Z(e.$slots, "default", {}, void 0, !0)
-  ], 8, _n)) : (i(), o("button", Sn, [
+  ], 8, _n)) : (s(), o("button", Sn, [
     Z(e.$slots, "default", {}, void 0, !0)
   ]));
 }
-const me = /* @__PURE__ */ W(bn, [["render", Mn], ["__scopeId", "data-v-57dec64c"]]), Ln = { class: "label" }, xn = { class: "hover" }, Fn = { class: "label" }, Tn = {
+const ae = /* @__PURE__ */ W(bn, [["render", Mn], ["__scopeId", "data-v-57dec64c"]]), Ln = { class: "label" }, xn = { class: "hover" }, Fn = { class: "label" }, Tn = {
   __name: "ButtonLink",
   props: {
     to: {
@@ -470,19 +470,19 @@ const me = /* @__PURE__ */ W(bn, [["render", Mn], ["__scopeId", "data-v-57dec64c
     }
   },
   setup(e) {
-    const t = e, r = d(
+    const t = e, r = f(
       () => import("./icon-external-link-WeOL_8ZY.js")
-    ), n = d(
+    ), n = f(
       () => import("./icon-arrow-right-wLk03dY8.js")
-    ), a = d(
+    ), a = f(
       () => import("./icon-download-Dp9VXiET.js")
-    ), s = d(
-      () => Promise.resolve().then(() => Hr)
-    ), l = ar(), c = p(() => [
+    ), i = f(
+      () => Promise.resolve().then(() => qr)
+    ), l = it(), c = y(() => [
       "button-link",
       (l == null ? void 0 : l.value) || "",
       t.isSecondary ? "is-secondary" : t.isTertiary ? "is-tertiary" : t.isQuaternary ? "is-quaternary" : ""
-    ]), h = p(() => {
+    ]), d = y(() => {
       switch (!0) {
         case t.isDownload:
           return a;
@@ -493,30 +493,30 @@ const me = /* @__PURE__ */ W(bn, [["render", Mn], ["__scopeId", "data-v-57dec64c
         case (t.linkTarget === "_blank" || t.iconName === "svg-external-link"):
           return r;
         case t.iconName === "icon-close":
-          return s;
+          return i;
         // case props.iconName:
         //     return props.iconName
         default:
           return r;
       }
     });
-    return (f, y) => (i(), I(me, {
+    return (h, v) => (s(), I(ae, {
       to: e.to,
-      class: A(c.value),
+      class: q(c.value),
       "is-download": e.isDownload,
       "link-target": e.linkTarget
     }, {
-      default: ee(() => [
-        u("span", Ln, D(e.label), 1),
-        Z(f.$slots, "default", {}, void 0, !0),
-        h.value !== "" ? (i(), I(X(h.value), {
+      default: Q(() => [
+        u("span", Ln, P(e.label), 1),
+        Z(h.$slots, "default", {}, void 0, !0),
+        d.value !== "" ? (s(), I(J(d.value), {
           key: 0,
           class: "arrow",
           "aria-hidden": "true"
         })) : m("", !0),
         u("div", xn, [
-          u("span", Fn, D(e.label), 1),
-          h.value !== "" ? (i(), I(X(h.value), {
+          u("span", Fn, P(e.label), 1),
+          d.value !== "" ? (s(), I(J(d.value), {
             key: 0,
             class: "arrow",
             "aria-hidden": "true"
@@ -526,147 +526,147 @@ const me = /* @__PURE__ */ W(bn, [["render", Mn], ["__scopeId", "data-v-57dec64c
       _: 3
     }, 8, ["to", "class", "is-download", "link-target"]));
   }
-}, ir = /* @__PURE__ */ W(Tn, [["__scopeId", "data-v-2c45c183"]]), at = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+}, ir = /* @__PURE__ */ W(Tn, [["__scopeId", "data-v-2c45c183"]]), ot = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: ir
-}, Symbol.toStringTag, { value: "Module" })), $n = {
+}, Symbol.toStringTag, { value: "Module" })), Cn = {
   name: "IconWithLink",
   components: {
-    SmartLink: me,
-    SvgIconConsultation: d(
+    SmartLink: ae,
+    SvgIconConsultation: f(
       () => import("./icon-chat-DCvwPwHu.js")
     ),
-    SvgIconList: d(
+    SvgIconList: f(
       () => import("./icon-list-CvgvlR7v.js")
     ),
-    SvgIconLocation: d(
+    SvgIconLocation: f(
       () => import("./icon-location-DNog__Cl.js")
     ),
-    SvgIconPhone: d(
+    SvgIconPhone: f(
       () => import("./icon-phone-DPv-PoqA.js")
     ),
-    SvgIconSearch: d(
+    SvgIconSearch: f(
       () => import("./icon-search-iss6-A2x.js")
     ),
-    SvgIconVirtual: d(
+    SvgIconVirtual: f(
       () => import("./icon-virtual-CwZieS3s.js")
     ),
-    SvgIconHeadphones: d(
+    SvgIconHeadphones: f(
       () => import("./icon-headphones-Vk0iXmnu.js")
     ),
-    SvgIconVideo: d(
+    SvgIconVideo: f(
       () => import("./icon-video-Tda9BGRR.js")
     ),
-    SvgIconImageStack: d(
+    SvgIconImageStack: f(
       () => import("./icon-image-stack-B7_3hmGM.js")
     ),
-    SvgIconMoney: d(
+    SvgIconMoney: f(
       () => import("./icon-money-BxPRObPA.js")
     ),
-    SvgIconMessage: d(
+    SvgIconMessage: f(
       () => import("./icon-message-CyHSPUb-.js")
     ),
-    SvgIconPlay: d(
+    SvgIconPlay: f(
       () => import("./icon-play-BaMxYNFG.js")
     ),
-    SvgIconPlayFilled: d(
+    SvgIconPlayFilled: f(
       () => import("./icon-play-filled-Dvcf_yQh.js")
     ),
-    SvgIconEye: d(
+    SvgIconEye: f(
       () => import("./icon-eye-L7brvvQ3.js")
     ),
-    SvgIconCheck: d(
+    SvgIconCheck: f(
       () => import("./icon-check-CKGDA7ua.js")
     ),
-    SvgIconEmail: d(
+    SvgIconEmail: f(
       () => import("./icon-email-d9JGcdKa.js")
     ),
-    SvgIconCard: d(
+    SvgIconCard: f(
       () => import("./icon-card-BiKDOVdQ.js")
     ),
-    SvgIconCalendar: d(
+    SvgIconCalendar: f(
       () => import("./icon-calendar-BFfsVZ3B.js")
     ),
-    SvgIconLaptop: d(
+    SvgIconLaptop: f(
       () => import("./icon-laptop-Bmg8PSn7.js")
     ),
-    SvgIconBook: d(
+    SvgIconBook: f(
       () => import("./icon-book-Dhs3bbZ0.js")
     ),
-    SvgIconLocker: d(
+    SvgIconLocker: f(
       () => import("./icon-locker-BBQPsbYg.js")
     ),
-    SvgIconPerson: d(
+    SvgIconPerson: f(
       () => import("./icon-person-BPUoRkt6.js")
     ),
-    SvgIconAccessible: d(
+    SvgIconAccessible: f(
       () => import("./icon-accessible-C8Gup1rK.js")
     ),
-    SvgIconClock: d(
+    SvgIconClock: f(
       () => import("./icon-clock-CG3EE-5W.js")
     ),
-    SvgIconChair: d(
+    SvgIconChair: f(
       () => import("./icon-chair-D8fW8Dnx.js")
     ),
-    SvgIconLight: d(
+    SvgIconLight: f(
       () => import("./icon-light-wkkuRssP.js")
     ),
-    SvgIconLocationFilled: d(
+    SvgIconLocationFilled: f(
       () => import("./icon-location-filled-Cyf_QfPI.js")
     ),
-    SvgIconAlert: d(
+    SvgIconAlert: f(
       () => import("./icon-alert-C-nJ0RMX.js")
     ),
-    SvgIconShareEmail: d(
+    SvgIconShareEmail: f(
       () => import("./icon-share-email-ds0LMlnf.js")
     ),
-    SvgIconSharePrinter: d(
+    SvgIconSharePrinter: f(
       () => Promise.resolve().then(() => fi)
     ),
-    SvgIconShareFacebook: d(
+    SvgIconShareFacebook: f(
       () => import("./icon-share-facebook-jNsnyfWc.js")
     ),
-    SvgIconShareInstagram: d(
+    SvgIconShareInstagram: f(
       () => import("./icon-share-instagram-CHpDcj4d.js")
     ),
-    SvgIconShareLinkedin: d(
+    SvgIconShareLinkedin: f(
       () => import("./icon-share-linkedin-D_WCf0Fz.js")
     ),
-    SvgIconShareTwitter: d(
+    SvgIconShareTwitter: f(
       () => import("./icon-share-twitter-CS2kovPG.js")
     ),
-    SvgIconShareWhatsapp: d(
+    SvgIconShareWhatsapp: f(
       () => import("./icon-share-whatsapp-B2hhPPEt.js")
     ),
     // FTVA Icons
-    SvgIconFtvaAppleinc: d(
+    SvgIconFtvaAppleinc: f(
       () => import("./icon-ftva-appleinc-D6O1BYI_.js")
     ),
-    SvgIconFtvaGcal: d(
+    SvgIconFtvaGcal: f(
       () => import("./icon-ftva-gcal-C7UpU-sa.js")
     ),
-    SvgIconFtvaOutlook: d(
+    SvgIconFtvaOutlook: f(
       () => import("./icon-ftva-outlook-D01ntAYf.js")
     ),
-    SvgIconFtvaDownload: d(
+    SvgIconFtvaDownload: f(
       () => import("./icon-ftva-download-CfgJu8GR.js")
     ),
-    SvgIconFtvaShare: d(
+    SvgIconFtvaShare: f(
       () => import("./icon-ftva-share-bwURDOcD.js")
     ),
-    SvgIconFtvaSocialConfirm: d(
+    SvgIconFtvaSocialConfirm: f(
       () => import("./icon-ftva-social_confirm-iljw2AFe.js")
     ),
-    SvgIconFtvaSocialEmail: d(
+    SvgIconFtvaSocialEmail: f(
       () => import("./icon-ftva-social_email-C1L_bljr.js")
     ),
-    SvgIconFtvaSocialFacebook: d(
+    SvgIconFtvaSocialFacebook: f(
       () => import("./icon-ftva-social_facebook-BgnF7yg7.js")
     ),
-    SvgIconFtvaSocialLink: d(
+    SvgIconFtvaSocialLink: f(
       () => import("./icon-ftva-social_link-BZIDORpF.js")
     ),
-    SvgIconFtvaSocialX: d(
+    SvgIconFtvaSocialX: f(
       () => import("./icon-ftva-social_x-7x5Xoj9-.js")
     )
   },
@@ -685,48 +685,48 @@ const me = /* @__PURE__ */ W(bn, [["render", Mn], ["__scopeId", "data-v-57dec64c
       default: ""
     }
   }
-}, Cn = { class: "icon-with-link" }, On = ["textContent"], In = {
+}, $n = { class: "icon-with-link" }, In = ["textContent"], On = {
   key: 1,
   class: "icon-with-link-container"
-}, Pn = ["textContent"];
-function En(e, t, r, n, a, s) {
-  const l = rt("SmartLink");
-  return i(), o("div", Cn, [
-    r.to ? (i(), I(l, {
+}, Dn = ["textContent"];
+function Pn(e, t, r, n, a, i) {
+  const l = at("SmartLink");
+  return s(), o("div", $n, [
+    r.to ? (s(), I(l, {
       key: 0,
       to: r.to,
       class: "icon-with-link-container link"
     }, {
-      default: ee(() => [
-        (i(), I(X(r.iconName), {
+      default: Q(() => [
+        (s(), I(J(r.iconName), {
           class: "icon",
           "aria-hidden": "true"
         })),
         u("div", {
           class: "text",
-          textContent: D(r.text)
-        }, null, 8, On)
+          textContent: P(r.text)
+        }, null, 8, In)
       ]),
       _: 1
-    }, 8, ["to"])) : (i(), o("div", In, [
-      (i(), I(X(r.iconName), {
+    }, 8, ["to"])) : (s(), o("div", On, [
+      (s(), I(J(r.iconName), {
         class: "icon",
         "aria-hidden": "true"
       })),
       u("div", {
         class: "text",
-        textContent: D(r.text)
-      }, null, 8, Pn)
+        textContent: P(r.text)
+      }, null, 8, Dn)
     ]))
   ]);
 }
-const or = /* @__PURE__ */ W($n, [["render", En], ["__scopeId", "data-v-065bd989"]]), lr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const or = /* @__PURE__ */ W(Cn, [["render", Pn], ["__scopeId", "data-v-065bd989"]]), lr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: or
-}, Symbol.toStringTag, { value: "Module" })), Dn = ["src", "height", "width", "alt", "srcset", "sizes", "object-fit"], Rn = ["innerHTML"], qn = {
+}, Symbol.toStringTag, { value: "Module" })), En = ["src", "height", "width", "alt", "srcset", "sizes", "object-fit"], Hn = ["innerHTML"], Rn = {
   key: 1,
   class: "credit"
-}, Hn = { class: "credit-text" }, An = /* @__PURE__ */ te({
+}, qn = { class: "credit-text" }, An = /* @__PURE__ */ ee({
   __name: "ResponsiveImage",
   props: {
     media: {
@@ -772,30 +772,30 @@ const or = /* @__PURE__ */ W($n, [["render", En], ["__scopeId", "data-v-065bd989
     }
   },
   setup(e) {
-    const t = e, r = H(!1), n = H(!1);
+    const t = e, r = A(!1), n = A(!1);
     function a() {
       r.value = !0;
     }
-    function s() {
+    function i() {
       n.value = !0;
     }
-    const l = p(() => {
-      let y = "";
-      return t.media.focalPoint && t.media.focalPoint.length > 0 && (y = `object-position:${t.media.focalPoint.map((M) => `${M * 100}%`).join(" ")}`), y;
-    }), c = p(() => {
-      const y = t.media.height || t.height, w = t.media.width || t.width;
-      return t.aspectRatio || y / w * 100;
-    }), h = p(() => ({
+    const l = y(() => {
+      let v = "";
+      return t.media.focalPoint && t.media.focalPoint.length > 0 && (v = `object-position:${t.media.focalPoint.map((M) => `${M * 100}%`).join(" ")}`), v;
+    }), c = y(() => {
+      const v = t.media.height || t.height, b = t.media.width || t.width;
+      return t.aspectRatio || v / b * 100;
+    }), d = y(() => ({
       paddingBottom: `${c.value}%`
-    })), f = p(() => [
+    })), h = y(() => [
       "responsive-image",
       `object-fit-${t.objectFit}`,
       { "has-loaded": r },
       { "has-errored": n }
     ]);
-    return (y, w) => t.media && t.media.src ? (i(), o("figure", {
+    return (v, b) => t.media && t.media.src ? (s(), o("figure", {
       key: 0,
-      class: A(f.value)
+      class: q(h.value)
     }, [
       u("img", {
         src: t.media.src || t.src,
@@ -805,29 +805,29 @@ const or = /* @__PURE__ */ W($n, [["render", En], ["__scopeId", "data-v-065bd989
         srcset: t.media.srcset || t.srcset,
         sizes: t.media.sizes || t.sizes,
         "object-fit": t.objectFit,
-        style: de(l.value),
+        style: fe(l.value),
         class: "media",
         onLoad: a,
-        onError: s
-      }, null, 44, Dn),
-      t.media.caption || t.caption ? (i(), o("figcaption", {
+        onError: i
+      }, null, 44, En),
+      t.media.caption || t.caption ? (s(), o("figcaption", {
         key: 0,
         class: "caption",
         innerHTML: t.media.caption || t.caption
-      }, null, 8, Rn)) : m("", !0),
+      }, null, 8, Hn)) : m("", !0),
       u("div", {
         class: "sizer",
-        style: de(h.value)
+        style: fe(d.value)
       }, null, 4),
-      Z(y.$slots, "default", {}, void 0, !0),
-      y.$slots.credit ? (i(), o("div", qn, [
-        u("div", Hn, [
-          Z(y.$slots, "credit", {}, void 0, !0)
+      Z(v.$slots, "default", {}, void 0, !0),
+      v.$slots.credit ? (s(), o("div", Rn, [
+        u("div", qn, [
+          Z(v.$slots, "credit", {}, void 0, !0)
         ])
       ])) : m("", !0)
     ], 2)) : m("", !0);
   }
-}), cr = /* @__PURE__ */ W(An, [["__scopeId", "data-v-c5a3f593"]]), Bn = ["src", "alt", "controls", "autoplay", "muted", "loop", "playsinline"], Nn = /* @__PURE__ */ te({
+}), cr = /* @__PURE__ */ W(An, [["__scopeId", "data-v-c5a3f593"]]), Bn = ["src", "alt", "controls", "autoplay", "muted", "loop", "playsinline"], Nn = /* @__PURE__ */ ee({
   __name: "ResponsiveVideo",
   props: {
     media: {
@@ -869,94 +869,94 @@ const or = /* @__PURE__ */ W($n, [["render", En], ["__scopeId", "data-v-065bd989
   },
   emits: ["ended", "error", "error-image", "error-video", "loaded", "loaded-image", "loaded-video", "playing"],
   setup(e, { emit: t }) {
-    const r = e, n = t, a = H(null), s = Dr({
+    const r = e, n = t, a = A(null), i = Er({
       video: !1
-    }), l = H({
+    }), l = A({
       video: !1
-    }), c = p(() => Object.values(l.value).includes(!0)), h = p(() => Object.values(s).every(Boolean)), f = p(() => r.media.src), y = p(() => {
+    }), c = y(() => Object.values(l.value).includes(!0)), d = y(() => Object.values(i).every(Boolean)), h = y(() => r.media.src), v = y(() => {
       const S = r.media.height;
       return S && typeof S == "string" ? Number.parseInt(S) : S;
-    }), w = p(() => {
+    }), b = y(() => {
       const S = r.media.width;
       return S && typeof S == "string" ? Number.parseInt(S) : S;
-    }), M = p(() => {
+    }), M = y(() => {
       let S = "landscape";
       switch (!0) {
-        case y.value > w.value:
+        case v.value > b.value:
           S = "portrait";
           break;
-        case y.value === w.value:
+        case v.value === b.value:
           S = "square";
           break;
       }
       return S;
-    }), _ = p(() => [
+    }), _ = y(() => [
       "responsive-video",
       `mode-${r.mode}`,
-      { "has-loaded": h.value },
+      { "has-loaded": d.value },
       { "has-error": c.value },
       { "has-video-error": l.value.video },
       `is-orientation-${M.value}`,
       `object-fit-${r.objectFit}`
-    ]), g = p(() => {
-      let S = r.aspectRatio || y.value / w.value * 100;
+    ]), g = y(() => {
+      let S = r.aspectRatio || v.value / b.value * 100;
       return S || (S = 0), S;
-    }), v = p(() => r.media.focalPoint.length > 0 ? {
+    }), p = y(() => r.media.focalPoint.length > 0 ? {
       x: r.media.focalPoint[0],
       y: r.media.focalPoint[1]
     } : {
       x: "0.5",
       y: "0.5"
-    }), L = p(() => r.media.alt), O = p(() => {
+    }), L = y(() => r.media.alt), O = y(() => {
       const S = {};
       return r.mode === "intrinsic-ratio" && (S.paddingBottom = `${g.value}%`), S;
-    }), R = p(() => {
+    }), R = y(() => {
       const S = {};
-      return v.value.x !== "" && v.value.y !== "" && (S.objectPosition = `${v.value.x}% ${v.value.y}%`), S;
+      return p.value.x !== "" && p.value.y !== "" && (S.objectPosition = `${p.value.x}% ${p.value.y}%`), S;
     });
-    rr(f, (S) => {
-      S && (s.video = !1, l.value.video = !1);
-    }), Rr(() => {
-      f.value && (s.video = a.value.readyState >= 3);
+    nr(h, (S) => {
+      S && (i.video = !1, l.value.video = !1);
+    }), Hr(() => {
+      h.value && (i.video = a.value.readyState >= 3);
     });
-    function x(S) {
-      s[S] = !0, n("loaded", S), n(`loaded-${S}`);
-    }
     function F(S) {
+      i[S] = !0, n("loaded", S), n(`loaded-${S}`);
+    }
+    function T(S) {
       l.value[S] = !0, n("error", S), n(`error-${S}`);
     }
-    function C(S) {
+    function $(S) {
       n("ended", S);
     }
-    function j() {
+    function V() {
       n("playing");
     }
-    return (S, V) => (i(), o("figure", {
-      class: A(_.value)
+    return (S, Y) => (s(), o("figure", {
+      class: q(_.value)
     }, [
-      f.value ? (i(), o("video", {
+      h.value ? (s(), o("video", {
         key: 0,
         ref_key: "videoRef",
         ref: a,
         class: "media media-video",
-        src: f.value,
+        src: h.value,
         alt: L.value,
-        style: de(R.value),
+        style: fe(R.value),
         controls: e.controls,
         autoplay: e.autoplay,
         muted: e.muted,
         loop: e.loop,
         playsinline: e.playsinline,
-        onLoadeddata: V[0] || (V[0] = (E) => x("video")),
-        onError: V[1] || (V[1] = (E) => F("video")),
-        onEnded: C,
-        onPlaying: j
+        onLoadeddata: Y[0] || (Y[0] = (E) => F("video")),
+        onError: Y[1] || (Y[1] = (E) => T("video")),
+        onEnded: $,
+        onPlaying: V
       }, null, 44, Bn)) : m("", !0),
       u("div", {
         class: "sizer",
-        style: de(O.value)
+        style: fe(O.value)
       }, null, 4),
-      V[2] || (V[2] = u("div", { class: "background-color" }, null, -1)),
+      Y[2] || (Y[2] = u("div", { class: "background-color" }, null, -1)),
       Z(S.$slots, "default", {}, void 0, !0)
     ], 2));
   }
@@ -970,7 +970,7 @@ function jn(e = "") {
 function Wn(e = "") {
   return e == null ? e : e.includes("https://test-craft.library.ucla.edu") ? e.replaceAll("https://test-craft.library.ucla.edu", "") : e.includes("https://stage-craft.library.ucla.edu") ? e.replaceAll("https://stage-craft.library.ucla.edu", "") : e.replaceAll("https://craft.library.ucla.edu", "");
 }
-const Vn = ["innerHTML"], Yn = /* @__PURE__ */ te({
+const Vn = ["innerHTML"], Yn = /* @__PURE__ */ ee({
   __name: "RichText",
   props: {
     richTextContent: {
@@ -979,25 +979,25 @@ const Vn = ["innerHTML"], Yn = /* @__PURE__ */ te({
     }
   },
   setup(e) {
-    const t = e, r = ar(), n = p(() => ["rich-text", (r == null ? void 0 : r.value) || ""]), a = p(() => {
-      const s = Wn(t.richTextContent);
-      return jn(s);
+    const t = e, r = it(), n = y(() => ["rich-text", (r == null ? void 0 : r.value) || ""]), a = y(() => {
+      const i = Wn(t.richTextContent);
+      return jn(i);
     });
-    return (s, l) => (i(), o("div", {
-      class: A(n.value)
+    return (i, l) => (s(), o("div", {
+      class: q(n.value)
     }, [
       u("div", {
         class: "parsed-content",
         innerHTML: a.value
       }, null, 8, Vn),
-      Z(s.$slots, "default", {}, void 0, !0)
+      Z(i.$slots, "default", {}, void 0, !0)
     ], 2));
   }
 }), dr = /* @__PURE__ */ W(Yn, [["__scopeId", "data-v-7e21c6ae"]]), hr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: dr
 }, Symbol.toStringTag, { value: "Module" }));
-function st(e = "") {
+function lt(e = "") {
   return e === null || /^https?:\/\//.test(e) || e.startsWith("/") || (e = `/${e}`), e;
 }
 const Un = {
@@ -1067,18 +1067,18 @@ const Un = {
   const a = Un[e];
   return typeof a == "string" ? n = a : t === 1 ? n = a.one : n = a.other.replace("{{count}}", t.toString()), r != null && r.addSuffix ? r.comparison && r.comparison > 0 ? "in " + n : n + " ago" : n;
 };
-function ke(e) {
+function we(e) {
   return (t = {}) => {
     const r = t.width ? String(t.width) : e.defaultWidth;
     return e.formats[r] || e.formats[e.defaultWidth];
   };
 }
-const Gn = {
+const Zn = {
   full: "EEEE, MMMM do, y",
   long: "MMMM do, y",
   medium: "MMM d, y",
   short: "MM/dd/yyyy"
-}, Zn = {
+}, Gn = {
   full: "h:mm:ss a zzzz",
   long: "h:mm:ss a z",
   medium: "h:mm:ss a",
@@ -1089,15 +1089,15 @@ const Gn = {
   medium: "{{date}}, {{time}}",
   short: "{{date}}, {{time}}"
 }, Xn = {
-  date: ke({
-    formats: Gn,
-    defaultWidth: "full"
-  }),
-  time: ke({
+  date: we({
     formats: Zn,
     defaultWidth: "full"
   }),
-  dateTime: ke({
+  time: we({
+    formats: Gn,
+    defaultWidth: "full"
+  }),
+  dateTime: we({
     formats: Qn,
     defaultWidth: "full"
   })
@@ -1109,7 +1109,7 @@ const Gn = {
   nextWeek: "eeee 'at' p",
   other: "P"
 }, Kn = (e, t, r, n) => Jn[e];
-function se(e) {
+function ie(e) {
   return (t, r) => {
     const n = r != null && r.context ? String(r.context) : "standalone";
     let a;
@@ -1120,8 +1120,8 @@ function se(e) {
       const l = e.defaultWidth, c = r != null && r.width ? String(r.width) : e.defaultWidth;
       a = e.values[c] || e.values[l];
     }
-    const s = e.argumentCallback ? e.argumentCallback(t) : t;
-    return a[s];
+    const i = e.argumentCallback ? e.argumentCallback(t) : t;
+    return a[i];
   };
 }
 const ea = {
@@ -1251,46 +1251,46 @@ const ea = {
   return r + "th";
 }, oa = {
   ordinalNumber: ia,
-  era: se({
+  era: ie({
     values: ea,
     defaultWidth: "wide"
   }),
-  quarter: se({
+  quarter: ie({
     values: ta,
     defaultWidth: "wide",
     argumentCallback: (e) => e - 1
   }),
-  month: se({
+  month: ie({
     values: ra,
     defaultWidth: "wide"
   }),
-  day: se({
+  day: ie({
     values: na,
     defaultWidth: "wide"
   }),
-  dayPeriod: se({
+  dayPeriod: ie({
     values: aa,
     defaultWidth: "wide",
     formattingValues: sa,
     defaultFormattingWidth: "wide"
   })
 };
-function ie(e) {
+function oe(e) {
   return (t, r = {}) => {
-    const n = r.width, a = n && e.matchPatterns[n] || e.matchPatterns[e.defaultMatchWidth], s = t.match(a);
-    if (!s)
+    const n = r.width, a = n && e.matchPatterns[n] || e.matchPatterns[e.defaultMatchWidth], i = t.match(a);
+    if (!i)
       return null;
-    const l = s[0], c = n && e.parsePatterns[n] || e.parsePatterns[e.defaultParseWidth], h = Array.isArray(c) ? ca(c, (w) => w.test(l)) : (
+    const l = i[0], c = n && e.parsePatterns[n] || e.parsePatterns[e.defaultParseWidth], d = Array.isArray(c) ? ca(c, (b) => b.test(l)) : (
       // [TODO] -- I challenge you to fix the type
-      la(c, (w) => w.test(l))
+      la(c, (b) => b.test(l))
     );
-    let f;
-    f = e.valueCallback ? e.valueCallback(h) : h, f = r.valueCallback ? (
+    let h;
+    h = e.valueCallback ? e.valueCallback(d) : d, h = r.valueCallback ? (
       // [TODO] -- I challenge you to fix the type
-      r.valueCallback(f)
-    ) : f;
-    const y = t.slice(l.length);
-    return { value: f, rest: y };
+      r.valueCallback(h)
+    ) : h;
+    const v = t.slice(l.length);
+    return { value: h, rest: v };
   };
 }
 function la(e, t) {
@@ -1307,9 +1307,9 @@ function ua(e) {
   return (t, r = {}) => {
     const n = t.match(e.matchPattern);
     if (!n) return null;
-    const a = n[0], s = t.match(e.parsePattern);
-    if (!s) return null;
-    let l = e.valueCallback ? e.valueCallback(s[0]) : s[0];
+    const a = n[0], i = t.match(e.parsePattern);
+    if (!i) return null;
+    let l = e.valueCallback ? e.valueCallback(i[0]) : i[0];
     l = r.valueCallback ? r.valueCallback(l) : l;
     const c = t.slice(a.length);
     return { value: l, rest: c };
@@ -1388,32 +1388,32 @@ const da = /^(\d+)(th|st|nd|rd)?/i, ha = /\d+/i, fa = {
     parsePattern: ha,
     valueCallback: (e) => parseInt(e, 10)
   }),
-  era: ie({
+  era: oe({
     matchPatterns: fa,
     defaultMatchWidth: "wide",
     parsePatterns: ma,
     defaultParseWidth: "any"
   }),
-  quarter: ie({
+  quarter: oe({
     matchPatterns: ga,
     defaultMatchWidth: "wide",
     parsePatterns: va,
     defaultParseWidth: "any",
     valueCallback: (e) => e + 1
   }),
-  month: ie({
+  month: oe({
     matchPatterns: ya,
     defaultMatchWidth: "wide",
     parsePatterns: pa,
     defaultParseWidth: "any"
   }),
-  day: ie({
+  day: oe({
     matchPatterns: ka,
     defaultMatchWidth: "wide",
     parsePatterns: ba,
     defaultParseWidth: "any"
   }),
-  dayPeriod: ie({
+  dayPeriod: oe({
     matchPatterns: wa,
     defaultMatchWidth: "any",
     parsePatterns: _a,
@@ -1432,18 +1432,18 @@ const da = /^(\d+)(th|st|nd|rd)?/i, ha = /\d+/i, fa = {
   }
 };
 let La = {};
-function ge() {
+function ve() {
   return La;
 }
-const fr = 6048e5, xa = 864e5, ht = Symbol.for("constructDateFrom");
-function J(e, t) {
-  return typeof e == "function" ? e(t) : e && typeof e == "object" && ht in e ? e[ht](t) : e instanceof Date ? new e.constructor(t) : new Date(t);
+const fr = 6048e5, xa = 864e5, ft = Symbol.for("constructDateFrom");
+function K(e, t) {
+  return typeof e == "function" ? e(t) : e && typeof e == "object" && ft in e ? e[ft](t) : e instanceof Date ? new e.constructor(t) : new Date(t);
 }
-function z(e, t) {
-  return J(t || e, e);
+function G(e, t) {
+  return K(t || e, e);
 }
-function ft(e) {
-  const t = z(e), r = new Date(
+function mt(e) {
+  const t = G(e), r = new Date(
     Date.UTC(
       t.getFullYear(),
       t.getMonth(),
@@ -1457,14 +1457,14 @@ function ft(e) {
   return r.setUTCFullYear(t.getFullYear()), +e - +r;
 }
 function Fa(e, ...t) {
-  const r = J.bind(
+  const r = K.bind(
     null,
     t.find((n) => typeof n == "object")
   );
   return t.map(r);
 }
-function mt(e, t) {
-  const r = z(e, t == null ? void 0 : t.in);
+function gt(e, t) {
+  const r = G(e, t == null ? void 0 : t.in);
   return r.setHours(0, 0, 0, 0), r;
 }
 function Ta(e, t, r) {
@@ -1472,77 +1472,77 @@ function Ta(e, t, r) {
     r == null ? void 0 : r.in,
     e,
     t
-  ), s = mt(n), l = mt(a), c = +s - ft(s), h = +l - ft(l);
-  return Math.round((c - h) / xa);
-}
-function $a(e, t) {
-  const r = z(e, t == null ? void 0 : t.in);
-  return r.setFullYear(r.getFullYear(), 0, 1), r.setHours(0, 0, 0, 0), r;
+  ), i = gt(n), l = gt(a), c = +i - mt(i), d = +l - mt(l);
+  return Math.round((c - d) / xa);
 }
 function Ca(e, t) {
-  const r = z(e, t == null ? void 0 : t.in);
-  return Ta(r, $a(r)) + 1;
+  const r = G(e, t == null ? void 0 : t.in);
+  return r.setFullYear(r.getFullYear(), 0, 1), r.setHours(0, 0, 0, 0), r;
 }
-function le(e, t) {
-  var c, h, f, y;
-  const r = ge(), n = (t == null ? void 0 : t.weekStartsOn) ?? ((h = (c = t == null ? void 0 : t.locale) == null ? void 0 : c.options) == null ? void 0 : h.weekStartsOn) ?? r.weekStartsOn ?? ((y = (f = r.locale) == null ? void 0 : f.options) == null ? void 0 : y.weekStartsOn) ?? 0, a = z(e, t == null ? void 0 : t.in), s = a.getDay(), l = (s < n ? 7 : 0) + s - n;
+function $a(e, t) {
+  const r = G(e, t == null ? void 0 : t.in);
+  return Ta(r, Ca(r)) + 1;
+}
+function ce(e, t) {
+  var c, d, h, v;
+  const r = ve(), n = (t == null ? void 0 : t.weekStartsOn) ?? ((d = (c = t == null ? void 0 : t.locale) == null ? void 0 : c.options) == null ? void 0 : d.weekStartsOn) ?? r.weekStartsOn ?? ((v = (h = r.locale) == null ? void 0 : h.options) == null ? void 0 : v.weekStartsOn) ?? 0, a = G(e, t == null ? void 0 : t.in), i = a.getDay(), l = (i < n ? 7 : 0) + i - n;
   return a.setDate(a.getDate() - l), a.setHours(0, 0, 0, 0), a;
 }
-function he(e, t) {
-  return le(e, { ...t, weekStartsOn: 1 });
+function me(e, t) {
+  return ce(e, { ...t, weekStartsOn: 1 });
 }
 function mr(e, t) {
-  const r = z(e, t == null ? void 0 : t.in), n = r.getFullYear(), a = J(r, 0);
+  const r = G(e, t == null ? void 0 : t.in), n = r.getFullYear(), a = K(r, 0);
   a.setFullYear(n + 1, 0, 4), a.setHours(0, 0, 0, 0);
-  const s = he(a), l = J(r, 0);
+  const i = me(a), l = K(r, 0);
   l.setFullYear(n, 0, 4), l.setHours(0, 0, 0, 0);
-  const c = he(l);
-  return r.getTime() >= s.getTime() ? n + 1 : r.getTime() >= c.getTime() ? n : n - 1;
-}
-function Oa(e, t) {
-  const r = mr(e, t), n = J(e, 0);
-  return n.setFullYear(r, 0, 4), n.setHours(0, 0, 0, 0), he(n);
+  const c = me(l);
+  return r.getTime() >= i.getTime() ? n + 1 : r.getTime() >= c.getTime() ? n : n - 1;
 }
 function Ia(e, t) {
-  const r = z(e, t == null ? void 0 : t.in), n = +he(r) - +Oa(r);
+  const r = mr(e, t), n = K(e, 0);
+  return n.setFullYear(r, 0, 4), n.setHours(0, 0, 0, 0), me(n);
+}
+function Oa(e, t) {
+  const r = G(e, t == null ? void 0 : t.in), n = +me(r) - +Ia(r);
   return Math.round(n / fr) + 1;
 }
 function gr(e, t) {
-  var y, w, M, _;
-  const r = z(e, t == null ? void 0 : t.in), n = r.getFullYear(), a = ge(), s = (t == null ? void 0 : t.firstWeekContainsDate) ?? ((w = (y = t == null ? void 0 : t.locale) == null ? void 0 : y.options) == null ? void 0 : w.firstWeekContainsDate) ?? a.firstWeekContainsDate ?? ((_ = (M = a.locale) == null ? void 0 : M.options) == null ? void 0 : _.firstWeekContainsDate) ?? 1, l = J((t == null ? void 0 : t.in) || e, 0);
-  l.setFullYear(n + 1, 0, s), l.setHours(0, 0, 0, 0);
-  const c = le(l, t), h = J((t == null ? void 0 : t.in) || e, 0);
-  h.setFullYear(n, 0, s), h.setHours(0, 0, 0, 0);
-  const f = le(h, t);
-  return +r >= +c ? n + 1 : +r >= +f ? n : n - 1;
+  var v, b, M, _;
+  const r = G(e, t == null ? void 0 : t.in), n = r.getFullYear(), a = ve(), i = (t == null ? void 0 : t.firstWeekContainsDate) ?? ((b = (v = t == null ? void 0 : t.locale) == null ? void 0 : v.options) == null ? void 0 : b.firstWeekContainsDate) ?? a.firstWeekContainsDate ?? ((_ = (M = a.locale) == null ? void 0 : M.options) == null ? void 0 : _.firstWeekContainsDate) ?? 1, l = K((t == null ? void 0 : t.in) || e, 0);
+  l.setFullYear(n + 1, 0, i), l.setHours(0, 0, 0, 0);
+  const c = ce(l, t), d = K((t == null ? void 0 : t.in) || e, 0);
+  d.setFullYear(n, 0, i), d.setHours(0, 0, 0, 0);
+  const h = ce(d, t);
+  return +r >= +c ? n + 1 : +r >= +h ? n : n - 1;
+}
+function Da(e, t) {
+  var c, d, h, v;
+  const r = ve(), n = (t == null ? void 0 : t.firstWeekContainsDate) ?? ((d = (c = t == null ? void 0 : t.locale) == null ? void 0 : c.options) == null ? void 0 : d.firstWeekContainsDate) ?? r.firstWeekContainsDate ?? ((v = (h = r.locale) == null ? void 0 : h.options) == null ? void 0 : v.firstWeekContainsDate) ?? 1, a = gr(e, t), i = K((t == null ? void 0 : t.in) || e, 0);
+  return i.setFullYear(a, 0, n), i.setHours(0, 0, 0, 0), ce(i, t);
 }
 function Pa(e, t) {
-  var c, h, f, y;
-  const r = ge(), n = (t == null ? void 0 : t.firstWeekContainsDate) ?? ((h = (c = t == null ? void 0 : t.locale) == null ? void 0 : c.options) == null ? void 0 : h.firstWeekContainsDate) ?? r.firstWeekContainsDate ?? ((y = (f = r.locale) == null ? void 0 : f.options) == null ? void 0 : y.firstWeekContainsDate) ?? 1, a = gr(e, t), s = J((t == null ? void 0 : t.in) || e, 0);
-  return s.setFullYear(a, 0, n), s.setHours(0, 0, 0, 0), le(s, t);
-}
-function Ea(e, t) {
-  const r = z(e, t == null ? void 0 : t.in), n = +le(r, t) - +Pa(r, t);
+  const r = G(e, t == null ? void 0 : t.in), n = +ce(r, t) - +Da(r, t);
   return Math.round(n / fr) + 1;
 }
-function $(e, t) {
+function C(e, t) {
   const r = e < 0 ? "-" : "", n = Math.abs(e).toString().padStart(t, "0");
   return r + n;
 }
-const Q = {
+const X = {
   // Year
   y(e, t) {
     const r = e.getFullYear(), n = r > 0 ? r : 1 - r;
-    return $(t === "yy" ? n % 100 : n, t.length);
+    return C(t === "yy" ? n % 100 : n, t.length);
   },
   // Month
   M(e, t) {
     const r = e.getMonth();
-    return t === "M" ? String(r + 1) : $(r + 1, 2);
+    return t === "M" ? String(r + 1) : C(r + 1, 2);
   },
   // Day of the month
   d(e, t) {
-    return $(e.getDate(), t.length);
+    return C(e.getDate(), t.length);
   },
   // AM or PM
   a(e, t) {
@@ -1562,26 +1562,26 @@ const Q = {
   },
   // Hour [1-12]
   h(e, t) {
-    return $(e.getHours() % 12 || 12, t.length);
+    return C(e.getHours() % 12 || 12, t.length);
   },
   // Hour [0-23]
   H(e, t) {
-    return $(e.getHours(), t.length);
+    return C(e.getHours(), t.length);
   },
   // Minute
   m(e, t) {
-    return $(e.getMinutes(), t.length);
+    return C(e.getMinutes(), t.length);
   },
   // Second
   s(e, t) {
-    return $(e.getSeconds(), t.length);
+    return C(e.getSeconds(), t.length);
   },
   // Fraction of second
   S(e, t) {
     const r = t.length, n = e.getMilliseconds(), a = Math.trunc(
       n * Math.pow(10, r - 3)
     );
-    return $(a, t.length);
+    return C(a, t.length);
   }
 }, re = {
   midnight: "midnight",
@@ -1590,7 +1590,7 @@ const Q = {
   afternoon: "afternoon",
   evening: "evening",
   night: "night"
-}, gt = {
+}, vt = {
   // Era
   G: function(e, t, r) {
     const n = e.getFullYear() > 0 ? 1 : 0;
@@ -1615,21 +1615,21 @@ const Q = {
       const n = e.getFullYear(), a = n > 0 ? n : 1 - n;
       return r.ordinalNumber(a, { unit: "year" });
     }
-    return Q.y(e, t);
+    return X.y(e, t);
   },
   // Local week-numbering year
   Y: function(e, t, r, n) {
-    const a = gr(e, n), s = a > 0 ? a : 1 - a;
+    const a = gr(e, n), i = a > 0 ? a : 1 - a;
     if (t === "YY") {
-      const l = s % 100;
-      return $(l, 2);
+      const l = i % 100;
+      return C(l, 2);
     }
-    return t === "Yo" ? r.ordinalNumber(s, { unit: "year" }) : $(s, t.length);
+    return t === "Yo" ? r.ordinalNumber(i, { unit: "year" }) : C(i, t.length);
   },
   // ISO week-numbering year
   R: function(e, t) {
     const r = mr(e);
-    return $(r, t.length);
+    return C(r, t.length);
   },
   // Extended year. This is a single number designating the year of this calendar system.
   // The main difference between `y` and `u` localizers are B.C. years:
@@ -1642,7 +1642,7 @@ const Q = {
   // while `uu` pads single digit years to 2 characters and returns other years unchanged.
   u: function(e, t) {
     const r = e.getFullYear();
-    return $(r, t.length);
+    return C(r, t.length);
   },
   // Quarter
   Q: function(e, t, r) {
@@ -1653,7 +1653,7 @@ const Q = {
         return String(n);
       // 01, 02, 03, 04
       case "QQ":
-        return $(n, 2);
+        return C(n, 2);
       // 1st, 2nd, 3rd, 4th
       case "Qo":
         return r.ordinalNumber(n, { unit: "quarter" });
@@ -1687,7 +1687,7 @@ const Q = {
         return String(n);
       // 01, 02, 03, 04
       case "qq":
-        return $(n, 2);
+        return C(n, 2);
       // 1st, 2nd, 3rd, 4th
       case "qo":
         return r.ordinalNumber(n, { unit: "quarter" });
@@ -1718,7 +1718,7 @@ const Q = {
     switch (t) {
       case "M":
       case "MM":
-        return Q.M(e, t);
+        return X.M(e, t);
       // 1st, 2nd, ..., 12th
       case "Mo":
         return r.ordinalNumber(n + 1, { unit: "month" });
@@ -1749,7 +1749,7 @@ const Q = {
         return String(n + 1);
       // 01, 02, ..., 12
       case "LL":
-        return $(n + 1, 2);
+        return C(n + 1, 2);
       // 1st, 2nd, ..., 12th
       case "Lo":
         return r.ordinalNumber(n + 1, { unit: "month" });
@@ -1773,22 +1773,22 @@ const Q = {
   },
   // Local week of year
   w: function(e, t, r, n) {
-    const a = Ea(e, n);
-    return t === "wo" ? r.ordinalNumber(a, { unit: "week" }) : $(a, t.length);
+    const a = Pa(e, n);
+    return t === "wo" ? r.ordinalNumber(a, { unit: "week" }) : C(a, t.length);
   },
   // ISO week of year
   I: function(e, t, r) {
-    const n = Ia(e);
-    return t === "Io" ? r.ordinalNumber(n, { unit: "week" }) : $(n, t.length);
+    const n = Oa(e);
+    return t === "Io" ? r.ordinalNumber(n, { unit: "week" }) : C(n, t.length);
   },
   // Day of the month
   d: function(e, t, r) {
-    return t === "do" ? r.ordinalNumber(e.getDate(), { unit: "date" }) : Q.d(e, t);
+    return t === "do" ? r.ordinalNumber(e.getDate(), { unit: "date" }) : X.d(e, t);
   },
   // Day of year
   D: function(e, t, r) {
-    const n = Ca(e);
-    return t === "Do" ? r.ordinalNumber(n, { unit: "dayOfYear" }) : $(n, t.length);
+    const n = $a(e);
+    return t === "Do" ? r.ordinalNumber(n, { unit: "dayOfYear" }) : C(n, t.length);
   },
   // Day of week
   E: function(e, t, r) {
@@ -1825,17 +1825,17 @@ const Q = {
   },
   // Local day of week
   e: function(e, t, r, n) {
-    const a = e.getDay(), s = (a - n.weekStartsOn + 8) % 7 || 7;
+    const a = e.getDay(), i = (a - n.weekStartsOn + 8) % 7 || 7;
     switch (t) {
       // Numerical value (Nth day of week with current locale or weekStartsOn)
       case "e":
-        return String(s);
+        return String(i);
       // Padded numerical value
       case "ee":
-        return $(s, 2);
+        return C(i, 2);
       // 1st, 2nd, ..., 7th
       case "eo":
-        return r.ordinalNumber(s, { unit: "day" });
+        return r.ordinalNumber(i, { unit: "day" });
       case "eee":
         return r.day(a, {
           width: "abbreviated",
@@ -1864,17 +1864,17 @@ const Q = {
   },
   // Stand-alone local day of week
   c: function(e, t, r, n) {
-    const a = e.getDay(), s = (a - n.weekStartsOn + 8) % 7 || 7;
+    const a = e.getDay(), i = (a - n.weekStartsOn + 8) % 7 || 7;
     switch (t) {
       // Numerical value (same as in `e`)
       case "c":
-        return String(s);
+        return String(i);
       // Padded numerical value
       case "cc":
-        return $(s, t.length);
+        return C(i, t.length);
       // 1st, 2nd, ..., 7th
       case "co":
-        return r.ordinalNumber(s, { unit: "day" });
+        return r.ordinalNumber(i, { unit: "day" });
       case "ccc":
         return r.day(a, {
           width: "abbreviated",
@@ -1910,7 +1910,7 @@ const Q = {
         return String(a);
       // 02
       case "ii":
-        return $(a, t.length);
+        return C(a, t.length);
       // 2nd
       case "io":
         return r.ordinalNumber(a, { unit: "day" });
@@ -2029,33 +2029,33 @@ const Q = {
       let n = e.getHours() % 12;
       return n === 0 && (n = 12), r.ordinalNumber(n, { unit: "hour" });
     }
-    return Q.h(e, t);
+    return X.h(e, t);
   },
   // Hour [0-23]
   H: function(e, t, r) {
-    return t === "Ho" ? r.ordinalNumber(e.getHours(), { unit: "hour" }) : Q.H(e, t);
+    return t === "Ho" ? r.ordinalNumber(e.getHours(), { unit: "hour" }) : X.H(e, t);
   },
   // Hour [0-11]
   K: function(e, t, r) {
     const n = e.getHours() % 12;
-    return t === "Ko" ? r.ordinalNumber(n, { unit: "hour" }) : $(n, t.length);
+    return t === "Ko" ? r.ordinalNumber(n, { unit: "hour" }) : C(n, t.length);
   },
   // Hour [1-24]
   k: function(e, t, r) {
     let n = e.getHours();
-    return n === 0 && (n = 24), t === "ko" ? r.ordinalNumber(n, { unit: "hour" }) : $(n, t.length);
+    return n === 0 && (n = 24), t === "ko" ? r.ordinalNumber(n, { unit: "hour" }) : C(n, t.length);
   },
   // Minute
   m: function(e, t, r) {
-    return t === "mo" ? r.ordinalNumber(e.getMinutes(), { unit: "minute" }) : Q.m(e, t);
+    return t === "mo" ? r.ordinalNumber(e.getMinutes(), { unit: "minute" }) : X.m(e, t);
   },
   // Second
   s: function(e, t, r) {
-    return t === "so" ? r.ordinalNumber(e.getSeconds(), { unit: "second" }) : Q.s(e, t);
+    return t === "so" ? r.ordinalNumber(e.getSeconds(), { unit: "second" }) : X.s(e, t);
   },
   // Fraction of second
   S: function(e, t) {
-    return Q.S(e, t);
+    return X.S(e, t);
   },
   // Timezone (ISO-8601. If offset is 0, output is always `'Z'`)
   X: function(e, t, r) {
@@ -2065,13 +2065,13 @@ const Q = {
     switch (t) {
       // Hours and optional minutes
       case "X":
-        return yt(n);
+        return pt(n);
       // Hours, minutes and optional seconds without `:` delimiter
       // Note: neither ISO-8601 nor JavaScript supports seconds in timezone offsets
       // so this token always has the same output as `XX`
       case "XXXX":
       case "XX":
-        return K(n);
+        return te(n);
       // Hours, minutes and optional seconds with `:` delimiter
       // Note: neither ISO-8601 nor JavaScript supports seconds in timezone offsets
       // so this token always has the same output as `XXX`
@@ -2079,7 +2079,7 @@ const Q = {
       case "XXX":
       // Hours and minutes with `:` delimiter
       default:
-        return K(n, ":");
+        return te(n, ":");
     }
   },
   // Timezone (ISO-8601. If offset is 0, output is `'+00:00'` or equivalent)
@@ -2088,13 +2088,13 @@ const Q = {
     switch (t) {
       // Hours and optional minutes
       case "x":
-        return yt(n);
+        return pt(n);
       // Hours, minutes and optional seconds without `:` delimiter
       // Note: neither ISO-8601 nor JavaScript supports seconds in timezone offsets
       // so this token always has the same output as `xx`
       case "xxxx":
       case "xx":
-        return K(n);
+        return te(n);
       // Hours, minutes and optional seconds with `:` delimiter
       // Note: neither ISO-8601 nor JavaScript supports seconds in timezone offsets
       // so this token always has the same output as `xxx`
@@ -2102,7 +2102,7 @@ const Q = {
       case "xxx":
       // Hours and minutes with `:` delimiter
       default:
-        return K(n, ":");
+        return te(n, ":");
     }
   },
   // Timezone (GMT)
@@ -2113,11 +2113,11 @@ const Q = {
       case "O":
       case "OO":
       case "OOO":
-        return "GMT" + vt(n, ":");
+        return "GMT" + yt(n, ":");
       // Long
       case "OOOO":
       default:
-        return "GMT" + K(n, ":");
+        return "GMT" + te(n, ":");
     }
   },
   // Timezone (specific non-location)
@@ -2128,35 +2128,35 @@ const Q = {
       case "z":
       case "zz":
       case "zzz":
-        return "GMT" + vt(n, ":");
+        return "GMT" + yt(n, ":");
       // Long
       case "zzzz":
       default:
-        return "GMT" + K(n, ":");
+        return "GMT" + te(n, ":");
     }
   },
   // Seconds timestamp
   t: function(e, t, r) {
     const n = Math.trunc(+e / 1e3);
-    return $(n, t.length);
+    return C(n, t.length);
   },
   // Milliseconds timestamp
   T: function(e, t, r) {
-    return $(+e, t.length);
+    return C(+e, t.length);
   }
 };
-function vt(e, t = "") {
-  const r = e > 0 ? "-" : "+", n = Math.abs(e), a = Math.trunc(n / 60), s = n % 60;
-  return s === 0 ? r + String(a) : r + String(a) + t + $(s, 2);
+function yt(e, t = "") {
+  const r = e > 0 ? "-" : "+", n = Math.abs(e), a = Math.trunc(n / 60), i = n % 60;
+  return i === 0 ? r + String(a) : r + String(a) + t + C(i, 2);
 }
-function yt(e, t) {
-  return e % 60 === 0 ? (e > 0 ? "-" : "+") + $(Math.abs(e) / 60, 2) : K(e, t);
+function pt(e, t) {
+  return e % 60 === 0 ? (e > 0 ? "-" : "+") + C(Math.abs(e) / 60, 2) : te(e, t);
 }
-function K(e, t = "") {
-  const r = e > 0 ? "-" : "+", n = Math.abs(e), a = $(Math.trunc(n / 60), 2), s = $(n % 60, 2);
-  return r + a + t + s;
+function te(e, t = "") {
+  const r = e > 0 ? "-" : "+", n = Math.abs(e), a = C(Math.trunc(n / 60), 2), i = C(n % 60, 2);
+  return r + a + t + i;
 }
-const pt = (e, t) => {
+const kt = (e, t) => {
   switch (e) {
     case "P":
       return t.date({ width: "short" });
@@ -2180,36 +2180,36 @@ const pt = (e, t) => {
     default:
       return t.time({ width: "full" });
   }
-}, Da = (e, t) => {
+}, Ea = (e, t) => {
   const r = e.match(/(P+)(p+)?/) || [], n = r[1], a = r[2];
   if (!a)
-    return pt(e, t);
-  let s;
+    return kt(e, t);
+  let i;
   switch (n) {
     case "P":
-      s = t.dateTime({ width: "short" });
+      i = t.dateTime({ width: "short" });
       break;
     case "PP":
-      s = t.dateTime({ width: "medium" });
+      i = t.dateTime({ width: "medium" });
       break;
     case "PPP":
-      s = t.dateTime({ width: "long" });
+      i = t.dateTime({ width: "long" });
       break;
     case "PPPP":
     default:
-      s = t.dateTime({ width: "full" });
+      i = t.dateTime({ width: "full" });
       break;
   }
-  return s.replace("{{date}}", pt(n, t)).replace("{{time}}", vr(a, t));
-}, Ra = {
+  return i.replace("{{date}}", kt(n, t)).replace("{{time}}", vr(a, t));
+}, Ha = {
   p: vr,
-  P: Da
-}, qa = /^D+$/, Ha = /^Y+$/, Aa = ["D", "DD", "YY", "YYYY"];
+  P: Ea
+}, Ra = /^D+$/, qa = /^Y+$/, Aa = ["D", "DD", "YY", "YYYY"];
 function Ba(e) {
-  return qa.test(e);
+  return Ra.test(e);
 }
 function Na(e) {
-  return Ha.test(e);
+  return qa.test(e);
 }
 function ja(e, t, r) {
   const n = Wa(e, t, r);
@@ -2223,76 +2223,76 @@ function Va(e) {
   return e instanceof Date || typeof e == "object" && Object.prototype.toString.call(e) === "[object Date]";
 }
 function Ya(e) {
-  return !(!Va(e) && typeof e != "number" || isNaN(+z(e)));
+  return !(!Va(e) && typeof e != "number" || isNaN(+G(e)));
 }
-const Ua = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g, za = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g, Ga = /^'([^]*?)'?$/, Za = /''/g, Qa = /[a-zA-Z]/;
-function Y(e, t, r) {
-  var y, w, M, _;
-  const n = ge(), a = n.locale ?? Ma, s = n.firstWeekContainsDate ?? ((w = (y = n.locale) == null ? void 0 : y.options) == null ? void 0 : w.firstWeekContainsDate) ?? 1, l = n.weekStartsOn ?? ((_ = (M = n.locale) == null ? void 0 : M.options) == null ? void 0 : _.weekStartsOn) ?? 0, c = z(e, r == null ? void 0 : r.in);
+const Ua = /[yYQqMLwIdDecihHKkms]o|(\w)\1*|''|'(''|[^'])+('|$)|./g, za = /P+p+|P+|p+|''|'(''|[^'])+('|$)|./g, Za = /^'([^]*?)'?$/, Ga = /''/g, Qa = /[a-zA-Z]/;
+function U(e, t, r) {
+  var v, b, M, _;
+  const n = ve(), a = n.locale ?? Ma, i = n.firstWeekContainsDate ?? ((b = (v = n.locale) == null ? void 0 : v.options) == null ? void 0 : b.firstWeekContainsDate) ?? 1, l = n.weekStartsOn ?? ((_ = (M = n.locale) == null ? void 0 : M.options) == null ? void 0 : _.weekStartsOn) ?? 0, c = G(e, r == null ? void 0 : r.in);
   if (!Ya(c))
     throw new RangeError("Invalid time value");
-  let h = t.match(za).map((g) => {
-    const v = g[0];
-    if (v === "p" || v === "P") {
-      const L = Ra[v];
+  let d = t.match(za).map((g) => {
+    const p = g[0];
+    if (p === "p" || p === "P") {
+      const L = Ha[p];
       return L(g, a.formatLong);
     }
     return g;
   }).join("").match(Ua).map((g) => {
     if (g === "''")
       return { isToken: !1, value: "'" };
-    const v = g[0];
-    if (v === "'")
+    const p = g[0];
+    if (p === "'")
       return { isToken: !1, value: Xa(g) };
-    if (gt[v])
+    if (vt[p])
       return { isToken: !0, value: g };
-    if (v.match(Qa))
+    if (p.match(Qa))
       throw new RangeError(
-        "Format string contains an unescaped latin alphabet character `" + v + "`"
+        "Format string contains an unescaped latin alphabet character `" + p + "`"
       );
     return { isToken: !1, value: g };
   });
-  a.localize.preprocessor && (h = a.localize.preprocessor(c, h));
-  const f = {
-    firstWeekContainsDate: s,
+  a.localize.preprocessor && (d = a.localize.preprocessor(c, d));
+  const h = {
+    firstWeekContainsDate: i,
     weekStartsOn: l,
     locale: a
   };
-  return h.map((g) => {
+  return d.map((g) => {
     if (!g.isToken) return g.value;
-    const v = g.value;
-    (Na(v) || Ba(v)) && ja(v, t, String(e));
-    const L = gt[v[0]];
-    return L(c, v, a.localize, f);
+    const p = g.value;
+    (Na(p) || Ba(p)) && ja(p, t, String(e));
+    const L = vt[p[0]];
+    return L(c, p, a.localize, h);
   }).join("");
 }
 function Xa(e) {
-  const t = e.match(Ga);
-  return t ? t[1].replace(Za, "'") : e;
+  const t = e.match(Za);
+  return t ? t[1].replace(Ga, "'") : e;
 }
-function it(e = "", t = "", r = "long") {
-  const n = Y(new Date(e), "MMMM d, Y"), a = Y(new Date(t), "MMMM d, Y");
-  let s = `${n} - ${a}`;
-  if (n === a && (s = Y(new Date(e), "MMMM d, Y")), t || (s = n), r === "short" || r === "shortWithYear") {
-    const l = s.slice(0, 3), c = s.split(" ").slice(1).join(" ");
+function ue(e = "", t = "", r = "long") {
+  const n = U(new Date(e), "MMMM d, Y"), a = U(new Date(t), "MMMM d, Y");
+  let i = `${n} - ${a}`;
+  if (n === a && (i = U(new Date(e), "MMMM d, Y")), t || (i = n), r === "short" || r === "shortWithYear") {
+    const l = i.slice(0, 3), c = i.split(" ").slice(1).join(" ");
     if (t && t !== e) {
-      const h = Y(new Date(e), "MMM d"), f = Y(new Date(t), "MMM d");
+      const d = U(new Date(e), "MMM d"), h = U(new Date(t), "MMM d");
       if (r === "shortWithYear") {
-        const y = Y(new Date(t), "MMM d, Y");
-        return `${h} - ${y}`;
+        const v = U(new Date(t), "MMM d, Y");
+        return `${d} - ${v}`;
       }
-      return `${h} - ${f}`;
+      return `${d} - ${h}`;
     }
     return `${l} ${c}`;
   }
-  return s;
+  return i;
 }
-function ot(e = "", t = "") {
-  const r = Y(new Date(e), "h:mm aaa"), n = Y(new Date(t), "h:mm aaa");
+function ye(e = "", t = "") {
+  const r = U(new Date(e), "h:mm aaa"), n = U(new Date(t), "h:mm aaa");
   let a = `${r} - ${n}`;
-  return r === n && (a = Y(new Date(e), "h:mm aaa")), t || (a = r), a;
+  return r === n && (a = U(new Date(e), "h:mm aaa")), t || (a = r), a;
 }
-function ve(e = "") {
+function pe(e = "") {
   let t = "default";
   if (e == null)
     return t;
@@ -2323,7 +2323,7 @@ const Ja = {
   class: "svg__graphic-category-slash"
 };
 function yr(e, t) {
-  return i(), o("svg", Ja, t[0] || (t[0] = [
+  return s(), o("svg", Ja, t[0] || (t[0] = [
     u("path", {
       d: "M40.8666 1L20.4532 51.5248L7.48442 83.6237L1.00001 99.6732",
       stroke: "#0AA5FF",
@@ -2345,8 +2345,8 @@ const pr = { render: yr }, kr = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Ob
   class: "svg__graphic-hatch-lines"
 };
 function es(e, t) {
-  return i(), o("svg", Ka, t[0] || (t[0] = [
-    fe('<path d="M144.445 318.242L12.7009 0.182617" stroke="#C099FF" stroke-width="1.5" class="svg__stroke--wayfinder"></path><path d="M160.445 318.242L28.7009 0.182617" stroke="#C099FF" stroke-width="1.5" class="svg__stroke--wayfinder"></path><path d="M176.445 318.242L44.7009 0.182617" stroke="#C099FF" stroke-width="1.5" class="svg__stroke--wayfinder"></path><path d="M192.445 318.242L60.7009 0.182617" stroke="#C099FF" stroke-width="1.5" class="svg__stroke--wayfinder"></path><path d="M208.445 318.242L76.7009 0.182617" stroke="#C099FF" stroke-width="2" class="svg__stroke--wayfinder"></path><path d="M224.445 318.242L92.7009 0.182617" stroke="#C099FF" stroke-width="2" class="svg__stroke--wayfinder"></path><path d="M240.445 318.242L108.701 0.182617" stroke="#C099FF" stroke-width="2" class="svg__stroke--wayfinder"></path><path d="M256.445 318.242L124.701 0.182617" stroke="#C099FF" stroke-width="2" class="svg__stroke--wayfinder"></path><path d="M272.445 318.242L140.701 0.182617" stroke="#C099FF" stroke-width="2.5" class="svg__stroke--wayfinder"></path><path d="M288.445 318.242L156.701 0.182617" stroke="#C099FF" stroke-width="2.5" class="svg__stroke--wayfinder"></path><path d="M304.445 318.242L172.701 0.182617" stroke="#C099FF" stroke-width="2.5" class="svg__stroke--wayfinder"></path><path d="M320.445 318.242L188.701 0.182617" stroke="#C099FF" stroke-width="2.5" class="svg__stroke--wayfinder"></path><path d="M336.445 318.242L204.701 0.182617" stroke="#C099FF" stroke-width="3" class="svg__stroke--wayfinder"></path><path d="M352.445 318.242L220.701 0.182617" stroke="#C099FF" stroke-width="3" class="svg__stroke--wayfinder"></path><path d="M368.445 318.242L236.701 0.182617" stroke="#C099FF" stroke-width="3" class="svg__stroke--wayfinder"></path><path d="M384.445 318.242L252.701 0.182617" stroke="#C099FF" stroke-width="3" class="svg__stroke--wayfinder"></path><path d="M400.445 318.242L268.701 0.182617" stroke="#C099FF" stroke-width="3.5" class="svg__stroke--wayfinder"></path><path d="M416.445 318.242L284.701 0.182617" stroke="#C099FF" stroke-width="3.5" class="svg__stroke--wayfinder"></path><path d="M432.445 318.242L300.701 0.182617" stroke="#C099FF" stroke-width="3.5" class="svg__stroke--wayfinder"></path><path d="M448.445 318.242L316.701 0.182617" stroke="#C099FF" stroke-width="3.5" class="svg__stroke--wayfinder"></path><path d="M464.445 318.242L332.701 0.182617" stroke="#C099FF" stroke-width="4" class="svg__stroke--wayfinder"></path><path d="M480.445 318.242L348.701 0.182617" stroke="#C099FF" stroke-width="4" class="svg__stroke--wayfinder"></path><path d="M496.445 318.242L364.701 0.182617" stroke="#C099FF" stroke-width="4" class="svg__stroke--wayfinder"></path><path d="M512.445 318.242L380.701 0.182617" stroke="#C099FF" stroke-width="4" class="svg__stroke--wayfinder"></path><path d="M528.445 318.242L396.701 0.182617" stroke="#C099FF" stroke-width="4.5" class="svg__stroke--wayfinder"></path><path d="M544.445 318.242L412.701 0.182617" stroke="#C099FF" stroke-width="4.5" class="svg__stroke--wayfinder"></path><path d="M560.445 318.242L428.701 0.182617" stroke="#C099FF" stroke-width="4.5" class="svg__stroke--wayfinder"></path><path d="M576.445 318.242L444.701 0.182617" stroke="#C099FF" stroke-width="4.5" class="svg__stroke--wayfinder"></path><path d="M592.445 318.242L460.701 0.182617" stroke="#C099FF" stroke-width="5" class="svg__stroke--wayfinder"></path><path d="M608.445 318.242L476.701 0.182617" stroke="#C099FF" stroke-width="5" class="svg__stroke--wayfinder"></path><path d="M624.445 318.242L492.701 0.182617" stroke="#C099FF" stroke-width="5" class="svg__stroke--wayfinder"></path><path d="M640.445 318.242L508.701 0.182617" stroke="#C099FF" stroke-width="5" class="svg__stroke--wayfinder"></path><path d="M656.445 318.242L524.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M672.445 318.242L540.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M688.445 318.242L556.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M704.445 318.242L572.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M720.445 318.242L588.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M736.445 318.242L604.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M752.445 318.242L620.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M768.445 318.242L636.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M784.445 318.242L654.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M800.445 318.242L670.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M816.445 318.242L686.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M832.445 318.242L702.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M848.445 318.242L718.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M864.445 318.242L734.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M880.445 318.242L750.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path>', 47)
+  return s(), o("svg", Ka, t[0] || (t[0] = [
+    ge('<path d="M144.445 318.242L12.7009 0.182617" stroke="#C099FF" stroke-width="1.5" class="svg__stroke--wayfinder"></path><path d="M160.445 318.242L28.7009 0.182617" stroke="#C099FF" stroke-width="1.5" class="svg__stroke--wayfinder"></path><path d="M176.445 318.242L44.7009 0.182617" stroke="#C099FF" stroke-width="1.5" class="svg__stroke--wayfinder"></path><path d="M192.445 318.242L60.7009 0.182617" stroke="#C099FF" stroke-width="1.5" class="svg__stroke--wayfinder"></path><path d="M208.445 318.242L76.7009 0.182617" stroke="#C099FF" stroke-width="2" class="svg__stroke--wayfinder"></path><path d="M224.445 318.242L92.7009 0.182617" stroke="#C099FF" stroke-width="2" class="svg__stroke--wayfinder"></path><path d="M240.445 318.242L108.701 0.182617" stroke="#C099FF" stroke-width="2" class="svg__stroke--wayfinder"></path><path d="M256.445 318.242L124.701 0.182617" stroke="#C099FF" stroke-width="2" class="svg__stroke--wayfinder"></path><path d="M272.445 318.242L140.701 0.182617" stroke="#C099FF" stroke-width="2.5" class="svg__stroke--wayfinder"></path><path d="M288.445 318.242L156.701 0.182617" stroke="#C099FF" stroke-width="2.5" class="svg__stroke--wayfinder"></path><path d="M304.445 318.242L172.701 0.182617" stroke="#C099FF" stroke-width="2.5" class="svg__stroke--wayfinder"></path><path d="M320.445 318.242L188.701 0.182617" stroke="#C099FF" stroke-width="2.5" class="svg__stroke--wayfinder"></path><path d="M336.445 318.242L204.701 0.182617" stroke="#C099FF" stroke-width="3" class="svg__stroke--wayfinder"></path><path d="M352.445 318.242L220.701 0.182617" stroke="#C099FF" stroke-width="3" class="svg__stroke--wayfinder"></path><path d="M368.445 318.242L236.701 0.182617" stroke="#C099FF" stroke-width="3" class="svg__stroke--wayfinder"></path><path d="M384.445 318.242L252.701 0.182617" stroke="#C099FF" stroke-width="3" class="svg__stroke--wayfinder"></path><path d="M400.445 318.242L268.701 0.182617" stroke="#C099FF" stroke-width="3.5" class="svg__stroke--wayfinder"></path><path d="M416.445 318.242L284.701 0.182617" stroke="#C099FF" stroke-width="3.5" class="svg__stroke--wayfinder"></path><path d="M432.445 318.242L300.701 0.182617" stroke="#C099FF" stroke-width="3.5" class="svg__stroke--wayfinder"></path><path d="M448.445 318.242L316.701 0.182617" stroke="#C099FF" stroke-width="3.5" class="svg__stroke--wayfinder"></path><path d="M464.445 318.242L332.701 0.182617" stroke="#C099FF" stroke-width="4" class="svg__stroke--wayfinder"></path><path d="M480.445 318.242L348.701 0.182617" stroke="#C099FF" stroke-width="4" class="svg__stroke--wayfinder"></path><path d="M496.445 318.242L364.701 0.182617" stroke="#C099FF" stroke-width="4" class="svg__stroke--wayfinder"></path><path d="M512.445 318.242L380.701 0.182617" stroke="#C099FF" stroke-width="4" class="svg__stroke--wayfinder"></path><path d="M528.445 318.242L396.701 0.182617" stroke="#C099FF" stroke-width="4.5" class="svg__stroke--wayfinder"></path><path d="M544.445 318.242L412.701 0.182617" stroke="#C099FF" stroke-width="4.5" class="svg__stroke--wayfinder"></path><path d="M560.445 318.242L428.701 0.182617" stroke="#C099FF" stroke-width="4.5" class="svg__stroke--wayfinder"></path><path d="M576.445 318.242L444.701 0.182617" stroke="#C099FF" stroke-width="4.5" class="svg__stroke--wayfinder"></path><path d="M592.445 318.242L460.701 0.182617" stroke="#C099FF" stroke-width="5" class="svg__stroke--wayfinder"></path><path d="M608.445 318.242L476.701 0.182617" stroke="#C099FF" stroke-width="5" class="svg__stroke--wayfinder"></path><path d="M624.445 318.242L492.701 0.182617" stroke="#C099FF" stroke-width="5" class="svg__stroke--wayfinder"></path><path d="M640.445 318.242L508.701 0.182617" stroke="#C099FF" stroke-width="5" class="svg__stroke--wayfinder"></path><path d="M656.445 318.242L524.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M672.445 318.242L540.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M688.445 318.242L556.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M704.445 318.242L572.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M720.445 318.242L588.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M736.445 318.242L604.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M752.445 318.242L620.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M768.445 318.242L636.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M784.445 318.242L654.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M800.445 318.242L670.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M816.445 318.242L686.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M832.445 318.242L702.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M848.445 318.242L718.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M864.445 318.242L734.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path><path d="M880.445 318.242L750.701 0.182617" stroke="#C099FF" stroke-width="5.5" class="svg__stroke--wayfinder"></path>', 47)
   ]));
 }
 const br = { render: es }, ts = {
@@ -2357,7 +2357,7 @@ const br = { render: es }, ts = {
   xmlns: "http://www.w3.org/2000/svg"
 };
 function rs(e, t) {
-  return i(), o("svg", ts, t[0] || (t[0] = [
+  return s(), o("svg", ts, t[0] || (t[0] = [
     u("g", null, [
       u("path", {
         opacity: "0.25",
@@ -2388,7 +2388,7 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
 }, Ls = {
   key: 0,
   class: "block-form-container"
-}, xs = /* @__PURE__ */ te({
+}, xs = /* @__PURE__ */ ee({
   __name: "BannerFeatured",
   props: {
     media: {
@@ -2464,13 +2464,13 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
     }
   },
   setup(e) {
-    const t = e, r = p(() => {
+    const t = e, r = y(() => {
       if (t.media && t.media.src) {
-        const v = t.media.src.toLowerCase().split(".").pop();
-        return v === "mp4" || v === "m4a" || v === "f4v" || v === "m4b" || v === "mov";
+        const p = t.media.src.toLowerCase().split(".").pop();
+        return p === "mp4" || p === "m4a" || p === "f4v" || p === "m4b" || p === "mov";
       } else
         return !1;
-    }), n = p(() => r.value ? ur : cr), a = p(() => r.value ? null : t.media), s = p(() => {
+    }), n = y(() => r.value ? ur : cr), a = y(() => r.value ? null : t.media), i = y(() => {
       if (!r.value)
         return null;
       const g = t.media;
@@ -2484,38 +2484,38 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
         caption: g.caption,
         poster: g.poster
       };
-    }), l = p(() => r.value ? s.value : a.value), c = p(() => t.ratio), h = p(() => t.locations.map((g) => ({
+    }), l = y(() => r.value ? i.value : a.value), c = y(() => t.ratio), d = y(() => t.locations.map((g) => ({
       ...g,
       svg: g.title === "Online" ? "svg-icon-virtual" : "svg-icon-location",
       class: g.title === "Online" ? "location-online" : "location-link",
-      to: g.to != null ? st(g.to) : ""
-    }))), f = p(() => it(t.startDate, t.endDate)), y = p(() => Y(new Date(t.dateCreated), "MMMM d, Y")), w = p(() => t.startDate && t.sectionHandle === "event" ? ot(t.startDate, t.endDate) : ""), M = p(() => ve(t.to)), _ = p(() => [
+      to: g.to != null ? lt(g.to) : ""
+    }))), h = y(() => ue(t.startDate, t.endDate)), v = y(() => U(new Date(t.dateCreated), "MMMM d, Y")), b = y(() => t.startDate && t.sectionHandle === "event" ? ye(t.startDate, t.endDate) : ""), M = y(() => pe(t.to)), _ = y(() => [
       "banner-featured",
       { "hatch-left": !t.alignRight },
       `color-${M.value}`
     ]);
-    return (g, v) => (i(), o("div", {
-      class: A(_.value)
+    return (g, p) => (s(), o("div", {
+      class: q(_.value)
     }, [
       u("div", ns, [
         Z(g.$slots, "default", {}, () => [
-          e.breadcrumb ? (i(), o("div", as, [
-            q(T(pr), {
+          e.breadcrumb ? (s(), o("div", as, [
+            H(x(pr), {
               class: "heading-line",
               "aria-hidden": "true"
             }),
-            u("h2", ss, D(e.breadcrumb), 1)
+            u("h2", ss, P(e.breadcrumb), 1)
           ])) : m("", !0)
         ], !0)
       ]),
-      (i(), I(X(n.value), {
+      (s(), I(J(n.value), {
         class: "media",
         media: l.value,
         "aspect-ratio": c.value
       }, {
-        default: ee(() => [
-          r.value ? m("", !0) : (i(), o("div", is)),
-          q(T(wr), {
+        default: Q(() => [
+          r.value ? m("", !0) : (s(), o("div", is)),
+          H(x(wr), {
             class: "molecule",
             "aria-hidden": "true"
           })
@@ -2524,37 +2524,37 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
       }, 8, ["media", "aspect-ratio"])),
       u("div", os, [
         u("div", ls, [
-          e.category ? (i(), o("h2", {
+          e.category ? (s(), o("h2", {
             key: 0,
             class: "category category-mobile",
             innerHTML: e.category
           }, null, 8, cs)) : m("", !0)
         ]),
         u("div", us, [
-          q(T(br), {
+          H(x(br), {
             class: "svg",
             "aria-hidden": "true"
           })
         ])
       ]),
       u("div", ds, [
-        e.category ? (i(), o("div", {
+        e.category ? (s(), o("div", {
           key: 0,
           class: "category category-desktop",
           innerHTML: e.category
         }, null, 8, hs)) : m("", !0),
-        e.titleLink.length > 0 ? (i(), o("div", fs, [
-          q(me, {
+        e.titleLink.length > 0 ? (s(), o("div", fs, [
+          H(ae, {
             id: "banner-featured",
             to: e.titleLink,
             class: "title title-linked"
           }, {
-            default: ee(() => [
-              G(D(e.title), 1)
+            default: Q(() => [
+              B(P(e.title), 1)
             ]),
             _: 1
           }, 8, ["to"])
-        ])) : (i(), o("div", ms, [
+        ])) : (s(), o("div", ms, [
           u("h3", {
             id: "banner-featured",
             class: "title",
@@ -2562,48 +2562,48 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
           }, null, 8, gs)
         ])),
         u("div", vs, [
-          e.dateCreated ? (i(), o("div", ys, [
-            e.dateCreated ? (i(), o("time", {
+          e.dateCreated ? (s(), o("div", ys, [
+            e.dateCreated ? (s(), o("time", {
               key: 0,
               class: "date-created",
-              innerHTML: y.value
+              innerHTML: v.value
             }, null, 8, ps)) : m("", !0)
           ])) : m("", !0),
-          e.byline.length ? (i(), o("div", ks, [
-            (i(!0), o(B, null, N(e.byline, (L, O) => (i(), o("div", {
+          e.byline.length ? (s(), o("div", ks, [
+            (s(!0), o(N, null, j(e.byline, (L, O) => (s(), o("div", {
               key: `external-${O}`,
               class: "byline-item",
               innerHTML: L
             }, null, 8, bs))), 128))
           ])) : m("", !0),
-          e.description ? (i(), I(dr, {
+          e.description ? (s(), I(dr, {
             key: 2,
             class: "description",
             "rich-text-content": e.description
           }, null, 8, ["rich-text-content"])) : m("", !0),
-          e.startDate || e.endDate ? (i(), o("div", ws, [
-            e.startDate ? (i(), o("time", {
+          e.startDate || e.endDate ? (s(), o("div", ws, [
+            e.startDate ? (s(), o("time", {
               key: 0,
               class: "schedule-item",
-              innerHTML: f.value
+              innerHTML: h.value
             }, null, 8, _s)) : m("", !0),
-            w.value ? (i(), o("time", {
+            b.value ? (s(), o("time", {
               key: 1,
               class: "schedule-item",
-              innerHTML: w.value
+              innerHTML: b.value
             }, null, 8, Ss)) : m("", !0)
           ])) : m("", !0),
-          e.locations.length ? (i(), o("div", Ms, [
-            (i(!0), o(B, null, N(h.value, (L) => (i(), I(or, {
+          e.locations.length ? (s(), o("div", Ms, [
+            (s(!0), o(N, null, j(d.value, (L) => (s(), I(or, {
               key: `location-${L.id}`,
               text: L.title,
               "icon-name": L.svg,
               to: L.to,
-              class: A(L.class)
+              class: q(L.class)
             }, null, 8, ["text", "icon-name", "to", "class"]))), 128))
           ])) : m("", !0)
         ]),
-        e.to ? (i(), I(ir, {
+        e.to ? (s(), I(ir, {
           key: 3,
           id: "banner-featured-button",
           label: e.prompt,
@@ -2612,21 +2612,21 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
           class: "button"
         }, null, 8, ["label", "to"])) : m("", !0)
       ]),
-      !e.to && e.registerEvent ? (i(), o("div", Ls, [
-        q(nt)
+      !e.to && e.registerEvent ? (s(), o("div", Ls, [
+        H(st)
       ])) : m("", !0)
     ], 2));
   }
-}), vo = /* @__PURE__ */ W(xs, [["__scopeId", "data-v-d975c59b"]]), Fs = {
+}), Oo = /* @__PURE__ */ W(xs, [["__scopeId", "data-v-d975c59b"]]), Fs = {
   key: 0,
   class: "category"
-}, Ts = ["innerHTML"], $s = { class: "hatch-box" }, Cs = { class: "hatch" }, Os = { class: "meta" }, Is = ["innerHTML"], Ps = { class: "meta-text" }, Es = { class: "meta-block" }, Ds = {
+}, Ts = ["innerHTML"], Cs = { class: "hatch-box" }, $s = { class: "hatch" }, Is = { class: "meta" }, Os = ["innerHTML"], Ds = { class: "meta-text" }, Ps = { class: "meta-block" }, Es = {
   key: 0,
   class: "byline-item"
-}, Rs = {
+}, Hs = {
   key: 1,
   class: "subject-areas"
-}, qs = ["innerHTML"], Hs = ["innerHTML"], As = ["innerHTML"], Bs = {
+}, Rs = ["innerHTML"], qs = ["innerHTML"], As = ["innerHTML"], Bs = {
   key: 0,
   class: "contact-info-group"
 }, Ns = {
@@ -2635,7 +2635,7 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
 }, js = {
   key: 1,
   class: "block-form-container"
-}, Ws = /* @__PURE__ */ te({
+}, Ws = /* @__PURE__ */ ee({
   __name: "BannerHeader",
   props: {
     media: {
@@ -2736,43 +2736,43 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
     }
   },
   setup(e) {
-    const t = e, r = d(() => Promise.resolve().then(() => at)), n = d(() => Promise.resolve().then(() => hr)), a = d(() => Promise.resolve().then(() => lr)), s = d(() => Promise.resolve().then(() => kr)), l = p(() => ve(t.to)), c = p(() => [
+    const t = e, r = f(() => Promise.resolve().then(() => ot)), n = f(() => Promise.resolve().then(() => hr)), a = f(() => Promise.resolve().then(() => lr)), i = f(() => Promise.resolve().then(() => kr)), l = y(() => pe(t.to)), c = y(() => [
       "banner-header",
       { "hatch-left": !t.alignRight },
       `color-${l.value}`
-    ]), h = p(() => {
+    ]), d = y(() => {
       if (t.media && t.media.src) {
-        const F = t.media.src.toLowerCase().split(".").pop();
-        return F === "mp4" || F === "m4a" || F === "f4v" || F === "m4b" || F === "mov";
+        const T = t.media.src.toLowerCase().split(".").pop();
+        return T === "mp4" || T === "m4a" || T === "f4v" || T === "m4b" || T === "mov";
       } else
         return !1;
-    }), f = p(() => h.value ? ur : cr), y = p(() => h.value ? null : t.media), w = p(() => {
-      if (!h.value)
+    }), h = y(() => d.value ? ur : cr), v = y(() => d.value ? null : t.media), b = y(() => {
+      if (!d.value)
         return null;
-      const x = t.media;
+      const F = t.media;
       return {
-        src: x.src,
-        focalPoint: x.focalPoint,
-        sizes: x.sizes,
-        height: x.height,
-        width: x.width,
-        alt: x.alt,
-        caption: x.caption,
-        poster: x.poster
+        src: F.src,
+        focalPoint: F.focalPoint,
+        sizes: F.sizes,
+        height: F.height,
+        width: F.width,
+        alt: F.alt,
+        caption: F.caption,
+        poster: F.poster
       };
-    }), M = p(() => h.value ? w.value : y.value), _ = p(() => Y(new Date(t.dateCreated), "MMMM d, Y")), g = p(() => it(t.startDate, t.endDate)), v = p(() => t.startDate && t.sectionHandle === "event" ? ot(t.startDate, t.endDate) : ""), L = p(() => t.ratio), O = p(() => t.category ? "gradient" : "gradient-no-category"), R = p(() => t.locations.map((x) => {
-      let F = "svg-icon-location";
-      return x.title === "Online" && (F = "svg-icon-virtual"), {
-        ...x,
-        svg: F,
-        to: x.to != null ? st(x.to) : ""
+    }), M = y(() => d.value ? b.value : v.value), _ = y(() => U(new Date(t.dateCreated), "MMMM d, Y")), g = y(() => ue(t.startDate, t.endDate)), p = y(() => t.startDate && t.sectionHandle === "event" ? ye(t.startDate, t.endDate) : ""), L = y(() => t.ratio), O = y(() => t.category ? "gradient" : "gradient-no-category"), R = y(() => t.locations.map((F) => {
+      let T = "svg-icon-location";
+      return F.title === "Online" && (T = "svg-icon-virtual"), {
+        ...F,
+        svg: T,
+        to: F.to != null ? lt(F.to) : ""
       };
     }));
-    return (x, F) => (i(), o("div", {
-      class: A(c.value)
+    return (F, T) => (s(), o("div", {
+      class: q(c.value)
     }, [
-      e.category ? (i(), o("div", Fs, [
-        q(T(s), {
+      e.category ? (s(), o("div", Fs, [
+        H(x(i), {
           class: "heading-line",
           "aria-hidden": "true"
         }),
@@ -2781,117 +2781,117 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
           innerHTML: e.category
         }, null, 8, Ts)
       ])) : m("", !0),
-      (i(), I(X(f.value), {
+      (s(), I(J(h.value), {
         class: "media",
         media: M.value,
         "aspect-ratio": L.value
       }, {
-        default: ee(() => [
-          h.value ? m("", !0) : (i(), o("div", {
+        default: Q(() => [
+          d.value ? m("", !0) : (s(), o("div", {
             key: 0,
-            class: A(O.value)
+            class: q(O.value)
           }, null, 2)),
-          q(T(wr), {
+          H(x(wr), {
             class: "molecule",
             "aria-hidden": "true"
           })
         ]),
         _: 1
       }, 8, ["media", "aspect-ratio"])),
-      u("div", $s, [
-        F[0] || (F[0] = u("div", { class: "clipped-box" }, null, -1)),
-        u("div", Cs, [
-          q(T(br), {
+      u("div", Cs, [
+        T[0] || (T[0] = u("div", { class: "clipped-box" }, null, -1)),
+        u("div", $s, [
+          H(x(br), {
             class: "svg",
             "aria-hidden": "true"
           })
         ])
       ]),
-      u("div", Os, [
+      u("div", Is, [
         u("h1", {
           class: "title",
           innerHTML: e.title
-        }, null, 8, Is),
-        e.text ? (i(), I(T(n), {
+        }, null, 8, Os),
+        e.text ? (s(), I(x(n), {
           key: 0,
           class: "snippet",
           "rich-text-content": e.text
         }, null, 8, ["rich-text-content"])) : m("", !0),
-        U(u("div", Ps, [
-          U(u("div", Es, [
-            e.byline.length ? (i(), o("div", Ds, [
-              (i(!0), o(B, null, N(e.byline, (C, j) => (i(), o("div", {
-                key: `${C}-${j}`,
+        z(u("div", Ds, [
+          z(u("div", Ps, [
+            e.byline.length ? (s(), o("div", Es, [
+              (s(!0), o(N, null, j(e.byline, ($, V) => (s(), o("div", {
+                key: `${$}-${V}`,
                 class: "byline-item"
-              }, D(C), 1))), 128))
+              }, P($), 1))), 128))
             ])) : m("", !0),
-            e.subjectAreas.length ? (i(), o("div", Rs, [
-              (i(!0), o(B, null, N(e.subjectAreas, (C, j) => (i(), o("div", {
-                key: `${C.title}-${j}`
-              }, D(C.title), 1))), 128))
+            e.subjectAreas.length ? (s(), o("div", Hs, [
+              (s(!0), o(N, null, j(e.subjectAreas, ($, V) => (s(), o("div", {
+                key: `${$.title}-${V}`
+              }, P($.title), 1))), 128))
             ])) : m("", !0),
-            e.dateCreated ? (i(), o("time", {
+            e.dateCreated ? (s(), o("time", {
               key: 2,
               class: "date-created",
               innerHTML: _.value
-            }, null, 8, qs)) : m("", !0),
-            e.startDate ? (i(), o("time", {
+            }, null, 8, Rs)) : m("", !0),
+            e.startDate ? (s(), o("time", {
               key: 3,
               class: "schedule-item",
               innerHTML: g.value
-            }, null, 8, Hs)) : m("", !0),
-            v.value ? (i(), o("time", {
+            }, null, 8, qs)) : m("", !0),
+            p.value ? (s(), o("time", {
               key: 4,
               class: "schedule-item",
-              innerHTML: v.value
+              innerHTML: p.value
             }, null, 8, As)) : m("", !0)
           ], 512), [
             [
-              dt,
+              ht,
               e.byline.length || e.subjectAreas.length || e.dateCreated || e.startDate
             ]
           ]),
-          e.email || e.phone || e.staffDirectoryLink || e.addressLink ? (i(), o("div", Bs, [
-            e.email ? (i(), I(T(a), {
+          e.email || e.phone || e.staffDirectoryLink || e.addressLink ? (s(), o("div", Bs, [
+            e.email ? (s(), I(x(a), {
               key: 0,
               text: e.email,
               "icon-name": "svg-icon-email",
               to: `mailto:${e.email}`
             }, null, 8, ["text", "to"])) : m("", !0),
-            e.phone ? (i(), I(T(a), {
+            e.phone ? (s(), I(x(a), {
               key: 1,
               text: e.phone,
               "icon-name": "svg-icon-phone",
               to: `tel:${e.phone}`
             }, null, 8, ["text", "to"])) : m("", !0),
-            e.staffDirectoryLink ? (i(), I(T(a), {
+            e.staffDirectoryLink ? (s(), I(x(a), {
               key: 2,
               text: "View staff directory",
               "icon-name": "svg-icon-person",
               to: e.staffDirectoryLink
             }, null, 8, ["to"])) : m("", !0),
-            e.addressLink ? (i(), I(T(a), {
+            e.addressLink ? (s(), I(x(a), {
               key: 3,
               text: e.address,
               "icon-name": "svg-icon-location",
               to: e.addressLink
             }, null, 8, ["text", "to"])) : m("", !0)
           ])) : m("", !0),
-          e.locations.length ? (i(), o("div", Ns, [
-            (i(!0), o(B, null, N(R.value, (C) => (i(), I(T(a), {
-              key: `location-${C.id}`,
-              text: C.title,
-              "icon-name": C.svg,
-              to: C.to
+          e.locations.length ? (s(), o("div", Ns, [
+            (s(!0), o(N, null, j(R.value, ($) => (s(), I(x(a), {
+              key: `location-${$.id}`,
+              text: $.title,
+              "icon-name": $.svg,
+              to: $.to
             }, null, 8, ["text", "icon-name", "to"]))), 128))
           ])) : m("", !0)
         ], 512), [
           [
-            dt,
+            ht,
             e.byline.length || e.subjectAreas.length || e.dateCreated || e.startDate || e.email || e.phone || e.staffDirectoryLink || e.addressLink
           ]
         ]),
-        e.to ? (i(), I(T(r), {
+        e.to ? (s(), I(x(r), {
           key: 1,
           label: e.prompt,
           "is-secondary": !0,
@@ -2899,15 +2899,15 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
           to: e.to
         }, null, 8, ["label", "to"])) : m("", !0)
       ]),
-      !e.to && e.registerEvent ? (i(), o("div", js, [
-        q(nt)
+      !e.to && e.registerEvent ? (s(), o("div", js, [
+        H(st)
       ])) : m("", !0)
     ], 2));
   }
-}), yo = /* @__PURE__ */ W(Ws, [["__scopeId", "data-v-a5497b29"]]), Vs = { class: "banner-text" }, Ys = { class: "banner-text-content-container" }, Us = {
+}), Do = /* @__PURE__ */ W(Ws, [["__scopeId", "data-v-a5497b29"]]), Vs = { class: "banner-text" }, Ys = { class: "banner-text-content-container" }, Us = {
   key: 0,
   class: "category"
-}, zs = ["innerHTML"], Gs = { class: "content" }, Zs = { class: "title" }, Qs = ["lang", "innerHTML"], Xs = {
+}, zs = ["innerHTML"], Zs = { class: "content" }, Gs = { class: "title" }, Qs = ["lang", "innerHTML"], Xs = {
   key: 1,
   class: "meta-block"
 }, Js = {
@@ -2940,7 +2940,7 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
 }, ui = {
   key: 0,
   class: "block-form-container"
-}, di = /* @__PURE__ */ te({
+}, di = /* @__PURE__ */ ee({
   __name: "BannerText",
   props: {
     category: {
@@ -3039,120 +3039,120 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
     }
   },
   setup(e) {
-    const t = e, r = d(() => Promise.resolve().then(() => at)), n = d(() => Promise.resolve().then(() => hr)), a = d(() => Promise.resolve().then(() => lr)), s = d(() => Promise.resolve().then(() => kr)), l = p(() => {
+    const t = e, r = f(() => Promise.resolve().then(() => ot)), n = f(() => Promise.resolve().then(() => hr)), a = f(() => Promise.resolve().then(() => lr)), i = f(() => Promise.resolve().then(() => kr)), l = y(() => {
       let _ = ["banner-text-container", "theme-light"];
       return t.isDarkBlue && (_ = ["banner-text-container", "theme-dark"]), _;
-    }), c = p(() => ve(t.to)), h = p(() => ["text", `color-${c.value}`]), f = p(() => Y(new Date(t.dateCreated), "MMMM d, Y")), y = p(() => it(t.startDate, t.endDate)), w = p(() => t.startDate && t.sectionHandle === "event" ? ot(t.startDate, t.endDate) : ""), M = p(() => t.locations.map((_) => {
+    }), c = y(() => pe(t.to)), d = y(() => ["text", `color-${c.value}`]), h = y(() => U(new Date(t.dateCreated), "MMMM d, Y")), v = y(() => ue(t.startDate, t.endDate)), b = y(() => t.startDate && t.sectionHandle === "event" ? ye(t.startDate, t.endDate) : ""), M = y(() => t.locations.map((_) => {
       let g = "svg-icon-location";
       return _.title === "Online" && (g = "svg-icon-virtual"), {
         ..._,
         svg: g,
-        to: _.to != null ? st(_.to) : ""
+        to: _.to != null ? lt(_.to) : ""
       };
     }));
-    return (_, g) => (i(), o("div", Vs, [
+    return (_, g) => (s(), o("div", Vs, [
       u("div", {
-        class: A(l.value)
+        class: q(l.value)
       }, [
         u("div", Ys, [
-          e.category ? (i(), o("div", Us, [
-            q(T(s), {
+          e.category ? (s(), o("div", Us, [
+            H(x(i), {
               class: "heading-line",
               "aria-hidden": "true"
             }),
             u("div", {
-              class: A(h.value),
+              class: q(d.value),
               innerHTML: e.category
             }, null, 10, zs)
           ])) : m("", !0),
-          u("div", Gs, [
-            u("h1", Zs, [
-              G(D(e.title) + " ", 1),
-              e.alternativeFullName ? (i(), o("span", {
+          u("div", Zs, [
+            u("h1", Gs, [
+              B(P(e.title) + " ", 1),
+              e.alternativeFullName ? (s(), o("span", {
                 key: 0,
                 lang: e.language,
                 class: "translation",
                 innerHTML: e.alternativeFullName
               }, null, 8, Qs)) : m("", !0)
             ]),
-            e.text ? (i(), I(T(n), {
+            e.text ? (s(), I(x(n), {
               key: 0,
               class: "text",
               "rich-text-content": e.text
             }, null, 8, ["rich-text-content"])) : m("", !0),
-            e.byline || e.subjectAreas || e.startDate || e.phone || e.email || e.addressLink || e.staffDirectoryLink ? (i(), o("div", Xs, [
-              e.byline ? (i(), o("div", Js, [
-                (i(!0), o(B, null, N(e.byline, (v, L) => (i(), o("div", {
-                  key: `${v}-${L}`
-                }, D(v), 1))), 128))
+            e.byline || e.subjectAreas || e.startDate || e.phone || e.email || e.addressLink || e.staffDirectoryLink ? (s(), o("div", Xs, [
+              e.byline ? (s(), o("div", Js, [
+                (s(!0), o(N, null, j(e.byline, (p, L) => (s(), o("div", {
+                  key: `${p}-${L}`
+                }, P(p), 1))), 128))
               ])) : m("", !0),
-              e.subjectAreas ? (i(), o("div", Ks, [
-                (i(!0), o(B, null, N(e.subjectAreas, (v, L) => (i(), o("div", {
-                  key: `${v.title}-${L}`
-                }, D(v.title), 1))), 128))
+              e.subjectAreas ? (s(), o("div", Ks, [
+                (s(!0), o(N, null, j(e.subjectAreas, (p, L) => (s(), o("div", {
+                  key: `${p.title}-${L}`
+                }, P(p.title), 1))), 128))
               ])) : m("", !0),
-              e.email ? (i(), o("div", ei, [
-                q(T(a), {
+              e.email ? (s(), o("div", ei, [
+                H(x(a), {
                   text: e.email,
                   "icon-name": "svg-icon-email",
                   to: `mailto:${e.email}`
                 }, null, 8, ["text", "to"])
               ])) : m("", !0),
-              e.phone ? (i(), o("div", ti, [
-                q(T(a), {
+              e.phone ? (s(), o("div", ti, [
+                H(x(a), {
                   text: e.phone,
                   "icon-name": "svg-icon-phone",
                   to: `tel:${e.phone}`
                 }, null, 8, ["text", "to"])
               ])) : m("", !0),
-              e.staffDirectoryLink ? (i(), o("div", ri, [
-                q(T(a), {
+              e.staffDirectoryLink ? (s(), o("div", ri, [
+                H(x(a), {
                   text: "View staff directory",
                   "icon-name": "svg-icon-person",
                   to: e.staffDirectoryLink
                 }, null, 8, ["to"])
               ])) : m("", !0),
-              e.addressLink ? (i(), o("div", ni, [
-                q(T(a), {
+              e.addressLink ? (s(), o("div", ni, [
+                H(x(a), {
                   text: e.address,
                   "icon-name": "svg-icon-location",
                   to: e.addressLink
                 }, null, 8, ["text", "to"])
               ])) : m("", !0),
-              e.startDate || e.dateCreated ? (i(), o("div", ai, [
-                e.dateCreated ? (i(), o("time", {
+              e.startDate || e.dateCreated ? (s(), o("div", ai, [
+                e.dateCreated ? (s(), o("time", {
                   key: 0,
                   class: "date-created",
-                  innerHTML: f.value
+                  innerHTML: h.value
                 }, null, 8, si)) : m("", !0),
-                e.startDate ? (i(), o("time", {
+                e.startDate ? (s(), o("time", {
                   key: 1,
                   class: "schedule-item",
-                  innerHTML: y.value
+                  innerHTML: v.value
                 }, null, 8, ii)) : m("", !0),
-                w.value ? (i(), o("time", {
+                b.value ? (s(), o("time", {
                   key: 2,
                   class: "schedule-item",
-                  innerHTML: w.value
+                  innerHTML: b.value
                 }, null, 8, oi)) : m("", !0),
-                e.isOnline ? (i(), o("div", li, " Online ")) : m("", !0)
+                e.isOnline ? (s(), o("div", li, " Online ")) : m("", !0)
               ])) : m("", !0)
             ])) : m("", !0),
-            e.locations.length ? (i(), o("div", ci, [
-              (i(!0), o(B, null, N(M.value, (v) => (i(), I(T(a), {
-                key: `location-${v.id}`,
-                text: v.title,
-                "icon-name": v.svg,
-                to: v.to
+            e.locations.length ? (s(), o("div", ci, [
+              (s(!0), o(N, null, j(M.value, (p) => (s(), I(x(a), {
+                key: `location-${p.id}`,
+                text: p.title,
+                "icon-name": p.svg,
+                to: p.to
               }, null, 8, ["text", "icon-name", "to"]))), 128))
             ])) : m("", !0),
-            e.to && !e.isDarkBlue ? (i(), I(T(r), {
+            e.to && !e.isDarkBlue ? (s(), I(x(r), {
               key: 3,
               label: e.buttonText,
               to: e.to,
               "is-secondary": !0
             }, null, 8, ["label", "to"])) : m("", !0),
-            e.to && e.isDarkBlue ? (i(), I(T(r), {
+            e.to && e.isDarkBlue ? (s(), I(x(r), {
               key: 4,
               label: e.buttonText,
               to: e.to,
@@ -3161,12 +3161,12 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
           ])
         ])
       ], 2),
-      !e.to && e.registerEvent ? (i(), o("div", ui, [
-        q(nt)
+      !e.to && e.registerEvent ? (s(), o("div", ui, [
+        H(st)
       ])) : m("", !0)
     ]));
   }
-}), po = /* @__PURE__ */ W(di, [["__scopeId", "data-v-04cddc69"]]), hi = {
+}), Po = /* @__PURE__ */ W(di, [["__scopeId", "data-v-04cddc69"]]), hi = {
   width: "32",
   height: "32",
   viewBox: "0 0 32 32",
@@ -3175,15 +3175,15 @@ const wr = { render: rs }, ns = { class: "slot" }, as = {
   class: "svg__icon-share-printer"
 };
 function _r(e, t) {
-  return i(), o("svg", hi, t[0] || (t[0] = [
-    fe('<circle cx="16" cy="16" r="16" fill="#F2F2F2" class="svg__fill--secondary-grey-01"></circle><path d="M7 21.1984h-.75c0 .4142.33579.75.75.75v-.75Zm0-8.1205v-.75c-.41421 0-.75.3358-.75.75H7Zm18 0h.75c0-.4142-.3358-.75-.75-.75v.75Zm0 8.1205v.75c.4142 0 .75-.3358.75-.75H25Zm-16.29837.75h.75v-1.5h-.75v1.5Zm14.57147-1.5h-.75v1.5h.75v-1.5Zm-15.5231.75v-8.1205h-1.5v8.1205h1.5ZM7 13.8279h18v-1.5H7v1.5Zm17.25-.75v8.1205h1.5v-8.1205h-1.5ZM8.70163 20.4484H7v1.5h1.70163v-1.5Zm16.29837 0h-1.7269v1.5H25v-1.5Z" fill="#0F0F0F" class="svg__fill--black"></path><path d="M11.4482 18.7737v6.5454h9.0013v-6.5454h-9.0013Z" stroke="#0F0F0F" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="svg__stroke--black"></path><path d="M13.5213 21.0669h4.8821" stroke="#0F0F0F" class="svg__stroke--black"></path><path d="M13.5213 22.812h2.99" stroke="#0F0F0F" class="svg__stroke--black"></path><path d="M10.6306 16.4412h1.6243" stroke="#0F0F0F" stroke-width="1.25" class="svg__stroke--black"></path><path d="M9.86359 8.68115v4.41055H22.5071V8.68115H9.86359Z" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="svg__stroke--black"></path>', 7)
+  return s(), o("svg", hi, t[0] || (t[0] = [
+    ge('<circle cx="16" cy="16" r="16" fill="#F2F2F2" class="svg__fill--secondary-grey-01"></circle><path d="M7 21.1984h-.75c0 .4142.33579.75.75.75v-.75Zm0-8.1205v-.75c-.41421 0-.75.3358-.75.75H7Zm18 0h.75c0-.4142-.3358-.75-.75-.75v.75Zm0 8.1205v.75c.4142 0 .75-.3358.75-.75H25Zm-16.29837.75h.75v-1.5h-.75v1.5Zm14.57147-1.5h-.75v1.5h.75v-1.5Zm-15.5231.75v-8.1205h-1.5v8.1205h1.5ZM7 13.8279h18v-1.5H7v1.5Zm17.25-.75v8.1205h1.5v-8.1205h-1.5ZM8.70163 20.4484H7v1.5h1.70163v-1.5Zm16.29837 0h-1.7269v1.5H25v-1.5Z" fill="#0F0F0F" class="svg__fill--black"></path><path d="M11.4482 18.7737v6.5454h9.0013v-6.5454h-9.0013Z" stroke="#0F0F0F" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="svg__stroke--black"></path><path d="M13.5213 21.0669h4.8821" stroke="#0F0F0F" class="svg__stroke--black"></path><path d="M13.5213 22.812h2.99" stroke="#0F0F0F" class="svg__stroke--black"></path><path d="M10.6306 16.4412h1.6243" stroke="#0F0F0F" stroke-width="1.25" class="svg__stroke--black"></path><path d="M9.86359 8.68115v4.41055H22.5071V8.68115H9.86359Z" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="svg__stroke--black"></path>', 7)
   ]));
 }
 const Sr = { render: _r }, fi = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Sr,
   render: _r
-}, Symbol.toStringTag, { value: "Module" })), mi = { class: "block-amenities" }, gi = { class: "amenity-column" }, vi = { class: "amenities-list" }, yi = { class: "amenity-name" }, pi = /* @__PURE__ */ te({
+}, Symbol.toStringTag, { value: "Module" })), mi = { class: "block-amenities" }, gi = { class: "amenity-column" }, vi = { class: "amenities-list" }, yi = { class: "amenity-name" }, pi = /* @__PURE__ */ ee({
   __name: "BlockAmenities",
   props: {
     amenities: {
@@ -3192,23 +3192,23 @@ const Sr = { render: _r }, fi = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Ob
     }
   },
   setup(e) {
-    const t = e, r = d(
+    const t = e, r = f(
       () => import("./icon-clock-CG3EE-5W.js")
-    ), n = d(
+    ), n = f(
       () => import("./icon-accessible-C8Gup1rK.js")
-    ), a = d(
+    ), a = f(
       () => import("./icon-chair-D8fW8Dnx.js")
-    ), s = d(
+    ), i = f(
       () => import("./icon-virtual-CwZieS3s.js")
-    ), l = d(
+    ), l = f(
       () => import("./icon-laptop-Bmg8PSn7.js")
-    ), c = d(
+    ), c = f(
       () => import("./icon-locker-BBQPsbYg.js")
-    ), h = d(
+    ), d = f(
       () => import("./icon-light-wkkuRssP.js")
-    ), f = d(
+    ), h = f(
       () => import("./icon-book-Dhs3bbZ0.js")
-    ), y = {
+    ), v = {
       "icon-clock": {
         icon: r,
         label: "24 Hour Study Space"
@@ -3222,7 +3222,7 @@ const Sr = { render: _r }, fi = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Ob
         label: "Cafe"
       },
       "icon-virtual": {
-        icon: s,
+        icon: i,
         label: "Computer/Laptop Access"
       },
       "icon-laptop": {
@@ -3234,7 +3234,7 @@ const Sr = { render: _r }, fi = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Ob
         label: "Locker"
       },
       "icon-light": {
-        icon: h,
+        icon: d,
         label: "Makerspace"
       },
       "icon-share-printer": {
@@ -3242,442 +3242,442 @@ const Sr = { render: _r }, fi = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Ob
         label: "Print, Copy and Scan"
       },
       "icon-book": {
-        icon: f,
+        icon: h,
         label: "Research Help"
       }
-    }, w = p(() => t.amenities.map((M) => {
-      const _ = y[M];
+    }, b = y(() => t.amenities.map((M) => {
+      const _ = v[M];
       return {
         svgIcon: _.icon,
         svgLabel: _.label
       };
     }));
-    return (M, _) => (i(), o("div", mi, [
+    return (M, _) => (s(), o("div", mi, [
       _[0] || (_[0] = u("h3", { class: "amenities-title" }, " At This Location ", -1)),
       u("div", gi, [
         u("ul", vi, [
-          (i(!0), o(B, null, N(w.value, (g, v) => (i(), o("li", {
-            key: `${g.svgLabel}-${v}`,
+          (s(!0), o(N, null, j(b.value, (g, p) => (s(), o("li", {
+            key: `${g.svgLabel}-${p}`,
             class: "amenitiy-row"
           }, [
-            g.svgIcon ? (i(), I(X(g.svgIcon), { key: 0 })) : m("", !0),
-            u("span", yi, D(g.svgLabel), 1)
+            g.svgIcon ? (s(), I(J(g.svgIcon), { key: 0 })) : m("", !0),
+            u("span", yi, P(g.svgLabel), 1)
           ]))), 128))
         ])
       ])
     ]));
   }
-}), ko = /* @__PURE__ */ W(pi, [["__scopeId", "data-v-3ecae64a"]]);
-var ue = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
+}), Eo = /* @__PURE__ */ W(pi, [["__scopeId", "data-v-3ecae64a"]]);
+var he = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
 function Mr(e) {
   return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
 }
-var be, kt;
+var _e, bt;
 function Lr() {
-  if (kt) return be;
-  kt = 1;
-  var e = typeof ue == "object" && ue && ue.Object === Object && ue;
-  return be = e, be;
-}
-var we, bt;
-function ki() {
-  if (bt) return we;
+  if (bt) return _e;
   bt = 1;
-  var e = Lr(), t = typeof self == "object" && self && self.Object === Object && self, r = e || t || Function("return this")();
-  return we = r, we;
+  var e = typeof he == "object" && he && he.Object === Object && he;
+  return _e = e, _e;
 }
-var _e, wt;
-function lt() {
-  if (wt) return _e;
+var Se, wt;
+function ki() {
+  if (wt) return Se;
   wt = 1;
-  var e = ki(), t = e.Symbol;
-  return _e = t, _e;
+  var e = Lr(), t = typeof self == "object" && self && self.Object === Object && self, r = e || t || Function("return this")();
+  return Se = r, Se;
 }
-var Se, _t;
-function bi() {
-  if (_t) return Se;
+var Me, _t;
+function ct() {
+  if (_t) return Me;
   _t = 1;
-  function e(t, r) {
-    for (var n = -1, a = t == null ? 0 : t.length, s = Array(a); ++n < a; )
-      s[n] = r(t[n], n, t);
-    return s;
-  }
-  return Se = e, Se;
+  var e = ki(), t = e.Symbol;
+  return Me = t, Me;
 }
-var Me, St;
-function wi() {
-  if (St) return Me;
+var Le, St;
+function bi() {
+  if (St) return Le;
   St = 1;
-  var e = Array.isArray;
-  return Me = e, Me;
+  function e(t, r) {
+    for (var n = -1, a = t == null ? 0 : t.length, i = Array(a); ++n < a; )
+      i[n] = r(t[n], n, t);
+    return i;
+  }
+  return Le = e, Le;
 }
-var Le, Mt;
-function _i() {
-  if (Mt) return Le;
+var xe, Mt;
+function wi() {
+  if (Mt) return xe;
   Mt = 1;
-  var e = lt(), t = Object.prototype, r = t.hasOwnProperty, n = t.toString, a = e ? e.toStringTag : void 0;
-  function s(l) {
-    var c = r.call(l, a), h = l[a];
+  var e = Array.isArray;
+  return xe = e, xe;
+}
+var Fe, Lt;
+function _i() {
+  if (Lt) return Fe;
+  Lt = 1;
+  var e = ct(), t = Object.prototype, r = t.hasOwnProperty, n = t.toString, a = e ? e.toStringTag : void 0;
+  function i(l) {
+    var c = r.call(l, a), d = l[a];
     try {
       l[a] = void 0;
-      var f = !0;
+      var h = !0;
     } catch {
     }
-    var y = n.call(l);
-    return f && (c ? l[a] = h : delete l[a]), y;
+    var v = n.call(l);
+    return h && (c ? l[a] = d : delete l[a]), v;
   }
-  return Le = s, Le;
+  return Fe = i, Fe;
 }
-var xe, Lt;
+var Te, xt;
 function Si() {
-  if (Lt) return xe;
-  Lt = 1;
+  if (xt) return Te;
+  xt = 1;
   var e = Object.prototype, t = e.toString;
   function r(n) {
     return t.call(n);
   }
-  return xe = r, xe;
+  return Te = r, Te;
 }
-var Fe, xt;
+var Ce, Ft;
 function xr() {
-  if (xt) return Fe;
-  xt = 1;
-  var e = lt(), t = _i(), r = Si(), n = "[object Null]", a = "[object Undefined]", s = e ? e.toStringTag : void 0;
-  function l(c) {
-    return c == null ? c === void 0 ? a : n : s && s in Object(c) ? t(c) : r(c);
-  }
-  return Fe = l, Fe;
-}
-var Te, Ft;
-function Fr() {
-  if (Ft) return Te;
+  if (Ft) return Ce;
   Ft = 1;
+  var e = ct(), t = _i(), r = Si(), n = "[object Null]", a = "[object Undefined]", i = e ? e.toStringTag : void 0;
+  function l(c) {
+    return c == null ? c === void 0 ? a : n : i && i in Object(c) ? t(c) : r(c);
+  }
+  return Ce = l, Ce;
+}
+var $e, Tt;
+function Fr() {
+  if (Tt) return $e;
+  Tt = 1;
   function e(t) {
     return t != null && typeof t == "object";
   }
-  return Te = e, Te;
+  return $e = e, $e;
 }
-var $e, Tt;
+var Ie, Ct;
 function Tr() {
-  if (Tt) return $e;
-  Tt = 1;
+  if (Ct) return Ie;
+  Ct = 1;
   var e = xr(), t = Fr(), r = "[object Symbol]";
   function n(a) {
     return typeof a == "symbol" || t(a) && e(a) == r;
   }
-  return $e = n, $e;
+  return Ie = n, Ie;
 }
-var Ce, $t;
-function $r() {
-  if ($t) return Ce;
+var Oe, $t;
+function Cr() {
+  if ($t) return Oe;
   $t = 1;
-  var e = lt(), t = bi(), r = wi(), n = Tr(), a = e ? e.prototype : void 0, s = a ? a.toString : void 0;
+  var e = ct(), t = bi(), r = wi(), n = Tr(), a = e ? e.prototype : void 0, i = a ? a.toString : void 0;
   function l(c) {
     if (typeof c == "string")
       return c;
     if (r(c))
       return t(c, l) + "";
     if (n(c))
-      return s ? s.call(c) : "";
-    var h = c + "";
-    return h == "0" && 1 / c == -1 / 0 ? "-0" : h;
+      return i ? i.call(c) : "";
+    var d = c + "";
+    return d == "0" && 1 / c == -1 / 0 ? "-0" : d;
   }
-  return Ce = l, Ce;
+  return Oe = l, Oe;
 }
-var Oe, Ct;
+var De, It;
 function Mi() {
-  if (Ct) return Oe;
-  Ct = 1;
+  if (It) return De;
+  It = 1;
   function e(t, r, n) {
-    var a = -1, s = t.length;
-    r < 0 && (r = -r > s ? 0 : s + r), n = n > s ? s : n, n < 0 && (n += s), s = r > n ? 0 : n - r >>> 0, r >>>= 0;
-    for (var l = Array(s); ++a < s; )
+    var a = -1, i = t.length;
+    r < 0 && (r = -r > i ? 0 : i + r), n = n > i ? i : n, n < 0 && (n += i), i = r > n ? 0 : n - r >>> 0, r >>>= 0;
+    for (var l = Array(i); ++a < i; )
       l[a] = t[a + r];
     return l;
   }
-  return Oe = e, Oe;
+  return De = e, De;
 }
-var Ie, Ot;
+var Pe, Ot;
 function Li() {
-  if (Ot) return Ie;
+  if (Ot) return Pe;
   Ot = 1;
   var e = Mi();
   function t(r, n, a) {
-    var s = r.length;
-    return a = a === void 0 ? s : a, !n && a >= s ? r : e(r, n, a);
+    var i = r.length;
+    return a = a === void 0 ? i : a, !n && a >= i ? r : e(r, n, a);
   }
-  return Ie = t, Ie;
+  return Pe = t, Pe;
 }
-var Pe, It;
-function ct() {
-  if (It) return Pe;
-  It = 1;
-  var e = "\\ud800-\\udfff", t = "\\u0300-\\u036f", r = "\\ufe20-\\ufe2f", n = "\\u20d0-\\u20ff", a = t + r + n, s = "\\ufe0e\\ufe0f", l = "\\u200d", c = RegExp("[" + l + e + a + s + "]");
-  function h(f) {
-    return c.test(f);
+var Ee, Dt;
+function ut() {
+  if (Dt) return Ee;
+  Dt = 1;
+  var e = "\\ud800-\\udfff", t = "\\u0300-\\u036f", r = "\\ufe20-\\ufe2f", n = "\\u20d0-\\u20ff", a = t + r + n, i = "\\ufe0e\\ufe0f", l = "\\u200d", c = RegExp("[" + l + e + a + i + "]");
+  function d(h) {
+    return c.test(h);
   }
-  return Pe = h, Pe;
+  return Ee = d, Ee;
 }
-var Ee, Pt;
-function Cr() {
-  if (Pt) return Ee;
+var He, Pt;
+function $r() {
+  if (Pt) return He;
   Pt = 1;
   function e(t) {
     var r = typeof t;
     return t != null && (r == "object" || r == "function");
   }
-  return Ee = e, Ee;
+  return He = e, He;
 }
-var De, Et;
+var Re, Et;
 function xi() {
-  if (Et) return De;
+  if (Et) return Re;
   Et = 1;
   var e = xr(), t = Fr(), r = "[object RegExp]";
   function n(a) {
     return t(a) && e(a) == r;
   }
-  return De = n, De;
+  return Re = n, Re;
 }
-var Re, Dt;
+var qe, Ht;
 function Fi() {
-  if (Dt) return Re;
-  Dt = 1;
+  if (Ht) return qe;
+  Ht = 1;
   function e(t) {
     return function(r) {
       return t(r);
     };
   }
-  return Re = e, Re;
+  return qe = e, qe;
 }
-var oe = { exports: {} };
-oe.exports;
+var le = { exports: {} };
+le.exports;
 var Rt;
 function Ti() {
   return Rt || (Rt = 1, function(e, t) {
-    var r = Lr(), n = t && !t.nodeType && t, a = n && !0 && e && !e.nodeType && e, s = a && a.exports === n, l = s && r.process, c = function() {
+    var r = Lr(), n = t && !t.nodeType && t, a = n && !0 && e && !e.nodeType && e, i = a && a.exports === n, l = i && r.process, c = function() {
       try {
-        var h = a && a.require && a.require("util").types;
-        return h || l && l.binding && l.binding("util");
+        var d = a && a.require && a.require("util").types;
+        return d || l && l.binding && l.binding("util");
       } catch {
       }
     }();
     e.exports = c;
-  }(oe, oe.exports)), oe.exports;
+  }(le, le.exports)), le.exports;
 }
-var qe, qt;
-function $i() {
-  if (qt) return qe;
+var Ae, qt;
+function Ci() {
+  if (qt) return Ae;
   qt = 1;
   var e = xi(), t = Fi(), r = Ti(), n = r && r.isRegExp, a = n ? t(n) : e;
-  return qe = a, qe;
+  return Ae = a, Ae;
 }
-var He, Ht;
-function Ci() {
-  if (Ht) return He;
-  Ht = 1;
+var Be, At;
+function $i() {
+  if (At) return Be;
+  At = 1;
   function e(t) {
     return function(r) {
       return r == null ? void 0 : r[t];
     };
   }
-  return He = e, He;
+  return Be = e, Be;
 }
-var Ae, At;
-function Oi() {
-  if (At) return Ae;
-  At = 1;
-  var e = Ci(), t = e("length");
-  return Ae = t, Ae;
-}
-var Be, Bt;
+var Ne, Bt;
 function Ii() {
-  if (Bt) return Be;
+  if (Bt) return Ne;
   Bt = 1;
-  var e = "\\ud800-\\udfff", t = "\\u0300-\\u036f", r = "\\ufe20-\\ufe2f", n = "\\u20d0-\\u20ff", a = t + r + n, s = "\\ufe0e\\ufe0f", l = "[" + e + "]", c = "[" + a + "]", h = "\\ud83c[\\udffb-\\udfff]", f = "(?:" + c + "|" + h + ")", y = "[^" + e + "]", w = "(?:\\ud83c[\\udde6-\\uddff]){2}", M = "[\\ud800-\\udbff][\\udc00-\\udfff]", _ = "\\u200d", g = f + "?", v = "[" + s + "]?", L = "(?:" + _ + "(?:" + [y, w, M].join("|") + ")" + v + g + ")*", O = v + g + L, R = "(?:" + [y + c + "?", c, w, M, l].join("|") + ")", x = RegExp(h + "(?=" + h + ")|" + R + O, "g");
-  function F(C) {
-    for (var j = x.lastIndex = 0; x.test(C); )
-      ++j;
-    return j;
-  }
-  return Be = F, Be;
+  var e = $i(), t = e("length");
+  return Ne = t, Ne;
 }
-var Ne, Nt;
-function Pi() {
-  if (Nt) return Ne;
+var je, Nt;
+function Oi() {
+  if (Nt) return je;
   Nt = 1;
-  var e = Oi(), t = ct(), r = Ii();
+  var e = "\\ud800-\\udfff", t = "\\u0300-\\u036f", r = "\\ufe20-\\ufe2f", n = "\\u20d0-\\u20ff", a = t + r + n, i = "\\ufe0e\\ufe0f", l = "[" + e + "]", c = "[" + a + "]", d = "\\ud83c[\\udffb-\\udfff]", h = "(?:" + c + "|" + d + ")", v = "[^" + e + "]", b = "(?:\\ud83c[\\udde6-\\uddff]){2}", M = "[\\ud800-\\udbff][\\udc00-\\udfff]", _ = "\\u200d", g = h + "?", p = "[" + i + "]?", L = "(?:" + _ + "(?:" + [v, b, M].join("|") + ")" + p + g + ")*", O = p + g + L, R = "(?:" + [v + c + "?", c, b, M, l].join("|") + ")", F = RegExp(d + "(?=" + d + ")|" + R + O, "g");
+  function T($) {
+    for (var V = F.lastIndex = 0; F.test($); )
+      ++V;
+    return V;
+  }
+  return je = T, je;
+}
+var We, jt;
+function Di() {
+  if (jt) return We;
+  jt = 1;
+  var e = Ii(), t = ut(), r = Oi();
   function n(a) {
     return t(a) ? r(a) : e(a);
   }
-  return Ne = n, Ne;
+  return We = n, We;
 }
-var je, jt;
-function Ei() {
-  if (jt) return je;
-  jt = 1;
+var Ve, Wt;
+function Pi() {
+  if (Wt) return Ve;
+  Wt = 1;
   function e(t) {
     return t.split("");
   }
-  return je = e, je;
+  return Ve = e, Ve;
 }
-var We, Wt;
-function Di() {
-  if (Wt) return We;
-  Wt = 1;
-  var e = "\\ud800-\\udfff", t = "\\u0300-\\u036f", r = "\\ufe20-\\ufe2f", n = "\\u20d0-\\u20ff", a = t + r + n, s = "\\ufe0e\\ufe0f", l = "[" + e + "]", c = "[" + a + "]", h = "\\ud83c[\\udffb-\\udfff]", f = "(?:" + c + "|" + h + ")", y = "[^" + e + "]", w = "(?:\\ud83c[\\udde6-\\uddff]){2}", M = "[\\ud800-\\udbff][\\udc00-\\udfff]", _ = "\\u200d", g = f + "?", v = "[" + s + "]?", L = "(?:" + _ + "(?:" + [y, w, M].join("|") + ")" + v + g + ")*", O = v + g + L, R = "(?:" + [y + c + "?", c, w, M, l].join("|") + ")", x = RegExp(h + "(?=" + h + ")|" + R + O, "g");
-  function F(C) {
-    return C.match(x) || [];
-  }
-  return We = F, We;
-}
-var Ve, Vt;
-function Ri() {
-  if (Vt) return Ve;
+var Ye, Vt;
+function Ei() {
+  if (Vt) return Ye;
   Vt = 1;
-  var e = Ei(), t = ct(), r = Di();
+  var e = "\\ud800-\\udfff", t = "\\u0300-\\u036f", r = "\\ufe20-\\ufe2f", n = "\\u20d0-\\u20ff", a = t + r + n, i = "\\ufe0e\\ufe0f", l = "[" + e + "]", c = "[" + a + "]", d = "\\ud83c[\\udffb-\\udfff]", h = "(?:" + c + "|" + d + ")", v = "[^" + e + "]", b = "(?:\\ud83c[\\udde6-\\uddff]){2}", M = "[\\ud800-\\udbff][\\udc00-\\udfff]", _ = "\\u200d", g = h + "?", p = "[" + i + "]?", L = "(?:" + _ + "(?:" + [v, b, M].join("|") + ")" + p + g + ")*", O = p + g + L, R = "(?:" + [v + c + "?", c, b, M, l].join("|") + ")", F = RegExp(d + "(?=" + d + ")|" + R + O, "g");
+  function T($) {
+    return $.match(F) || [];
+  }
+  return Ye = T, Ye;
+}
+var Ue, Yt;
+function Hi() {
+  if (Yt) return Ue;
+  Yt = 1;
+  var e = Pi(), t = ut(), r = Ei();
   function n(a) {
     return t(a) ? r(a) : e(a);
   }
-  return Ve = n, Ve;
+  return Ue = n, Ue;
 }
-var Ye, Yt;
-function qi() {
-  if (Yt) return Ye;
-  Yt = 1;
+var ze, Ut;
+function Ri() {
+  if (Ut) return ze;
+  Ut = 1;
   var e = /\s/;
   function t(r) {
     for (var n = r.length; n-- && e.test(r.charAt(n)); )
       ;
     return n;
   }
-  return Ye = t, Ye;
+  return ze = t, ze;
 }
-var Ue, Ut;
-function Hi() {
-  if (Ut) return Ue;
-  Ut = 1;
-  var e = qi(), t = /^\s+/;
+var Ze, zt;
+function qi() {
+  if (zt) return Ze;
+  zt = 1;
+  var e = Ri(), t = /^\s+/;
   function r(n) {
     return n && n.slice(0, e(n) + 1).replace(t, "");
   }
-  return Ue = r, Ue;
+  return Ze = r, Ze;
 }
-var ze, zt;
+var Ge, Zt;
 function Ai() {
-  if (zt) return ze;
-  zt = 1;
-  var e = Hi(), t = Cr(), r = Tr(), n = NaN, a = /^[-+]0x[0-9a-f]+$/i, s = /^0b[01]+$/i, l = /^0o[0-7]+$/i, c = parseInt;
-  function h(f) {
-    if (typeof f == "number")
-      return f;
-    if (r(f))
+  if (Zt) return Ge;
+  Zt = 1;
+  var e = qi(), t = $r(), r = Tr(), n = NaN, a = /^[-+]0x[0-9a-f]+$/i, i = /^0b[01]+$/i, l = /^0o[0-7]+$/i, c = parseInt;
+  function d(h) {
+    if (typeof h == "number")
+      return h;
+    if (r(h))
       return n;
-    if (t(f)) {
-      var y = typeof f.valueOf == "function" ? f.valueOf() : f;
-      f = t(y) ? y + "" : y;
+    if (t(h)) {
+      var v = typeof h.valueOf == "function" ? h.valueOf() : h;
+      h = t(v) ? v + "" : v;
     }
-    if (typeof f != "string")
-      return f === 0 ? f : +f;
-    f = e(f);
-    var w = s.test(f);
-    return w || l.test(f) ? c(f.slice(2), w ? 2 : 8) : a.test(f) ? n : +f;
+    if (typeof h != "string")
+      return h === 0 ? h : +h;
+    h = e(h);
+    var b = i.test(h);
+    return b || l.test(h) ? c(h.slice(2), b ? 2 : 8) : a.test(h) ? n : +h;
   }
-  return ze = h, ze;
+  return Ge = d, Ge;
 }
-var Ge, Gt;
+var Qe, Gt;
 function Bi() {
-  if (Gt) return Ge;
+  if (Gt) return Qe;
   Gt = 1;
   var e = Ai(), t = 1 / 0, r = 17976931348623157e292;
   function n(a) {
     if (!a)
       return a === 0 ? a : 0;
     if (a = e(a), a === t || a === -1 / 0) {
-      var s = a < 0 ? -1 : 1;
-      return s * r;
+      var i = a < 0 ? -1 : 1;
+      return i * r;
     }
     return a === a ? a : 0;
   }
-  return Ge = n, Ge;
+  return Qe = n, Qe;
 }
-var Ze, Zt;
+var Xe, Qt;
 function Ni() {
-  if (Zt) return Ze;
-  Zt = 1;
+  if (Qt) return Xe;
+  Qt = 1;
   var e = Bi();
   function t(r) {
     var n = e(r), a = n % 1;
     return n === n ? a ? n - a : n : 0;
   }
-  return Ze = t, Ze;
+  return Xe = t, Xe;
 }
-var Qe, Qt;
-function Or() {
-  if (Qt) return Qe;
-  Qt = 1;
-  var e = $r();
+var Je, Xt;
+function Ir() {
+  if (Xt) return Je;
+  Xt = 1;
+  var e = Cr();
   function t(r) {
     return r == null ? "" : e(r);
   }
-  return Qe = t, Qe;
+  return Je = t, Je;
 }
-var Xe, Xt;
+var Ke, Jt;
 function ji() {
-  if (Xt) return Xe;
-  Xt = 1;
-  var e = $r(), t = Li(), r = ct(), n = Cr(), a = $i(), s = Pi(), l = Ri(), c = Ni(), h = Or(), f = 30, y = "...", w = /\w*$/;
+  if (Jt) return Ke;
+  Jt = 1;
+  var e = Cr(), t = Li(), r = ut(), n = $r(), a = Ci(), i = Di(), l = Hi(), c = Ni(), d = Ir(), h = 30, v = "...", b = /\w*$/;
   function M(_, g) {
-    var v = f, L = y;
+    var p = h, L = v;
     if (n(g)) {
       var O = "separator" in g ? g.separator : O;
-      v = "length" in g ? c(g.length) : v, L = "omission" in g ? e(g.omission) : L;
+      p = "length" in g ? c(g.length) : p, L = "omission" in g ? e(g.omission) : L;
     }
-    _ = h(_);
+    _ = d(_);
     var R = _.length;
     if (r(_)) {
-      var x = l(_);
-      R = x.length;
+      var F = l(_);
+      R = F.length;
     }
-    if (v >= R)
+    if (p >= R)
       return _;
-    var F = v - s(L);
-    if (F < 1)
+    var T = p - i(L);
+    if (T < 1)
       return L;
-    var C = x ? t(x, 0, F).join("") : _.slice(0, F);
+    var $ = F ? t(F, 0, T).join("") : _.slice(0, T);
     if (O === void 0)
-      return C + L;
-    if (x && (F += C.length - F), a(O)) {
-      if (_.slice(F).search(O)) {
-        var j, S = C;
-        for (O.global || (O = RegExp(O.source, h(w.exec(O)) + "g")), O.lastIndex = 0; j = O.exec(S); )
-          var V = j.index;
-        C = C.slice(0, V === void 0 ? F : V);
+      return $ + L;
+    if (F && (T += $.length - T), a(O)) {
+      if (_.slice(T).search(O)) {
+        var V, S = $;
+        for (O.global || (O = RegExp(O.source, d(b.exec(O)) + "g")), O.lastIndex = 0; V = O.exec(S); )
+          var Y = V.index;
+        $ = $.slice(0, Y === void 0 ? T : Y);
       }
-    } else if (_.indexOf(e(O), F) != F) {
-      var E = C.lastIndexOf(O);
-      E > -1 && (C = C.slice(0, E));
+    } else if (_.indexOf(e(O), T) != T) {
+      var E = $.lastIndexOf(O);
+      E > -1 && ($ = $.slice(0, E));
     }
-    return C + L;
+    return $ + L;
   }
-  return Xe = M, Xe;
+  return Ke = M, Ke;
 }
 var Wi = ji();
 const Vi = /* @__PURE__ */ Mr(Wi);
-var Je, Jt;
+var et, Kt;
 function Yi() {
-  if (Jt) return Je;
-  Jt = 1;
+  if (Kt) return et;
+  Kt = 1;
   function e(t) {
     return function(r) {
       return t == null ? void 0 : t[r];
     };
   }
-  return Je = e, Je;
+  return et = e, et;
 }
-var Ke, Kt;
+var tt, er;
 function Ui() {
-  if (Kt) return Ke;
-  Kt = 1;
+  if (er) return tt;
+  er = 1;
   var e = Yi(), t = {
     "&amp;": "&",
     "&lt;": "<",
@@ -3685,24 +3685,24 @@ function Ui() {
     "&quot;": '"',
     "&#39;": "'"
   }, r = e(t);
-  return Ke = r, Ke;
+  return tt = r, tt;
 }
-var et, er;
+var rt, tr;
 function zi() {
-  if (er) return et;
-  er = 1;
-  var e = Or(), t = Ui(), r = /&(?:amp|lt|gt|quot|#39);/g, n = RegExp(r.source);
-  function a(s) {
-    return s = e(s), s && n.test(s) ? s.replace(r, t) : s;
+  if (tr) return rt;
+  tr = 1;
+  var e = Ir(), t = Ui(), r = /&(?:amp|lt|gt|quot|#39);/g, n = RegExp(r.source);
+  function a(i) {
+    return i = e(i), i && n.test(i) ? i.replace(r, t) : i;
   }
-  return et = a, et;
+  return rt = a, rt;
 }
-var Gi = zi();
-const Zi = /* @__PURE__ */ Mr(Gi);
-function tr(e = "", t = Number.POSITIVE_INFINITY) {
+var Zi = zi();
+const Gi = /* @__PURE__ */ Mr(Zi);
+function rr(e = "", t = Number.POSITIVE_INFINITY) {
   if (e == null)
     return e;
-  const r = Zi(
+  const r = Gi(
     e.replace(/<[^>]+>/g, "").replace(/"/g, "")
   );
   return Vi(r, {
@@ -3720,8 +3720,8 @@ const Qi = {
   class: "svg__illustration-digitized-resources"
 };
 function Xi(e, t) {
-  return i(), o("svg", Qi, t[0] || (t[0] = [
-    fe('<path d="M9.08984 113.223H190.91V131.489C190.91 135.493 187.664 138.739 183.66 138.739H115.956H83.8441H16.3398C12.3358 138.739 9.08984 135.493 9.08984 131.489V113.223Z" stroke="#0B6AB7" stroke-width="1.5" class="svg__stroke--primary-blue-03"></path><path d="M83.791 139.489V155M116.002 139.489V155M116.002 155H135.066M116.002 155H83.791M83.791 155H65.3848" stroke="#0B6AB7" stroke-width="1.5" class="svg__stroke--primary-blue-03"></path><path d="M14.3398 5.75H185.66C188.56 5.75 190.91 8.10051 190.91 11V113.253H9.08984V11C9.08984 8.10051 11.4403 5.75 14.3398 5.75Z" stroke="#0B6AB7" stroke-width="1.5" class="svg__stroke--primary-blue-03"></path><path d="M185.176 19.3555L157.085 30.991L145.45 59.0816L157.085 87.1723L185.176 98.8078" stroke="#FFD600" stroke-width="1.5" class="svg__stroke--secondary-yellow-03"></path><path d="M17.7856 10.9407H182.213C184.008 10.9407 185.463 12.3957 185.463 14.1907V103.971C185.463 105.766 184.008 107.221 182.213 107.221H17.7856C15.9907 107.221 14.5356 105.766 14.5356 103.971V14.1907C14.5356 12.3957 15.9907 10.9407 17.7856 10.9407Z" stroke="#0AA5FF" stroke-width="1.5" class="svg__stroke--default-cyan-03"></path><path d="M99.9953 131.954L104.221 130.204L105.971 125.979L104.221 121.754L99.9953 120.003L95.7701 121.754L94.02 125.979L95.7701 130.204L99.9953 131.954Z" fill="#0AA5FF" class="svg__fill--default-cyan-03"></path><path d="M44.4458 35.502H84.4458" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 41.502H84.4458" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 47.502L84.4458 47.5019" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 53.502L84.4458 53.5019" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 59.502L75.4405 59.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 71.502L84.4458 71.5019" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 77.502L84.4458 77.5019" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 83.502L68.388 83.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 41.502H116.446" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 35.502H116.446" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 47.502H105.364" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 59.502L116.446 59.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 65.502L116.446 65.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 71.502L116.446 71.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 77.502L116.446 77.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 83.502L112.79 83.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path>', 22)
+  return s(), o("svg", Qi, t[0] || (t[0] = [
+    ge('<path d="M9.08984 113.223H190.91V131.489C190.91 135.493 187.664 138.739 183.66 138.739H115.956H83.8441H16.3398C12.3358 138.739 9.08984 135.493 9.08984 131.489V113.223Z" stroke="#0B6AB7" stroke-width="1.5" class="svg__stroke--primary-blue-03"></path><path d="M83.791 139.489V155M116.002 139.489V155M116.002 155H135.066M116.002 155H83.791M83.791 155H65.3848" stroke="#0B6AB7" stroke-width="1.5" class="svg__stroke--primary-blue-03"></path><path d="M14.3398 5.75H185.66C188.56 5.75 190.91 8.10051 190.91 11V113.253H9.08984V11C9.08984 8.10051 11.4403 5.75 14.3398 5.75Z" stroke="#0B6AB7" stroke-width="1.5" class="svg__stroke--primary-blue-03"></path><path d="M185.176 19.3555L157.085 30.991L145.45 59.0816L157.085 87.1723L185.176 98.8078" stroke="#FFD600" stroke-width="1.5" class="svg__stroke--secondary-yellow-03"></path><path d="M17.7856 10.9407H182.213C184.008 10.9407 185.463 12.3957 185.463 14.1907V103.971C185.463 105.766 184.008 107.221 182.213 107.221H17.7856C15.9907 107.221 14.5356 105.766 14.5356 103.971V14.1907C14.5356 12.3957 15.9907 10.9407 17.7856 10.9407Z" stroke="#0AA5FF" stroke-width="1.5" class="svg__stroke--default-cyan-03"></path><path d="M99.9953 131.954L104.221 130.204L105.971 125.979L104.221 121.754L99.9953 120.003L95.7701 121.754L94.02 125.979L95.7701 130.204L99.9953 131.954Z" fill="#0AA5FF" class="svg__fill--default-cyan-03"></path><path d="M44.4458 35.502H84.4458" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 41.502H84.4458" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 47.502L84.4458 47.5019" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 53.502L84.4458 53.5019" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 59.502L75.4405 59.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 71.502L84.4458 71.5019" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 77.502L84.4458 77.5019" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M44.4458 83.502L68.388 83.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 41.502H116.446" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 35.502H116.446" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 47.502H105.364" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 59.502L116.446 59.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 65.502L116.446 65.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 71.502L116.446 71.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 77.502L116.446 77.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path><path d="M92.4458 83.502L112.79 83.502" stroke="#00E0E0" stroke-width="1.5" class="svg__stroke--help-green-03"></path>', 22)
   ]));
 }
 const Ji = { render: Xi }, Ki = {
@@ -3733,25 +3733,25 @@ const Ji = { render: Xi }, Ki = {
   class: "svg__illustration-teaching"
 };
 function eo(e, t) {
-  return i(), o("svg", Ki, t[0] || (t[0] = [
-    fe('<path d="M98.6874 4.74365L99.414 4.55781C99.3291 4.22585 99.03 3.99364 98.6874 3.99365C98.3447 3.99366 98.0457 4.22589 97.9608 4.55785L98.6874 4.74365ZM97.9608 4.92949L132.152 138.616L133.606 138.244L99.414 4.55781L97.9608 4.92949ZM132.158 138.635L136.786 154.948L138.229 154.539L133.601 138.225L132.158 138.635ZM97.9608 4.55785L63.7763 138.244L65.2295 138.616L99.414 4.92945L97.9608 4.55785ZM63.7814 138.225L59.1535 154.539L60.5965 154.948L65.2244 138.635L63.7814 138.225ZM132.879 137.68H64.5029V139.18H132.879V137.68Z" fill="#0B6AB7" class="svg__fill--primary-blue-03"></path><rect x="91.8477" y="16.0012" width="13.6887" height="8.52157" fill="white" class="svg__fill--white"></rect><rect x="15.6284" y="24.1885" width="168.77" height="101.715" rx="1.25" fill="white" stroke="#0B6AB7" stroke-width="1.5" class="svg__fill--white svg__stroke--primary-blue-03"></rect><rect x="15.6284" y="16.5989" width="168.77" height="7.17405" rx="1.25" stroke="#0B6AB7" stroke-width="1.5" class="svg__stroke--primary-blue-03"></rect><rect x="18.8344" y="19.5251" width="162.503" height="1.35532" rx="0.67766" stroke="#0AA5FF" stroke-width="1.35532" class="svg__stroke--default-cyan-03"></rect><path d="M118.251 50.2215H120.732C121.642 50.2215 122.379 50.9586 122.379 51.8678V99.3356C122.379 100.245 121.642 100.982 120.732 100.982H116.912H82.5513C82.5513 100.982 77.6423 100.982 77.6426 95.5711M118.251 50.2215V89.9373C118.251 89.9373 90.4163 89.9373 82.5513 89.9373C82.5513 89.9373 77.6428 90.1604 77.6426 95.5711M118.251 50.2215V46.0938H85.8739C81.3279 46.0938 77.6426 49.779 77.6426 54.3251V95.5711" stroke="#0B6AB7" stroke-width="1.25" class="svg__stroke--primary-blue-03"></path><path d="M98.7616 58.0586L106.301 61.1814L109.424 68.7206L106.301 76.2598L98.7616 79.3826L91.2224 76.2598L88.0996 68.7206L91.2224 61.1814L98.7616 58.0586Z" stroke="#FFD600" stroke-width="1.25" class="svg__stroke--secondary-yellow-03"></path><path d="M84.665 96.2986L106.396 96.2986" stroke="#00E0E0" stroke-width="1.25" class="svg__stroke--help-green-03"></path><path d="M108.205 96.2986L112.156 96.2986" stroke="#00E0E0" stroke-width="1.25" class="svg__stroke--help-green-03"></path><path d="M113.8 96.2986L115.117 96.2986" stroke="#00E0E0" stroke-width="1.25" class="svg__stroke--help-green-03"></path><path d="M94.3551 101.378L98.6348 104.292C98.6591 104.309 98.6921 104.291 98.6921 104.262V95.6572H90.0181V104.262C90.0181 104.291 90.051 104.309 90.0754 104.292L94.3551 101.378Z" fill="#0AA5FF" class="svg__fill--default-cyan-03"></path>', 11)
+  return s(), o("svg", Ki, t[0] || (t[0] = [
+    ge('<path d="M98.6874 4.74365L99.414 4.55781C99.3291 4.22585 99.03 3.99364 98.6874 3.99365C98.3447 3.99366 98.0457 4.22589 97.9608 4.55785L98.6874 4.74365ZM97.9608 4.92949L132.152 138.616L133.606 138.244L99.414 4.55781L97.9608 4.92949ZM132.158 138.635L136.786 154.948L138.229 154.539L133.601 138.225L132.158 138.635ZM97.9608 4.55785L63.7763 138.244L65.2295 138.616L99.414 4.92945L97.9608 4.55785ZM63.7814 138.225L59.1535 154.539L60.5965 154.948L65.2244 138.635L63.7814 138.225ZM132.879 137.68H64.5029V139.18H132.879V137.68Z" fill="#0B6AB7" class="svg__fill--primary-blue-03"></path><rect x="91.8477" y="16.0012" width="13.6887" height="8.52157" fill="white" class="svg__fill--white"></rect><rect x="15.6284" y="24.1885" width="168.77" height="101.715" rx="1.25" fill="white" stroke="#0B6AB7" stroke-width="1.5" class="svg__fill--white svg__stroke--primary-blue-03"></rect><rect x="15.6284" y="16.5989" width="168.77" height="7.17405" rx="1.25" stroke="#0B6AB7" stroke-width="1.5" class="svg__stroke--primary-blue-03"></rect><rect x="18.8344" y="19.5251" width="162.503" height="1.35532" rx="0.67766" stroke="#0AA5FF" stroke-width="1.35532" class="svg__stroke--default-cyan-03"></rect><path d="M118.251 50.2215H120.732C121.642 50.2215 122.379 50.9586 122.379 51.8678V99.3356C122.379 100.245 121.642 100.982 120.732 100.982H116.912H82.5513C82.5513 100.982 77.6423 100.982 77.6426 95.5711M118.251 50.2215V89.9373C118.251 89.9373 90.4163 89.9373 82.5513 89.9373C82.5513 89.9373 77.6428 90.1604 77.6426 95.5711M118.251 50.2215V46.0938H85.8739C81.3279 46.0938 77.6426 49.779 77.6426 54.3251V95.5711" stroke="#0B6AB7" stroke-width="1.25" class="svg__stroke--primary-blue-03"></path><path d="M98.7616 58.0586L106.301 61.1814L109.424 68.7206L106.301 76.2598L98.7616 79.3826L91.2224 76.2598L88.0996 68.7206L91.2224 61.1814L98.7616 58.0586Z" stroke="#FFD600" stroke-width="1.25" class="svg__stroke--secondary-yellow-03"></path><path d="M84.665 96.2986L106.396 96.2986" stroke="#00E0E0" stroke-width="1.25" class="svg__stroke--help-green-03"></path><path d="M108.205 96.2986L112.156 96.2986" stroke="#00E0E0" stroke-width="1.25" class="svg__stroke--help-green-03"></path><path d="M113.8 96.2986L115.117 96.2986" stroke="#00E0E0" stroke-width="1.25" class="svg__stroke--help-green-03"></path><path d="M94.3551 101.378L98.6348 104.292C98.6591 104.309 98.6921 104.291 98.6921 104.262V95.6572H90.0181V104.262C90.0181 104.291 90.051 104.309 90.0754 104.292L94.3551 101.378Z" fill="#0AA5FF" class="svg__fill--default-cyan-03"></path>', 11)
   ]));
 }
 const to = { render: eo }, ro = {
   name: "BlockCardWithIllustration",
   components: {
-    SmartLink: me,
-    IllustrationBookBinding: d(() => import("./illustration-book-binding-CgZ-Lhg2.js")),
-    IllustrationBorrowingBooks: d(() => import("./illustration-borrowing-books-B8qR2SUi.js")),
-    IllustrationDatabases: d(() => import("./illustration-databases-D85yQ2d_.js")),
+    SmartLink: ae,
+    IllustrationBookBinding: f(() => import("./illustration-book-binding-CgZ-Lhg2.js")),
+    IllustrationBorrowingBooks: f(() => import("./illustration-borrowing-books-B8qR2SUi.js")),
+    IllustrationDatabases: f(() => import("./illustration-databases-D85yQ2d_.js")),
     IllustrationDigitizedResources: Ji,
     /* : defineAsyncComponent(() =>
       import(
         'ucla-library-design-tokens/assets/svgs/illustration-digitized-resources.svg'
       )), */
-    IllustrationFindSpace: d(() => import("./illustration-find-space-Cp5L5B6y.js")),
-    IllustrationRemoteAccess: d(() => import("./illustration-remote-access-B1gfhv8X.js")),
-    IllustrationResearch: d(() => import("./illustration-research-BET8HhYT.js")),
+    IllustrationFindSpace: f(() => import("./illustration-find-space-Cp5L5B6y.js")),
+    IllustrationRemoteAccess: f(() => import("./illustration-remote-access-B1gfhv8X.js")),
+    IllustrationResearch: f(() => import("./illustration-research-BET8HhYT.js")),
     IllustrationTeaching: to
     /* : defineAsyncComponent(() =>
       import(
@@ -3793,7 +3793,7 @@ const to = { render: eo }, ro = {
       ];
     },
     sectionName() {
-      return ve(this.to);
+      return pe(this.to);
     },
     parsedSvgName() {
       return `${this.iconName}`;
@@ -3802,10 +3802,10 @@ const to = { render: eo }, ro = {
       return !!this.to.includes("http");
     },
     parsedTextHorizontal() {
-      return this.text ? tr(this.text, 250) : "";
+      return this.text ? rr(this.text, 250) : "";
     },
     parsedTextVertical() {
-      return this.text ? tr(this.text) : "";
+      return this.text ? rr(this.text) : "";
     }
   }
 }, no = { class: "meta" }, ao = ["innerHTML"], so = ["innerHTML"], io = {
@@ -3815,26 +3815,26 @@ const to = { render: eo }, ro = {
   key: 3,
   class: "text"
 };
-function lo(e, t, r, n, a, s) {
-  const l = rt("SmartLink");
-  return i(), o("li", {
-    class: A(s.classes)
+function lo(e, t, r, n, a, i) {
+  const l = at("SmartLink");
+  return s(), o("li", {
+    class: q(i.classes)
   }, [
-    (i(), I(X(s.parsedSvgName), {
+    (s(), I(J(i.parsedSvgName), {
       class: "svg",
       "aria-hidden": "true"
     })),
     u("div", no, [
-      r.category ? (i(), o("div", {
+      r.category ? (s(), o("div", {
         key: 0,
         class: "category",
         innerHTML: r.category
       }, null, 8, ao)) : m("", !0),
-      r.to ? (i(), I(l, {
+      r.to ? (s(), I(l, {
         key: 1,
         to: r.to
       }, {
-        default: ee(() => [
+        default: Q(() => [
           u("h3", {
             class: "title",
             innerHTML: r.title
@@ -3842,11 +3842,165 @@ function lo(e, t, r, n, a, s) {
         ]),
         _: 1
       }, 8, ["to"])) : m("", !0),
-      r.isHorizontal ? (i(), o("div", io, D(s.parsedTextHorizontal), 1)) : (i(), o("div", oo, D(s.parsedTextVertical), 1))
+      r.isHorizontal ? (s(), o("div", io, P(i.parsedTextHorizontal), 1)) : (s(), o("div", oo, P(i.parsedTextVertical), 1))
     ])
   ], 2);
 }
-const bo = /* @__PURE__ */ W(ro, [["render", lo], ["__scopeId", "data-v-9fd02525"]]), co = {
+const Ho = /* @__PURE__ */ W(ro, [["render", lo], ["__scopeId", "data-v-9fd02525"]]), co = {
+  width: "20",
+  height: "21",
+  viewBox: "0 0 20 21",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  class: "svg__icon-ftva-calendar"
+};
+function uo(e, t) {
+  return s(), o("svg", co, t[0] || (t[0] = [
+    u("path", {
+      d: "M7 0.5V2.5H13V0.5H15V2.5H19C19.2652 2.5 19.5196 2.60536 19.7071 2.79289C19.8946 2.98043 20 3.23478 20 3.5V19.5C20 19.7652 19.8946 20.0196 19.7071 20.2071C19.5196 20.3946 19.2652 20.5 19 20.5H1C0.734784 20.5 0.48043 20.3946 0.292893 20.2071C0.105357 20.0196 0 19.7652 0 19.5V3.5C0 3.23478 0.105357 2.98043 0.292893 2.79289C0.48043 2.60536 0.734784 2.5 1 2.5H5V0.5H7ZM18 10.5H2V18.5H18V10.5ZM5 4.5H2V8.5H18V4.5H15V6.5H13V4.5H7V6.5H5V4.5Z",
+      fill: "#115DAF",
+      class: "svg__fill--accent-blue"
+    }, null, -1)
+  ]));
+}
+const ho = { render: uo }, fo = {
+  width: "20",
+  height: "20",
+  viewBox: "0 0 20 20",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  class: "svg__icon-ftva-clock"
+};
+function mo(e, t) {
+  return s(), o("svg", fo, t[0] || (t[0] = [
+    u("path", {
+      d: "M10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0ZM10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2ZM10 4C10.2449 4.00003 10.4813 4.08996 10.6644 4.25272C10.8474 4.41547 10.9643 4.63975 10.993 4.883L11 5V9.586L13.707 12.293C13.8863 12.473 13.9905 12.7144 13.9982 12.9684C14.006 13.2223 13.9168 13.4697 13.7488 13.6603C13.5807 13.8508 13.3464 13.9703 13.0935 13.9944C12.8406 14.0185 12.588 13.9454 12.387 13.79L12.293 13.707L9.293 10.707C9.13758 10.5514 9.03776 10.349 9.009 10.131L9 10V5C9 4.73478 9.10536 4.48043 9.29289 4.29289C9.48043 4.10536 9.73478 4 10 4Z",
+      fill: "#115DAF",
+      class: "svg__fill--accent-blue"
+    }, null, -1)
+  ]));
+}
+const go = { render: mo }, vo = {
+  width: "16",
+  height: "22",
+  viewBox: "0 0 16 22",
+  fill: "none",
+  xmlns: "http://www.w3.org/2000/svg",
+  class: "svg__icon-ftva-location"
+};
+function yo(e, t) {
+  return s(), o("svg", vo, t[0] || (t[0] = [
+    u("path", {
+      d: "M8.00005 10.45C7.2707 10.45 6.57123 10.1603 6.05551 9.64454C5.53978 9.12882 5.25005 8.42935 5.25005 7.7C5.25005 6.97065 5.53978 6.27118 6.05551 5.75546C6.57123 5.23973 7.2707 4.95 8.00005 4.95C8.72939 4.95 9.42887 5.23973 9.94459 5.75546C10.4603 6.27118 10.75 6.97065 10.75 7.7C10.75 8.06114 10.6789 8.41873 10.5407 8.75238C10.4025 9.08603 10.2 9.38918 9.94459 9.64454C9.68923 9.89991 9.38607 10.1025 9.05243 10.2407C8.71878 10.3789 8.36118 10.45 8.00005 10.45ZM8.00005 0C5.95788 0 3.99936 0.811248 2.55533 2.25528C1.1113 3.69931 0.300049 5.65783 0.300049 7.7C0.300049 13.475 8.00005 22 8.00005 22C8.00005 22 15.7 13.475 15.7 7.7C15.7 5.65783 14.8888 3.69931 13.4448 2.25528C12.0007 0.811248 10.0422 0 8.00005 0Z",
+      fill: "#115DAF",
+      class: "svg__fill--accent-blue"
+    }, null, -1)
+  ]));
+}
+const po = { render: yo }, ko = { class: "event-list date" }, bo = {
+  key: 0,
+  class: "event-list time"
+}, wo = {
+  key: 1,
+  class: "event-list location"
+}, _o = { key: 0 }, So = { key: 1 }, Mo = {
+  key: 2,
+  class: "locations-wrapper"
+}, Lo = /* @__PURE__ */ ee({
+  __name: "BlockEventDetail",
+  props: {
+    startDate: {
+      type: String,
+      required: !1
+    },
+    endDate: {
+      type: String,
+      required: !1
+    },
+    // Implied this is the start time
+    time: {
+      type: String,
+      required: !1
+    },
+    ongoing: {
+      type: Boolean,
+      default: !1
+    },
+    locations: {
+      type: Array,
+      default: () => []
+    }
+  },
+  setup(e) {
+    const t = it(), r = y(() => ["block-event-detail", (t == null ? void 0 : t.value) || ""]), n = y(() => {
+      switch (t == null ? void 0 : t.value) {
+        case "ftva":
+          return {
+            multiLocationMsgDisplay: !0
+          };
+        default:
+          return {
+            multiLocationMsgDisplay: !1
+          };
+      }
+    }), a = y(() => (t == null ? void 0 : t.value) === "ftva" ? "_blank" : ""), i = y(() => e.ongoing ? "Ongoing" : e.endDate ? ue(e.startDate, e.endDate, "shortWithYear") : e.startDate ? ue(e.startDate, e.startDate) : null);
+    return (l, c) => {
+      var d, h;
+      return s(), o("div", {
+        class: q(r.value)
+      }, [
+        u("div", ko, [
+          u("span", null, [
+            e.startDate ? (s(), I(x(ho), {
+              key: 0,
+              class: "row-icon"
+            })) : m("", !0),
+            B(" " + P(i.value), 1)
+          ])
+        ]),
+        e.time ? (s(), o("div", bo, [
+          u("span", null, [
+            H(x(go), { class: "row-icon" }),
+            B(" " + P(x(ye)(e.time, e.time)), 1)
+          ])
+        ])) : m("", !0),
+        e.locations && e.locations.length > 0 ? (s(), o("div", wo, [
+          u("span", null, [
+            H(x(po), { class: "row-icon" }),
+            (d = n.value) != null && d.multiLocationMsgDisplay && e.locations.length > 1 ? (s(), o("span", _o, " Multiple Locations ")) : (h = n.value) != null && h.multiLocationMsgDisplay && e.locations.length === 1 ? (s(), o("span", So, [
+              H(ae, {
+                to: e.locations[0].publicUrl,
+                "link-target": a.value
+              }, {
+                default: Q(() => [
+                  B(P(e.locations[0].title), 1)
+                ]),
+                _: 1
+              }, 8, ["to", "link-target"])
+            ])) : (s(), o("span", Mo, [
+              (s(!0), o(N, null, j(e.locations, (v, b) => (s(), o("span", {
+                key: v.title,
+                class: "location-link"
+              }, [
+                H(ae, {
+                  to: v.url,
+                  "link-target": a.value
+                }, {
+                  default: Q(() => [
+                    B(P(v.title), 1)
+                  ]),
+                  _: 2
+                }, 1032, ["to", "link-target"]),
+                B(" " + P(b < e.locations.length - 1 ? ", " : ""), 1)
+              ]))), 128))
+            ]))
+          ])
+        ])) : m("", !0),
+        Z(l.$slots, "default", {}, void 0, !0)
+      ], 2);
+    };
+  }
+}), Ro = /* @__PURE__ */ W(Lo, [["__scopeId", "data-v-0d26c83c"]]), xo = {
   name: "AlphabeticalBrowseBy",
   props: {
     selectedLetterProp: {
@@ -3973,33 +4127,34 @@ const bo = /* @__PURE__ */ W(ro, [["render", lo], ["__scopeId", "data-v-9fd02525
       this.selectedLetter = e.letter, this.checkIfLetterIsSelected(), this.$emit("selectedLetter", this.selectedLetter);
     }
   }
-}, uo = { class: "alphabetical-browse-by" }, ho = { class: "alphabet-list" }, fo = ["onClick"];
-function mo(e, t, r, n, a, s) {
-  return i(), o("div", uo, [
+}, Fo = { class: "alphabetical-browse-by" }, To = { class: "alphabet-list" }, Co = ["onClick"];
+function $o(e, t, r, n, a, i) {
+  return s(), o("div", Fo, [
     t[0] || (t[0] = u("h2", { class: "title" }, " Browse by Last Name ", -1)),
-    u("ul", ho, [
-      (i(!0), o(B, null, N(s.parsedAlphabet, (l) => (i(), o("li", {
+    u("ul", To, [
+      (s(!0), o(N, null, j(i.parsedAlphabet, (l) => (s(), o("li", {
         key: l.letter,
-        class: A(l.class),
-        onClick: (c) => s.handleSelectedLetter(l)
+        class: q(l.class),
+        onClick: (c) => i.handleSelectedLetter(l)
       }, [
-        u("a", null, D(l.letter), 1)
-      ], 10, fo))), 128))
+        u("a", null, P(l.letter), 1)
+      ], 10, Co))), 128))
     ])
   ]);
 }
-const wo = /* @__PURE__ */ W(co, [["render", mo], ["__scopeId", "data-v-a5f902ae"]]);
+const qo = /* @__PURE__ */ W(xo, [["render", $o], ["__scopeId", "data-v-a5f902ae"]]);
 export {
-  wo as AlphabeticalBrowseBy,
-  vo as BannerFeatured,
-  yo as BannerHeader,
-  po as BannerText,
-  ko as BlockAmenities,
-  bo as BlockCardWithIllustration,
+  qo as AlphabeticalBrowseBy,
+  Oo as BannerFeatured,
+  Do as BannerHeader,
+  Po as BannerText,
+  Eo as BlockAmenities,
+  Ho as BlockCardWithIllustration,
+  Ro as BlockEventDetail,
   ir as ButtonLink,
   or as IconWithLink,
   cr as ResponsiveImage,
   ur as ResponsiveVideo,
   dr as RichText,
-  me as SmartLink
+  ae as SmartLink
 };

@@ -168,6 +168,79 @@ sectionHandle: string;
 }, {}, {}, {}, string, ComponentProvideOptions, true, {}, HTMLDivElement>;
 
 declare const __VLS_component_2: DefineComponent<ExtractPropTypes<    {
+startDate: {
+type: StringConstructor;
+required: false;
+};
+endDate: {
+type: StringConstructor;
+required: false;
+};
+time: {
+type: StringConstructor;
+required: false;
+};
+ongoing: {
+type: BooleanConstructor;
+default: boolean;
+};
+locations: {
+type: {
+(arrayLength: number): BlockEventDetailLocation[];
+(...items: BlockEventDetailLocation[]): BlockEventDetailLocation[];
+new (arrayLength: number): BlockEventDetailLocation[];
+new (...items: BlockEventDetailLocation[]): BlockEventDetailLocation[];
+isArray(arg: any): arg is any[];
+readonly prototype: any[];
+from<T>(arrayLike: ArrayLike<T>): T[];
+from<T, U>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => U, thisArg?: any): U[];
+from<T>(iterable: Iterable<T> | ArrayLike<T>): T[];
+from<T, U>(iterable: Iterable<T> | ArrayLike<T>, mapfn: (v: T, k: number) => U, thisArg?: any): U[];
+of<T>(...items: T[]): T[];
+readonly [Symbol.species]: ArrayConstructor;
+};
+default: () => never[];
+};
+}>, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<ExtractPropTypes<    {
+startDate: {
+type: StringConstructor;
+required: false;
+};
+endDate: {
+type: StringConstructor;
+required: false;
+};
+time: {
+type: StringConstructor;
+required: false;
+};
+ongoing: {
+type: BooleanConstructor;
+default: boolean;
+};
+locations: {
+type: {
+(arrayLength: number): BlockEventDetailLocation[];
+(...items: BlockEventDetailLocation[]): BlockEventDetailLocation[];
+new (arrayLength: number): BlockEventDetailLocation[];
+new (...items: BlockEventDetailLocation[]): BlockEventDetailLocation[];
+isArray(arg: any): arg is any[];
+readonly prototype: any[];
+from<T>(arrayLike: ArrayLike<T>): T[];
+from<T, U>(arrayLike: ArrayLike<T>, mapfn: (v: T, k: number) => U, thisArg?: any): U[];
+from<T>(iterable: Iterable<T> | ArrayLike<T>): T[];
+from<T, U>(iterable: Iterable<T> | ArrayLike<T>, mapfn: (v: T, k: number) => U, thisArg?: any): U[];
+of<T>(...items: T[]): T[];
+readonly [Symbol.species]: ArrayConstructor;
+};
+default: () => never[];
+};
+}>> & Readonly<{}>, {
+locations: BlockEventDetailLocation[];
+ongoing: boolean;
+}, {}, {}, {}, string, ComponentProvideOptions, true, {}, HTMLDivElement>;
+
+declare const __VLS_component_3: DefineComponent<ExtractPropTypes<    {
 media: {
 type: PropType<MediaItemType>;
 default: () => void;
@@ -262,7 +335,7 @@ aspectRatio: number;
 objectFit: string;
 }, {}, {}, {}, string, ComponentProvideOptions, true, {}, any>;
 
-declare const __VLS_component_3: DefineComponent<ExtractPropTypes<    {
+declare const __VLS_component_4: DefineComponent<ExtractPropTypes<    {
 media: {
 type: PropType<MediaItemType>;
 default: () => {};
@@ -368,7 +441,7 @@ controls: boolean;
 videoRef: HTMLVideoElement;
 }, HTMLElement>;
 
-declare const __VLS_component_4: DefineComponent<ExtractPropTypes<    {
+declare const __VLS_component_5: DefineComponent<ExtractPropTypes<    {
 richTextContent: {
 type: StringConstructor;
 default: string;
@@ -395,13 +468,22 @@ declare function __VLS_template_2(): {
     attrs: Partial<{}>;
     slots: {
         default?(_: {}): any;
+    };
+    refs: {};
+    rootEl: HTMLDivElement;
+};
+
+declare function __VLS_template_3(): {
+    attrs: Partial<{}>;
+    slots: {
+        default?(_: {}): any;
         credit?(_: {}): any;
     };
     refs: {};
     rootEl: any;
 };
 
-declare function __VLS_template_3(): {
+declare function __VLS_template_4(): {
     attrs: Partial<{}>;
     slots: {
         default?(_: {}): any;
@@ -412,7 +494,7 @@ declare function __VLS_template_3(): {
     rootEl: HTMLElement;
 };
 
-declare function __VLS_template_4(): {
+declare function __VLS_template_5(): {
     attrs: Partial<{}>;
     slots: {
         default?(_: {}): any;
@@ -428,6 +510,8 @@ declare type __VLS_TemplateResult_2 = ReturnType<typeof __VLS_template_2>;
 declare type __VLS_TemplateResult_3 = ReturnType<typeof __VLS_template_3>;
 
 declare type __VLS_TemplateResult_4 = ReturnType<typeof __VLS_template_4>;
+
+declare type __VLS_TemplateResult_5 = ReturnType<typeof __VLS_template_5>;
 
 declare type __VLS_WithTemplateSlots<T, S> = T & {
     new (): {
@@ -448,6 +532,12 @@ declare type __VLS_WithTemplateSlots_3<T, S> = T & {
 };
 
 declare type __VLS_WithTemplateSlots_4<T, S> = T & {
+    new (): {
+        $slots: S;
+    };
+};
+
+declare type __VLS_WithTemplateSlots_5<T, S> = T & {
     new (): {
         $slots: S;
     };
@@ -951,6 +1041,16 @@ export declare interface BlockCardMetaType {
 
 export { BlockCardWithIllustration }
 
+export declare const BlockEventDetail: __VLS_WithTemplateSlots_2<typeof __VLS_component_2, __VLS_TemplateResult_2["slots"]>;
+
+declare interface BlockEventDetailLocation {
+    id?: string;
+    title: string;
+    url?: string;
+    uri?: string;
+    publicUrl?: string;
+}
+
 export declare interface BlockImpactNumbersCarouselType {
     largeText: string;
     mediumText: string;
@@ -1132,11 +1232,11 @@ export declare interface NavSecondaryItemType extends NavItem {
     text?: string;
 }
 
-export declare const ResponsiveImage: __VLS_WithTemplateSlots_2<typeof __VLS_component_2, __VLS_TemplateResult_2["slots"]>;
+export declare const ResponsiveImage: __VLS_WithTemplateSlots_3<typeof __VLS_component_3, __VLS_TemplateResult_3["slots"]>;
 
-export declare const ResponsiveVideo: __VLS_WithTemplateSlots_3<typeof __VLS_component_3, __VLS_TemplateResult_3["slots"]>;
+export declare const ResponsiveVideo: __VLS_WithTemplateSlots_4<typeof __VLS_component_4, __VLS_TemplateResult_4["slots"]>;
 
-export declare const RichText: __VLS_WithTemplateSlots_4<typeof __VLS_component_4, __VLS_TemplateResult_4["slots"]>;
+export declare const RichText: __VLS_WithTemplateSlots_5<typeof __VLS_component_5, __VLS_TemplateResult_5["slots"]>;
 
 export declare interface SearchLinkItemType {
     text: string;
