@@ -8,9 +8,9 @@ module.exports = {
         preset: 'angular',
         releaseRules: [
           { type: 'refactor', release: 'patch' },
-          { type: 'chore', release: 'patch' }
-        ]
-      }
+          { type: 'chore', release: 'patch' },
+        ],
+      },
     ],
     '@semantic-release/release-notes-generator',
     [
