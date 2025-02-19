@@ -1,0 +1,2 @@
+export * from "/home/runner/work/apps-monorepo-poc/apps-monorepo-poc/packages/nuxt/src/module";
+export { default } from "/home/runner/work/apps-monorepo-poc/apps-monorepo-poc/packages/nuxt/src/module";
