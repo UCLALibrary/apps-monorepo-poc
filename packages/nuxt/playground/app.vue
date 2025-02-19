@@ -76,8 +76,8 @@ const mockFtvaEventDetailData = {
     {
       title: 'Vidiots',
       publicUrl: 'https://vidiotsfoundation.org/',
-    }
-  ]
+    },
+  ],
 }
 
 const MOCK = {
