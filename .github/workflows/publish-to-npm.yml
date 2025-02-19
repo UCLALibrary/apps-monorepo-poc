@@ -43,10 +43,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT_POC }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm --filter @apps-monorepo-poc/vue-component-library run release
+        run: pnpm --filter @apps-monorepo-poc/vue-component-library exec -- semantic-release -e semantic-release-monorepo
       - name: Release Nuxt Module
         if: steps.filter.outputs.component-library == 'true' || steps.filter.outputs.nuxt-module == 'true'
         env:
           GH_TOKEN: ${{ secrets.PAT_POC }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm --filter @apps-monorepo-poc/nuxt-module run release
+        run: pnpm --filter @apps-monorepo-poc/nuxt-module exec -- semantic-release -e semantic-release-monorepo
