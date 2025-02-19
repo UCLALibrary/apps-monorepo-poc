@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.2.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.1.0...@apps-monorepo-poc/vue-component-library-v1.2.0) (2025-02-19)
+
+
+### Features
+
+* APPS-3133 remove dist files and removed private key from package.json ([#29](https://github.com/UCLALibrary/apps-monorepo-poc/issues/29)) ([0902964](https://github.com/UCLALibrary/apps-monorepo-poc/commit/0902964862d38fb08c47c3814c7b3a4959668ac9))
+
 # [@apps-monorepo-poc/vue-component-library-v1.1.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.0.0...@apps-monorepo-poc/vue-component-library-v1.1.0) (2025-02-19)
 
 
