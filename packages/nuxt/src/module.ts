@@ -15,12 +15,12 @@ export default defineNuxtModule<ModuleOptions>({
   setup(_options, _nuxt) {
     const logger = useLogger('@apps-monorepo-poc/nuxt-module')
 
-    _nuxt.options.css.push('vue-component-library/style.css')
+    _nuxt.options.css.push('@apps-monorepo-poc/vue-component-library/style.css')
     Object.keys(VueComponentLibrary)
       .forEach((component) => {
         logger.info(`Adding component: ${component}`)
         addComponent({
-          filePath: 'vue-component-library',
+          filePath: '@apps-monorepo-poc/vue-component-library',
           name: component,
           export: component,
         })

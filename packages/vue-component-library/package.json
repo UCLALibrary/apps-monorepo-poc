@@ -36,6 +36,7 @@
     "pnpm": "^9.12.1"
   },
   "scripts": {
+    "prepack": "vite build",
     "dev": "vite",
     "build": "vue-tsc -b && VITE_CJS_TRACE=true vite build",
     "preview": "vite preview",

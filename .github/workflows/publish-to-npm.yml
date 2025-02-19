@@ -36,8 +36,6 @@ jobs:
         run: pnpm install
       - name: Install semantic-release extra plugins
         run: pnpm install --save-dev @semantic-release/changelog @semantic-release/git -w
-      - name: Build All Packages
-        run: pnpm run build
       - name: Release Component Library
         if: steps.filter.outputs.component-library == 'true'
         env:
