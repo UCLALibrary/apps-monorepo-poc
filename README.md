@@ -9,5 +9,5 @@ pnpm -r lint:fix
 ```
 
 ```
-pnpm -r build
+pnpm build
 ```
