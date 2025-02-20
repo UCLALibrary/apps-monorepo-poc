@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.8.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.7.0...@apps-monorepo-poc/vue-component-library-v1.8.0) (2025-02-20)
+
+
+### Features
+
+* APPS-3133 fix catalog and workspace references once packages are published ([#35](https://github.com/UCLALibrary/apps-monorepo-poc/issues/35)) ([7eed052](https://github.com/UCLALibrary/apps-monorepo-poc/commit/7eed05225b3d6e58fd8bcde3a3162e2e9d53a583))
+
 # [@apps-monorepo-poc/vue-component-library-v1.7.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.6.0...@apps-monorepo-poc/vue-component-library-v1.7.0) (2025-02-20)
 
 
