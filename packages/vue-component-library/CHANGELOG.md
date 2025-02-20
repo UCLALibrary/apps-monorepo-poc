@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.6.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.5.0...@apps-monorepo-poc/vue-component-library-v1.6.0) (2025-02-20)
+
+
+### Features
+
+* add a new component and call nuxt propare to generate.nuxt folder ([#33](https://github.com/UCLALibrary/apps-monorepo-poc/issues/33)) ([9f126a6](https://github.com/UCLALibrary/apps-monorepo-poc/commit/9f126a6a58cab5b654b5c922194567ca55f44d67))
+
 # [@apps-monorepo-poc/vue-component-library-v1.5.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.4.0...@apps-monorepo-poc/vue-component-library-v1.5.0) (2025-02-20)
 
 
