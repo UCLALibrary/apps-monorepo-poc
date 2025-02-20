@@ -1,9 +1,6 @@
 import { addComponent, defineNuxtModule, useLogger } from '@nuxt/kit'
+import type { ModuleOptions } from '@nuxt/schema'
 import * as VueComponentLibrary from '@apps-monorepo-poc/vue-component-library'
-// Module options TypeScript interface definition
-export interface ModuleOptions {
-  [key: string]: unknown
-}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
@@ -19,6 +16,7 @@ export default defineNuxtModule<ModuleOptions>({
     Object.keys(VueComponentLibrary)
       .forEach((component) => {
         logger.info(`Adding component: ${component}`)
+        // if (component === 'default') return
         addComponent({
           filePath: '@apps-monorepo-poc/vue-component-library',
           name: component,
