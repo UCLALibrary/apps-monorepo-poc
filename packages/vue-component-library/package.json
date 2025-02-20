@@ -52,13 +52,13 @@
     "@antfu/eslint-config": "4.2.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
-    "eslint": "^9.19.0",
+    "eslint": "^9.20.1",
     "postcss-base64": "^0.7.1",
-    "sass": "^1.79.5",
-    "ucla-library-design-tokens": "^5.28.0",
-    "vite": "catalog:",
+    "sass": "^1.85.0",
+    "ucla-library-design-tokens": "^5.29.0",
+    "vite": "^6.1.1",
     "vite-plugin-dts": "^4.5.0",
     "vite-svg-loader": "^5.1.0",
-    "vue": "catalog:"
+    "vue": "^3.5.13"
   }
 }
