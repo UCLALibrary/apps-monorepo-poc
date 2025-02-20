@@ -26,6 +26,7 @@ module.exports = {
       {
         assets: [
           'CHANGELOG.md',
+          'package.json', // ✅ Ensures updated peerDependencies before publishing
           'dist/*',
         ],
         message:
