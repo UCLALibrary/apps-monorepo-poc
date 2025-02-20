@@ -12,6 +12,7 @@ export { default as BlockLocationListItem } from './lib-components/BlockLocation
 export { default as BlockStaffList } from './lib-components/BlockStaffList.vue'
 export { default as BlockTag } from './lib-components/BlockTag.vue'
 export { default as ButtonLink } from './lib-components/ButtonLink.vue'
+export { default as GridGallery } from './lib-components/GridGallery.vue'
 export { default as IconWithLink } from './lib-components/IconWithLink.vue'
 export { default as ResponsiveImage } from './lib-components/ResponsiveImage.vue'
 export { default as ResponsiveVideo } from './lib-components/ResponsiveVideo.vue'
