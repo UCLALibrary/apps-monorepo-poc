@@ -22,14 +22,11 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./style.css": "./dist/style.css",
-    "./src/styles/*": "./src/styles/*"
+    "./style.css": "./dist/style.css"
   },
   "types": "./dist/index.d.ts",
   "files": [
-    "dist",
-    "src/lib-components",
-    "src/styles"
+    "dist"
   ],
   "engines": {
     "pnpm": "^9.12.1"
@@ -52,7 +49,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.2.0",
+    "@antfu/eslint-config": "4.2.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
     "eslint": "^9.19.0",
