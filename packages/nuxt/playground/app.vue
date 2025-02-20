@@ -63,7 +63,6 @@
 </template>
 
 <script setup lang="ts">
-import { GridGallery } from '@apps-monorepo-poc/vue-component-library';
 
 const mockFtvaEventDetailData = {
   id: '2847944',
