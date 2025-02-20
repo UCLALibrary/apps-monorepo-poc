@@ -1,3 +1,17 @@
+# [@apps-monorepo-poc/nuxt-module-v1.2.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.1.0...@apps-monorepo-poc/nuxt-module-v1.2.0) (2025-02-19)
+
+
+### Features
+
+* APPS-3133 remove dist files and removed private key from package.json ([#29](https://github.com/UCLALibrary/apps-monorepo-poc/issues/29)) ([0902964](https://github.com/UCLALibrary/apps-monorepo-poc/commit/0902964862d38fb08c47c3814c7b3a4959668ac9))
+
+# [@apps-monorepo-poc/nuxt-module-v1.1.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.0.0...@apps-monorepo-poc/nuxt-module-v1.1.0) (2025-02-19)
+
+
+### Features
+
+* APPS-3133 Update publishing actiona nd add prepack script ([#28](https://github.com/UCLALibrary/apps-monorepo-poc/issues/28)) ([e88a097](https://github.com/UCLALibrary/apps-monorepo-poc/commit/e88a09790e7a237c42b1fb4c00040939ff7ace27))
+
 # @apps-monorepo-poc/nuxt-module-v1.0.0 (2025-02-19)
 
 
