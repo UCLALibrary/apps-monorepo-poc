@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/nuxt-module-v1.3.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.2.0...@apps-monorepo-poc/nuxt-module-v1.3.0) (2025-02-20)
+
+
+### Features
+
+* Add a new component and fix nuxt-module build type error ([#30](https://github.com/UCLALibrary/apps-monorepo-poc/issues/30)) ([7118ba1](https://github.com/UCLALibrary/apps-monorepo-poc/commit/7118ba1e4f4382a3ba9b8bad82f74ef42996c4b1))
+
 # [@apps-monorepo-poc/nuxt-module-v1.2.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.1.0...@apps-monorepo-poc/nuxt-module-v1.2.0) (2025-02-19)
 
 
