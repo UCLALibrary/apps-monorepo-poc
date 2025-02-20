@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/nuxt-module-v1.6.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.5.0...@apps-monorepo-poc/nuxt-module-v1.6.0) (2025-02-20)
+
+
+### Features
+
+* Add new component and allow semantic release to update peer dependency component library package in npm package for nuxt-module ([#34](https://github.com/UCLALibrary/apps-monorepo-poc/issues/34)) ([0992baa](https://github.com/UCLALibrary/apps-monorepo-poc/commit/0992baad60f8253bd0482cdf258882155248dc11))
+
 # [@apps-monorepo-poc/nuxt-module-v1.5.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.4.0...@apps-monorepo-poc/nuxt-module-v1.5.0) (2025-02-20)
 
 
