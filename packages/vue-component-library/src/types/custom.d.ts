@@ -28,6 +28,11 @@ declare module '@/utils/accessibleExternalLinks' {
   export default accessibleExternalLinks
 }
 
+declare module '@/utils/removeHtmlTruncate' {
+  const removeHtmlTruncate: any
+  export default removeHtmlTruncate
+}
+
 declare module '@/composables/useTheme' {
   const useTheme: any
   export { useTheme }

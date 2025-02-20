@@ -23,7 +23,7 @@
     "declaration": true,
     "declarationDir": "dist",
     "emitDeclarationOnly": true,
-    "noEmit": true,
+    "noEmit": false,
     "outDir": "dist",
     "isolatedModules": true,
     "skipLibCheck": true,
