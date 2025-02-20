@@ -63,7 +63,6 @@
 </template>
 
 <script setup lang="ts">
-
 const mockFtvaEventDetailData = {
   id: '2847944',
   typeHandle: 'ftvaEvent',
