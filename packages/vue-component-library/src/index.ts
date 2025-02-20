@@ -10,6 +10,7 @@ export { default as BlockEventDetail } from './lib-components/BlockEventDetail.v
 export { default as BlockGenericList } from './lib-components/BlockGenericList.vue'
 export { default as BlockLocationListItem } from './lib-components/BlockLocationListItem.vue'
 export { default as BlockStaffList } from './lib-components/BlockStaffList.vue'
+export { default as BlockTag } from './lib-components/BlockTag.vue'
 export { default as ButtonLink } from './lib-components/ButtonLink.vue'
 export { default as IconWithLink } from './lib-components/IconWithLink.vue'
 export { default as ResponsiveImage } from './lib-components/ResponsiveImage.vue'
