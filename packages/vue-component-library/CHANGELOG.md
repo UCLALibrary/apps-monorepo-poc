@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.5.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.4.0...@apps-monorepo-poc/vue-component-library-v1.5.0) (2025-02-20)
+
+
+### Features
+
+* add a new component ([#32](https://github.com/UCLALibrary/apps-monorepo-poc/issues/32)) ([61ed4c7](https://github.com/UCLALibrary/apps-monorepo-poc/commit/61ed4c768c7b4d9075bb21c3e26b97c2fb325f3d))
+
 # [@apps-monorepo-poc/vue-component-library-v1.4.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.3.0...@apps-monorepo-poc/vue-component-library-v1.4.0) (2025-02-20)
 
 
