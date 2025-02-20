@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.4.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.3.0...@apps-monorepo-poc/vue-component-library-v1.4.0) (2025-02-20)
+
+
+### Features
+
+* APPS-3133 do not use recursive -r flag for build scripts from root and use filter flag so alias is not generated ([#31](https://github.com/UCLALibrary/apps-monorepo-poc/issues/31)) ([5d2323b](https://github.com/UCLALibrary/apps-monorepo-poc/commit/5d2323b193e336a8be9ebd282a0ad51683121f30))
+
 # [@apps-monorepo-poc/vue-component-library-v1.3.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.2.0...@apps-monorepo-poc/vue-component-library-v1.3.0) (2025-02-20)
 
 
