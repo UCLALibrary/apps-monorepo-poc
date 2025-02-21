@@ -1,3 +1,11 @@
+# [@apps-monorepo-poc/nuxt-module-v1.9.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.8.0...@apps-monorepo-poc/nuxt-module-v1.9.0) (2025-02-21)
+
+
+### Features
+
+* add a new component and add filter to pnpm publish command to fix module not found error ([#38](https://github.com/UCLALibrary/apps-monorepo-poc/issues/38)) ([2b502ce](https://github.com/UCLALibrary/apps-monorepo-poc/commit/2b502cef03007d0efd1b2f13626489ca4dbafa7e))
+* remove pnpm publish from release config and add it to github action after semantic release versioning of nuxt-module ([#39](https://github.com/UCLALibrary/apps-monorepo-poc/issues/39)) ([bc3d72f](https://github.com/UCLALibrary/apps-monorepo-poc/commit/bc3d72f2927e986a13a301d91dbd2491040ae381))
+
 # [@apps-monorepo-poc/nuxt-module-v1.8.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.7.0...@apps-monorepo-poc/nuxt-module-v1.8.0) (2025-02-21)
 
 
