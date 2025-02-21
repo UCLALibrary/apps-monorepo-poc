@@ -33,6 +33,11 @@ declare module '@/utils/removeHtmlTruncate' {
   export default removeHtmlTruncate
 }
 
+declare module '@/utils/formatEventSeriesDates' {
+  const formatEventSeriesDates: any
+  export default formatEventSeriesDates
+}
+
 declare module '@/composables/useTheme' {
   const useTheme: any
   export { useTheme }

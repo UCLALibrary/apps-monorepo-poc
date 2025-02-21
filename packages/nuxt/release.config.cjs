@@ -28,7 +28,7 @@ module.exports = {
     [
       '@semantic-release/exec',
       {
-        publishCmd: 'pnpm publish --no-git-checks', // Use pnpm publish
+        publishCmd: 'pnpm --filter @apps-monorepo-poc/nuxt-module publish --no-git-checks', // Use pnpm publish
       },
     ],
     '@semantic-release/github',
