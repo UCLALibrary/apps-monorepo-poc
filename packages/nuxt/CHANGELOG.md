@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/nuxt-module-v1.8.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.7.0...@apps-monorepo-poc/nuxt-module-v1.8.0) (2025-02-21)
+
+
+### Features
+
+* add npm registery to release action ([#37](https://github.com/UCLALibrary/apps-monorepo-poc/issues/37)) ([992d165](https://github.com/UCLALibrary/apps-monorepo-poc/commit/992d1658e3ccf9c13241468a9042eab3a918cef7))
+
 # [@apps-monorepo-poc/nuxt-module-v1.7.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.6.0...@apps-monorepo-poc/nuxt-module-v1.7.0) (2025-02-21)
 
 
