@@ -1,3 +1,39 @@
+# [@apps-monorepo-poc/nuxt-module-v1.9.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.8.0...@apps-monorepo-poc/nuxt-module-v1.9.0) (2025-02-21)
+
+
+### Features
+
+* add a new component and add filter to pnpm publish command to fix module not found error ([#38](https://github.com/UCLALibrary/apps-monorepo-poc/issues/38)) ([2b502ce](https://github.com/UCLALibrary/apps-monorepo-poc/commit/2b502cef03007d0efd1b2f13626489ca4dbafa7e))
+* remove pnpm publish from release config and add it to github action after semantic release versioning of nuxt-module ([#39](https://github.com/UCLALibrary/apps-monorepo-poc/issues/39)) ([bc3d72f](https://github.com/UCLALibrary/apps-monorepo-poc/commit/bc3d72f2927e986a13a301d91dbd2491040ae381))
+
+# [@apps-monorepo-poc/nuxt-module-v1.8.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.7.0...@apps-monorepo-poc/nuxt-module-v1.8.0) (2025-02-21)
+
+
+### Features
+
+* add npm registery to release action ([#37](https://github.com/UCLALibrary/apps-monorepo-poc/issues/37)) ([992d165](https://github.com/UCLALibrary/apps-monorepo-poc/commit/992d1658e3ccf9c13241468a9042eab3a918cef7))
+
+# [@apps-monorepo-poc/nuxt-module-v1.7.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.6.0...@apps-monorepo-poc/nuxt-module-v1.7.0) (2025-02-21)
+
+
+### Features
+
+* use pnpm publish and add new component ([#36](https://github.com/UCLALibrary/apps-monorepo-poc/issues/36)) ([c38116f](https://github.com/UCLALibrary/apps-monorepo-poc/commit/c38116f68e162f8b5bf444d80b448811c487b30e))
+
+# [@apps-monorepo-poc/nuxt-module-v1.6.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.5.0...@apps-monorepo-poc/nuxt-module-v1.6.0) (2025-02-20)
+
+
+### Features
+
+* Add new component and allow semantic release to update peer dependency component library package in npm package for nuxt-module ([#34](https://github.com/UCLALibrary/apps-monorepo-poc/issues/34)) ([0992baa](https://github.com/UCLALibrary/apps-monorepo-poc/commit/0992baad60f8253bd0482cdf258882155248dc11))
+
+# [@apps-monorepo-poc/nuxt-module-v1.5.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.4.0...@apps-monorepo-poc/nuxt-module-v1.5.0) (2025-02-20)
+
+
+### Features
+
+* add a new component and call nuxt propare to generate.nuxt folder ([#33](https://github.com/UCLALibrary/apps-monorepo-poc/issues/33)) ([9f126a6](https://github.com/UCLALibrary/apps-monorepo-poc/commit/9f126a6a58cab5b654b5c922194567ca55f44d67))
+
 # [@apps-monorepo-poc/nuxt-module-v1.4.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.3.0...@apps-monorepo-poc/nuxt-module-v1.4.0) (2025-02-20)
 
 

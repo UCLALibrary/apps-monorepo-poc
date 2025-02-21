@@ -31,10 +31,10 @@ My new Nuxt module for doing amazing things.
 Install the module to your Nuxt application with one command:
 
 ```bash
-npx nuxi module add my-module
+npx nuxi module add @apps-monorepo-poc/nuxt-module
 ```
 
-That's it! You can now use My Module in your Nuxt app ✨
+That's it! You can now use Nuxt Module in your Nuxt app ✨
 
 ## Contribution
 

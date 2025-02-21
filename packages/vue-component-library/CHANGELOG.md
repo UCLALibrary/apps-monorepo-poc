@@ -1,3 +1,31 @@
+# [@apps-monorepo-poc/vue-component-library-v1.9.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.8.0...@apps-monorepo-poc/vue-component-library-v1.9.0) (2025-02-21)
+
+
+### Features
+
+* use pnpm publish and add new component ([#36](https://github.com/UCLALibrary/apps-monorepo-poc/issues/36)) ([c38116f](https://github.com/UCLALibrary/apps-monorepo-poc/commit/c38116f68e162f8b5bf444d80b448811c487b30e))
+
+# [@apps-monorepo-poc/vue-component-library-v1.8.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.7.0...@apps-monorepo-poc/vue-component-library-v1.8.0) (2025-02-20)
+
+
+### Features
+
+* APPS-3133 fix catalog and workspace references once packages are published ([#35](https://github.com/UCLALibrary/apps-monorepo-poc/issues/35)) ([7eed052](https://github.com/UCLALibrary/apps-monorepo-poc/commit/7eed05225b3d6e58fd8bcde3a3162e2e9d53a583))
+
+# [@apps-monorepo-poc/vue-component-library-v1.7.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.6.0...@apps-monorepo-poc/vue-component-library-v1.7.0) (2025-02-20)
+
+
+### Features
+
+* Add new component and allow semantic release to update peer dependency component library package in npm package for nuxt-module ([#34](https://github.com/UCLALibrary/apps-monorepo-poc/issues/34)) ([0992baa](https://github.com/UCLALibrary/apps-monorepo-poc/commit/0992baad60f8253bd0482cdf258882155248dc11))
+
+# [@apps-monorepo-poc/vue-component-library-v1.6.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.5.0...@apps-monorepo-poc/vue-component-library-v1.6.0) (2025-02-20)
+
+
+### Features
+
+* add a new component and call nuxt propare to generate.nuxt folder ([#33](https://github.com/UCLALibrary/apps-monorepo-poc/issues/33)) ([9f126a6](https://github.com/UCLALibrary/apps-monorepo-poc/commit/9f126a6a58cab5b654b5c922194567ca55f44d67))
+
 # [@apps-monorepo-poc/vue-component-library-v1.5.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.4.0...@apps-monorepo-poc/vue-component-library-v1.5.0) (2025-02-20)
 
 
