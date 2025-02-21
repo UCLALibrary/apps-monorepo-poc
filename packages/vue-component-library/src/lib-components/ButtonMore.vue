@@ -1,7 +1,7 @@
 <script>
+import SmartLink from '@/lib-components/SmartLink.vue'
 import ArrowRight from 'ucla-library-design-tokens/assets/svgs/icon-arrow-right.svg'
 import MoleculeStroke from 'ucla-library-design-tokens/assets/svgs/molecule-stroke.svg'
-import SmartLink from '@/lib-components/SmartLink.vue'
 
 export default {
   name: 'ButtonMore',
