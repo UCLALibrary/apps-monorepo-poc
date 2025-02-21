@@ -19,13 +19,19 @@ module.exports = {
         changelogFile: 'CHANGELOG.md',
       },
     ],
-    '@semantic-release/npm',
+    [
+      '@semantic-release/npm',
+      {
+        npmPublish: false, // Disable default npm publish
+      },
+    ],
     '@semantic-release/github',
     [
       '@semantic-release/git',
       {
         assets: [
           'CHANGELOG.md',
+          'package.json', // ✅ Ensures updated peerDependencies before publishing
           'dist/*',
         ],
         message:

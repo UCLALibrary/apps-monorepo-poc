@@ -27,5 +27,13 @@
   },
   "engines": {
     "pnpm": "^9.12.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "catalog:",
+      "vue": "catalog:",
+      "typescript": "catalog:",
+      "vue-tsc": "catalog:"
+    }
   }
 }
