@@ -19,7 +19,18 @@ module.exports = {
         changelogFile: 'CHANGELOG.md',
       },
     ],
-    '@semantic-release/npm',
+    [
+      '@semantic-release/npm',
+      {
+        npmPublish: false, // Disable default npm publish
+      },
+    ],
+    [
+      '@semantic-release/exec',
+      {
+        publishCmd: 'pnpm publish --no-git-checks', // Use pnpm publish
+      },
+    ],
     '@semantic-release/github',
     [
       '@semantic-release/git',
