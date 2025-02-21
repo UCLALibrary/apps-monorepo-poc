@@ -56,5 +56,5 @@ jobs:
           GH_TOKEN: ${{ secrets.PAT_POC }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          cd packages/nuxt
-          pnpm publish --no-git-checks --access public
+          pnpm --filter @apps-monorepo-poc/nuxt-module install
+          pnpm --filter @apps-monorepo-poc/nuxt-module publish --no-git-checks --access public
