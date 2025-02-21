@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.9.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.8.0...@apps-monorepo-poc/vue-component-library-v1.9.0) (2025-02-21)
+
+
+### Features
+
+* use pnpm publish and add new component ([#36](https://github.com/UCLALibrary/apps-monorepo-poc/issues/36)) ([c38116f](https://github.com/UCLALibrary/apps-monorepo-poc/commit/c38116f68e162f8b5bf444d80b448811c487b30e))
+
 # [@apps-monorepo-poc/vue-component-library-v1.8.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.7.0...@apps-monorepo-poc/vue-component-library-v1.8.0) (2025-02-20)
 
 
