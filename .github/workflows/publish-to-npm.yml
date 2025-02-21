@@ -28,7 +28,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20
-          registry-url: "https://registry.npmjs.org/"
       - name: Setup PNPM
         uses: pnpm/action-setup@v4
         with:
@@ -43,11 +42,18 @@ jobs:
           GH_TOKEN: ${{ secrets.PAT_POC }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm --filter @apps-monorepo-poc/vue-component-library exec -- semantic-release -e semantic-release-monorepo
-      - name: Set up npm authentication
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
       - name: Release Nuxt Module
         if: steps.filter.outputs.component-library == 'true' || steps.filter.outputs.nuxt-module == 'true'
         env:
           GH_TOKEN: ${{ secrets.PAT_POC }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm --filter @apps-monorepo-poc/nuxt-module exec -- semantic-release -e semantic-release-monorepo
+      # 🔴 Manually publish Nuxt Module using pnpm
+      - name: Publish Nuxt Module
+        if: steps.filter.outputs.component-library == 'true' || steps.filter.outputs.nuxt-module == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PAT_POC }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          cd packages/nuxt
+          pnpm publish --no-git-checks --access public
