@@ -25,12 +25,6 @@ module.exports = {
         npmPublish: false, // Disable default npm publish
       },
     ],
-    [
-      '@semantic-release/exec',
-      {
-        publishCmd: 'pnpm --filter @apps-monorepo-poc/nuxt-module publish --no-git-checks', // Use pnpm publish
-      },
-    ],
     '@semantic-release/github',
     [
       '@semantic-release/git',
