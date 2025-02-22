@@ -23,6 +23,7 @@ export { default as ResponsiveVideo } from './lib-components/ResponsiveVideo.vue
 export { default as RichText } from './lib-components/RichText.vue'
 export { default as SectionCardsWithIllustrations } from './lib-components/SectionCardsWithIllustrations.vue'
 export { default as SectionDualMasonry } from './lib-components/SectionDualMasonry.vue'
+export { default as SectionGenericList } from './lib-components/SectionGenericList.vue'
 export { default as SmartLink } from './lib-components/SmartLink.vue'
 export * from './types/types'
 
