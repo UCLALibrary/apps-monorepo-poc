@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.14.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.13.0...@apps-monorepo-poc/vue-component-library-v1.14.0) (2025-02-22)
+
+
+### Features
+
+* always use force on nuxt module publish command to get the latest dependency versions ([#47](https://github.com/UCLALibrary/apps-monorepo-poc/issues/47)) ([cd210f9](https://github.com/UCLALibrary/apps-monorepo-poc/commit/cd210f9344470e7d352bf0a57689b661d1539ff5))
+
 # [@apps-monorepo-poc/vue-component-library-v1.13.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.12.0...@apps-monorepo-poc/vue-component-library-v1.13.0) (2025-02-22)
 
 
