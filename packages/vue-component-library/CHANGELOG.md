@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.16.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.15.0...@apps-monorepo-poc/vue-component-library-v1.16.0) (2025-02-22)
+
+
+### Features
+
+* add github token to publising github action ([#49](https://github.com/UCLALibrary/apps-monorepo-poc/issues/49)) ([4215920](https://github.com/UCLALibrary/apps-monorepo-poc/commit/421592091e84034841cf19934903be7f747ebf3d))
+
 # [@apps-monorepo-poc/vue-component-library-v1.15.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.14.0...@apps-monorepo-poc/vue-component-library-v1.15.0) (2025-02-22)
 
 
