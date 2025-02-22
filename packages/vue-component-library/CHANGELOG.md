@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.12.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.11.0...@apps-monorepo-poc/vue-component-library-v1.12.0) (2025-02-22)
+
+
+### Features
+
+* Update readme and github action ([#45](https://github.com/UCLALibrary/apps-monorepo-poc/issues/45)) ([de7b2ce](https://github.com/UCLALibrary/apps-monorepo-poc/commit/de7b2ce2843bdecb86a45a1f2dde1d6a5ce9da6c))
+
 # [@apps-monorepo-poc/vue-component-library-v1.11.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.10.0...@apps-monorepo-poc/vue-component-library-v1.11.0) (2025-02-22)
 
 
