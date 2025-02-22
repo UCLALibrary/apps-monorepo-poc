@@ -1,3 +1,11 @@
+# [@apps-monorepo-poc/nuxt-module-v1.10.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.9.0...@apps-monorepo-poc/nuxt-module-v1.10.0) (2025-02-22)
+
+
+### Features
+
+* Update readme and github action ([#45](https://github.com/UCLALibrary/apps-monorepo-poc/issues/45)) ([de7b2ce](https://github.com/UCLALibrary/apps-monorepo-poc/commit/de7b2ce2843bdecb86a45a1f2dde1d6a5ce9da6c))
+* use pnpm publish to publish the component librray too ([#43](https://github.com/UCLALibrary/apps-monorepo-poc/issues/43)) ([70cd2cd](https://github.com/UCLALibrary/apps-monorepo-poc/commit/70cd2cdde1e46f515aef7365ff2dc9a1f60ae913))
+
 # [@apps-monorepo-poc/nuxt-module-v1.9.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.8.0...@apps-monorepo-poc/nuxt-module-v1.9.0) (2025-02-21)
 
 
