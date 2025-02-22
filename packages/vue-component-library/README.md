@@ -19,3 +19,5 @@ pnpm add @apps-monorepo-poc/vue-component-library
 Few components added from ucla-library-website-components
 
 ## Add Cypress tests
+
+## Add storybook
