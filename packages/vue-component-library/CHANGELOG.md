@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.13.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.12.0...@apps-monorepo-poc/vue-component-library-v1.13.0) (2025-02-22)
+
+
+### Features
+
+* add a new component to test the release and publish workflow and perr dependencies version update to the latest ([#46](https://github.com/UCLALibrary/apps-monorepo-poc/issues/46)) ([d0cf68c](https://github.com/UCLALibrary/apps-monorepo-poc/commit/d0cf68c19ef05f37fd55cb6ef4f93bfce340530e))
+
 # [@apps-monorepo-poc/vue-component-library-v1.12.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.11.0...@apps-monorepo-poc/vue-component-library-v1.12.0) (2025-02-22)
 
 
