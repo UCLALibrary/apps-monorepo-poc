@@ -17,3 +17,5 @@ pnpm add @apps-monorepo-poc/vue-component-library
 ## Components
 
 Few components added from ucla-library-website-components
+
+## Add Cypress tests
