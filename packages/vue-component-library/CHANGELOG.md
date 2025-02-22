@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.15.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.14.0...@apps-monorepo-poc/vue-component-library-v1.15.0) (2025-02-22)
+
+
+### Features
+
+* APPS-3133 force commit to nuxt-module before publish if no file changes to nuxt-module ([#48](https://github.com/UCLALibrary/apps-monorepo-poc/issues/48)) ([09ce4c0](https://github.com/UCLALibrary/apps-monorepo-poc/commit/09ce4c0a75c44172e63d58798881eff72d80faa9))
+
 # [@apps-monorepo-poc/vue-component-library-v1.14.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.13.0...@apps-monorepo-poc/vue-component-library-v1.14.0) (2025-02-22)
 
 
