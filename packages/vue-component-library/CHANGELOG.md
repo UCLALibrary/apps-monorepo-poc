@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.11.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.10.0...@apps-monorepo-poc/vue-component-library-v1.11.0) (2025-02-22)
+
+
+### Features
+
+* use pnpm publish to publish the component librray too ([#43](https://github.com/UCLALibrary/apps-monorepo-poc/issues/43)) ([70cd2cd](https://github.com/UCLALibrary/apps-monorepo-poc/commit/70cd2cdde1e46f515aef7365ff2dc9a1f60ae913))
+
 # [@apps-monorepo-poc/vue-component-library-v1.10.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.9.0...@apps-monorepo-poc/vue-component-library-v1.10.0) (2025-02-22)
 
 
