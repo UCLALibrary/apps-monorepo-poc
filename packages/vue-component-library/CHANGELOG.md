@@ -1,3 +1,11 @@
+# [@apps-monorepo-poc/vue-component-library-v1.10.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.9.0...@apps-monorepo-poc/vue-component-library-v1.10.0) (2025-02-22)
+
+
+### Features
+
+* add a new component and add filter to pnpm publish command to fix module not found error ([#38](https://github.com/UCLALibrary/apps-monorepo-poc/issues/38)) ([2b502ce](https://github.com/UCLALibrary/apps-monorepo-poc/commit/2b502cef03007d0efd1b2f13626489ca4dbafa7e))
+* new component and use pnpm install with filter and pnpm publish with filtered package for nuxt-module ([#40](https://github.com/UCLALibrary/apps-monorepo-poc/issues/40)) ([4802e50](https://github.com/UCLALibrary/apps-monorepo-poc/commit/4802e50a8a2fa1e6bbc3cb7aee74d776105ba72c))
+
 # [@apps-monorepo-poc/vue-component-library-v1.9.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.8.0...@apps-monorepo-poc/vue-component-library-v1.9.0) (2025-02-21)
 
 
