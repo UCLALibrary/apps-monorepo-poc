@@ -68,4 +68,4 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           pnpm --filter @apps-monorepo-poc/nuxt-module install
-          pnpm --filter @apps-monorepo-poc/nuxt-module publish --no-git-checks --access public
+          pnpm --filter @apps-monorepo-poc/nuxt-module publish --no-git-checks --access public --force
