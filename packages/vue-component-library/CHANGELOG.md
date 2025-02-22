@@ -1,3 +1,10 @@
+# [@apps-monorepo-poc/vue-component-library-v1.17.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.16.0...@apps-monorepo-poc/vue-component-library-v1.17.0) (2025-02-22)
+
+
+### Features
+
+* add Personal access token and replace github token for force commit ([#50](https://github.com/UCLALibrary/apps-monorepo-poc/issues/50)) ([f52bf02](https://github.com/UCLALibrary/apps-monorepo-poc/commit/f52bf028f866cb329b8e23ed2b1f6cd543642e93))
+
 # [@apps-monorepo-poc/vue-component-library-v1.16.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/vue-component-library-v1.15.0...@apps-monorepo-poc/vue-component-library-v1.16.0) (2025-02-22)
 
 
