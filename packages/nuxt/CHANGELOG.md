@@ -1,3 +1,5 @@
+# [@apps-monorepo-poc/nuxt-module-v1.10.1](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.10.0...@apps-monorepo-poc/nuxt-module-v1.10.1) (2025-02-22)
+
 # [@apps-monorepo-poc/nuxt-module-v1.10.0](https://github.com/UCLALibrary/apps-monorepo-poc/compare/@apps-monorepo-poc/nuxt-module-v1.9.0...@apps-monorepo-poc/nuxt-module-v1.10.0) (2025-02-22)
 
 
