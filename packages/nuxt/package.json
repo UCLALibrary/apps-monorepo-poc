@@ -40,7 +40,8 @@
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.15.4"
+    "@nuxt/kit": "^3.15.4",
+    "ucla-library-design-tokens": "^5.28.0"
   },
   "devDependencies": {
     "@apps-monorepo-poc/vue-component-library": "workspace:^",
@@ -60,7 +61,7 @@
   "peerDependencies": {
     "@apps-monorepo-poc/vue-component-library": "workspace:^"
   },
-  "engines": {
-    "pnpm": "^9.12.1"
-  }
+  "sideEffects":[
+    "**/*.css"
+  ]
 }

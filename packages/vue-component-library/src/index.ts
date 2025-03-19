@@ -1,5 +1,5 @@
-import 'ucla-library-design-tokens/scss/app-global.scss'
-import '@/styles/global.scss'
+// import 'ucla-library-design-tokens/scss/app-global.scss'
+// import '@/styles/global.scss'
 
 export { default as BannerFeatured } from './lib-components/BannerFeatured.vue'
 export { default as BannerHeader } from './lib-components/BannerHeader.vue'

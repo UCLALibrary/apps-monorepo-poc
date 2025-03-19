@@ -19,18 +19,14 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    },
-    "./style.css": "./dist/style.css"
+      "import": "./dist/index.mjs"
+    }
   },
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "engines": {
-    "pnpm": "^9.12.1"
-  },
+
   "scripts": {
     "prepack": "vite build",
     "dev": "vite",
@@ -54,12 +50,17 @@
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
     "eslint": "^9.19.0",
+    "glob": "^11.0.1",
     "postcss-base64": "^0.7.1",
     "sass": "^1.79.5",
     "ucla-library-design-tokens": "^5.28.0",
     "vite": "catalog:",
     "vite-plugin-dts": "^4.5.0",
+    "vite-plugin-lib-inject-css": "^2.2.1",
     "vite-svg-loader": "^5.1.0",
     "vue": "catalog:"
-  }
+  },
+  "sideEffects": [
+    "**/*.css"
+  ]
 }

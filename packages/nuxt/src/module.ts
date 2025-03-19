@@ -12,7 +12,8 @@ export default defineNuxtModule<ModuleOptions>({
   setup(_options, _nuxt) {
     const logger = useLogger('@apps-monorepo-poc/nuxt-module')
 
-    _nuxt.options.css.push('@apps-monorepo-poc/vue-component-library/style.css')
+   _nuxt.options.build.transpile.push('@apps-monorepo-poc/vue-component-library')
+
     Object.keys(VueComponentLibrary)
       .forEach((component) => {
         logger.info(`Adding component: ${component}`)
