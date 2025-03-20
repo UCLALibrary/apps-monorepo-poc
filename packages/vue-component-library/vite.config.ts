@@ -1,11 +1,13 @@
-import { resolve } from 'node:path'
+import { extname, relative, resolve } from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import postcssBase64 from 'postcss-base64'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import svgLoader from 'vite-svg-loader'
 import packageJson from './package.json'
-
+import { libInjectCss } from 'vite-plugin-lib-inject-css'
+import { fileURLToPath } from 'node:url'
+import { glob } from 'glob'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -17,13 +19,14 @@ export default defineConfig({
       insertTypesEntry: true,
       rollupTypes: true,
     }),
+    libInjectCss(),
   ],
   build: {
     lib: {
-      entry: getFilePath('./src/index.ts'),
-      formats: ['es', 'cjs'],
-      fileName: 'index',
-      cssFileName: 'style',
+      entry: 'src/index.ts',
+      formats: ['es'],
+      // fileName: 'index',
+      // cssFileName: 'style',
 
     },
     rollupOptions: {
@@ -39,6 +42,22 @@ export default defineConfig({
         entryFileNames: `[name].js`,
         assetFileNames: `[name].[ext]`
       }, */
+
+      input: Object.fromEntries(
+        glob.sync('src/**/*.{js,ts,vue}', {ignore: ["src/stories/*.*"]})
+          .map(file => [
+            relative('src', file.slice(0, file.length - extname(file).length)),
+            fileURLToPath(new URL(file, import.meta.url)),
+          ])
+      ),
+      output: {
+        // Put chunk files at <output>/chunks
+        //format: 'es',
+        //chunkFileNames: 'chunks/[name].[hash].js',
+        // Put chunk styles at <output>/assets
+        assetFileNames: 'assets/[name][extname]',
+        entryFileNames: '[name].mjs',
+      },
       // make sure to externalize dependencies that shouldn't be bundled into the library
       external: Object.keys(packageJson.peerDependencies),
     },
@@ -65,6 +84,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': getFilePath('./src'),
+      '~ucla-library-design-tokens': getFilePath('node_modules/ucla-library-design-tokens'),
       'ucla-library-design-tokens': resolve(__dirname, 'node_modules/ucla-library-design-tokens'),
     },
     extensions: ['.mjs', '.mts', '.ts', '.jsx', '.tsx', '.vue', '.js', '.json'],
