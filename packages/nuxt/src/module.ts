@@ -11,6 +11,9 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {},
   setup(_options, _nuxt) {
     const logger = useLogger('@apps-monorepo-poc/nuxt-module')
+   /* if (Array.isArray(_nuxt.options.vite.ssr?.noExternal)) {
+      _nuxt.options.vite.ssr.noExternal.push('@apps-monorepo-poc/vue-component-library')
+    }*/
 
    _nuxt.options.build.transpile.push('@apps-monorepo-poc/vue-component-library')
 
